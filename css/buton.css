@@ -1,0 +1,126 @@
+.btn {
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    border: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: relative;
+}
+
+.btn-radius {
+    border-radius: 3px;
+}
+
+.btn-upper {
+    text-transform: uppercase;
+}
+
+.btn-small {
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.btn-medium {
+    height: 40px;
+    line-height: 40px;
+    font-size: 13px;
+}
+
+.btn-big {
+    height: 48px;
+    line-height: 48px;
+    font-size: 16px;
+    padding-left: 2px;
+    padding-right: 10px;
+}
+
+.btn-big:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.btn-default, .btn-default.passive:hover {
+    color: #fff;
+    background-color: #6c6c6c;
+}
+
+.btn-default:hover, .btn-default.active {
+    color: #eee;
+    background-color: #000;
+}
+
+.btn-dark, .btn-dark.passive:hover {
+    color: #eee;
+    background-color: #000;
+}
+
+.btn-dark:hover, .btn-dark.active {
+    color: #fff;
+    background-color: #666;
+}
+
+.btn-light, .btn-light.passive:hover {
+    color: #6c6c6c;
+    background-color: #f3f3f3;
+}
+
+.btn-light:hover, .btn-light.active {
+    color: #fff;
+    background-color: #6c6c6c;
+}
+
+.btn-success, .btn-success.passive:hover {
+    color: #fff;
+    background-color: #5cb85c;
+}
+
+.btn-success:hover, .btn-success.active {
+    background-color: #449d44;
+}
+
+.btn-warning, .btn-warning.passive:hover {
+    color: #000;
+    background-color: #fff;
+}
+
+.btn-warning:hover, .btn-warning.active {
+    color: #FFF;
+    background-color: #000;
+}
+
+.btn-warning:hover>span {
+    border: 1px solid #fff;
+    margin-top: 4px;
+}
+
+.btn-danger, .btn-danger.passive:hover {
+    color: #fff;
+    background-color: #d9534f;
+}
+
+.btn-danger:hover, .btn-danger.active {
+    background-color: #c9302c;
+}
+
+.btn-clear {
+    color: #6c6c6c;
+}
+
+.btn-clear:hover {
+    color: #000;
+}
+
+@media screen and (max-width: 540px) {
+    .addressRow .btn {
+        height: 25px;
+        line-height: 24px;
+        font-size: 12px;
+    }
+}

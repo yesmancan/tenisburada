@@ -1,0 +1,204 @@
+.sliderWrap {
+    width: 100%;
+    /*border-top:1px solid #ccc;
+border-bottom:            1px solid #ccc;
+overflow:hidden;*/
+}
+
+#slideList p {
+    padding-bottom: 0;
+}
+
+.slide-wrapper {
+    position: relative;
+}
+
+.sliderMain {
+    width: 100%;
+    min-height: 70px;
+}
+
+.GelismisVitrinLoad {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    top: 50%;
+    margin: -25px 0 0;
+}
+
+.carousel-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.sliderMain ul {
+    width: 100%;
+    min-height: 70px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+}
+
+.carousel {
+    position: relative;
+    left: 0;
+}
+
+.sliderMain li, .sliderMain p, .sliderMain a {
+    padding: 0;
+    margin: 0;
+}
+
+.responsive .fade li, .responsive .fade li p, .responsive .fade li a {
+    width: 100%;
+    height: 100%;
+}
+
+.responsive .fade li p, .responsive .fade li a {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.responsive li {
+    background-size: cover !important;
+}
+
+.fade>li {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.fade li.current {
+    position: static;
+}
+
+.carousel li {
+    float: left;
+}
+
+.sliderMain img {
+    float: left;
+    width: 100%;
+    max-width: 100%;
+}
+
+.slideControl {
+    position: absolute;
+    width: 100%;
+    height: 42px;
+    top: 50%;
+    margin-top: -21px;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding: 0px 10px;
+    box-sizing: border-box;
+}
+
+.twoCol .slideControl, .threeCol .slideControl {
+    left: 10px;
+    right: 10px;
+    margin-left: 0;
+    width: auto;
+}
+
+.slideControl span {
+    width: 18px;
+    height: 42px;
+    background-image: url('https://www.tenisburada.com/arrows.png');
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.nextSlide {
+    background-position: right 0;
+}
+
+.sliderMain ul.slidePager {
+    min-height: auto;
+    position: absolute;
+    height: 20px;
+    text-align: center;
+    bottom: 10px;
+    right: 10px;
+    left: 0px;
+    padding: 0px 10px;
+    box-sizing: border-box;
+    display: table;
+}
+
+.twoCol .sliderMain ul.slidePager, .threeCol .sliderMain ul.slidePager {
+    width: auto;
+    left: 10px;
+    right: 10px;
+    margin-left: 0;
+}
+
+.slidePager li {
+    display: inline-block;
+    width: 19.5px;
+    height: 19.5px;
+    line-height: 19.5px;
+    text-align: center;
+    color: #000;
+    font-size: 12px;
+    cursor: pointer;
+    background: #666;
+    margin-top: 5px;
+    margin-left: 5px;
+    border-radius: 5px;
+    background-color: #000;
+}
+
+.slidePager li.active {
+    width: 19.5px;
+    height: 19.5px;
+    line-height: 19.5px;
+    background: #C9C9C0;
+    margin-top: 0;
+    cursor: default;
+    color: #C9C9C0;
+}
+
+@media screen and (max-width: 1320px) {
+    .slideControl, .sliderMain ul.slidePager {
+        width: calc(100% - 60px);
+        left: 30px;
+        right: 30px;
+        margin-left: 0;
+    }
+}
+
+div.catalltop .ustkisimcat .ustkisimcatdiv1, div.catalltop .ustkisimcat .ustkisimcatdiv1 {
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .slideControl {
+        display: none;
+    }
+    div.catalltop> :nth-child(2)>.catall:nth-child(2) {
+        padding-right: 0!important;
+        padding-left: 0!important;
+    }
+    div.catalltop> :nth-child(3)>div:nth-child(2) {
+        padding-right: 0 !important;
+    }
+    div.catalltop> :nth-child(2)>.catall:nth-child(3), div.catalltop> :nth-child(3)>div:nth-child(3) {
+        padding-left: 0!important;
+    }
+    div.catalltop> :nth-child(2)>.catall:nth-child(3), div.catalltop> :nth-child(2)>.catall:nth-child(2), div.catalltop> :nth-child(3)>div:nth-child(2) {
+        margin-bottom: 5px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    div.catalltop .ustkisimcat .ustkisimcatdiv1, div.catalltop .ustkisimcat .ustkisimcatdiv1 {
+        margin-bottom: 5px;
+    }
+}
