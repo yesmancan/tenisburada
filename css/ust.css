@@ -81,11 +81,19 @@ ul#main-menu>li>a {
     width: 100%;
     display: inline-block;
 }
+
+.space-65 {
+    height: 65px;
+    width: 100%;
+    display: inline-block;
+}
+
 .space-40 {
     height: 40px;
     width: 100%;
     display: inline-block;
 }
+
 @media screen and (min-width:2560px) {
     #main-menu li>a {
         padding: 10px 65px;
