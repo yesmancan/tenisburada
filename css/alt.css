@@ -415,3 +415,72 @@ div>ul>li>ul>li:nth-child(1) {
 .pa-25 {
     padding: 25px;
 }
+
+.px-25 {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.pl-0 {
+    padding-left: 0;
+}
+
+.pr-0 {
+    padding-right: 0;
+}
+
+.fs-14 {
+    font-size: 14px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+#footer h2 {
+    font-weight: 500;
+    font-size: 1.35em;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+    font-family: 'Barlow', sans-serif;
+}
+
+#footer .p-st {
+    color: #7b7b7b;
+    font-weight: 400;
+    line-height: 1;
+    font-family: 'Barlow', sans-serif;
+}
+
+#footer .footer-br {
+    border-right: 2px solid #ebebeb;
+    min-height: 135px;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 100%;
+    width: 100%;
+    margin: 0;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+#footer .icon-w {
+    width: 90px;
+    padding: 0;
+    text-align: left;
+}
+
+#footer .icon-right-text {
+    width: calc(100% - 90px);
+    padding: 0;
+}
