@@ -1,0 +1,1034 @@
+.fasta
+{
+border-radius:                                               50px;
+font-size: 160%;
+height:                                               55px;
+line-height: 50px;
+background-color:                                               #FFF;
+color: #000;
+border:                                               1px solid;
+}
+
+.alturungrup1 > a.selected
+{
+background-color:                                  #000;
+}
+table.product-prop
+{
+width:300px!important;
+}
+
+.alturungrup1 > a.selected > p
+{
+color:                                  #fff;
+}
+
+.buyBtn > a
+{
+background-color:        #111;
+border-radius: 0;
+padding:        0;
+}
+
+.btn-basket-buy
+{
+font-weight:        400;
+font-size: 140%;
+text-align:        center;
+height: 50px;
+width: 100%;
+float:        left;
+color: #fff;
+font-family: 'Oswald', sans-serif;
+}
+
+.fasta > span
+{
+background-color: #000 !important;
+border-radius:                                               100px;
+width: 40px !important;
+height:                                               40px;
+margin-top: 6px;
+margin-left:                                               -10px;
+}
+#productLeft .slide-wrapper > .row:first-child
+{
+position:                                                relative;
+}
+#productBrandText
+{
+font-size:                                                14px;
+font-weight:700;
+color:                                                #000;
+}
+
+.subOne #subPro
+{
+display:            none;
+}
+#productName
+{
+line-height:            1;
+font-size: 14px;
+font-weight:            900;
+color: #000;
+text-transform:            uppercase;
+font-family: 'Oswald', sans-serif;
+}
+
+.mainPrices .discountPrice
+{
+font-size:      14px;
+font-weight: 500;
+color:            #737373;
+}
+
+.productName
+{
+font-size:                                                20px;
+font-weight:600;
+}
+
+.productBrandImg
+{
+margin-bottom:                                                10px;
+}
+
+.productComment
+{
+width:                                                87px;
+}
+
+.comment-btn
+{
+padding-left:                                                17px;
+line-height:30px;
+color:                                                #000;
+font-size:11px;
+background:url('commentIcon.png') no-repeat 0 center;
+}
+
+.mainPrices
+{
+position:           relative;
+font-family: 'Oswald', sans-serif;
+}
+
+.priceLine, .variantLine, .noteLine
+{
+line-height:                                    23px;
+font-size: 16px;
+}
+#urun-tab
+{
+padding-bottom:            120px;
+background-color: #17171d;
+}
+
+.currencyPrice
+{
+color:              #373737;
+margin-left: 30px;
+margin-top:              5px;
+font-size: 22px;
+}
+
+.normalPrice
+{
+font-size:                                                19px;
+}
+
+.discountPrice
+{
+font-size:                                    32px;
+font-weight: lighter;
+color:                                    #373737;
+}
+
+.variantLine, .noteLine
+{
+line-height:                                                30px;
+padding-top:5px;
+}
+#content > .inner
+{
+width:100%;
+}
+
+.prduct-code-buy-alt
+{
+margin-bottom:           5px;
+}
+
+.prduct-code-buy-alt >span
+{
+color:            #616161;
+font-size: 16px;
+letter-spacing: -0.9px;
+margin-bottom:            5px;
+font-family: 'Oswald', sans-serif;
+font-weight:            300;
+}
+#category-path
+{
+margin-top:            10px;
+font-family: 'Oswald', sans-serif;
+color:            #737373;
+font-weight: 400;
+text-transform: lowercase!important;
+font-size:      14px;
+}
+.productThumbs li .image-wrapper
+{
+width: 100%;
+background-color:            #c3c3c3;
+height: 2px;
+margin:            10px 0 10px 5px;
+}
+.productThumbs li.active .image-wrapper
+{
+background-color:            #00a2e8;
+}
+
+.variantWrapper >  .subOne > div > a.box-border:hover ,
+.variantWrapper >  .subOne > div > a.box-border > p:hover
+{
+background-color:            #313132;
+color: #fff!important;
+}
+
+.variantBox a.selected
+{
+background-color:            #313132;
+color: #fff!important;
+}
+
+.variantBox a.passive
+{
+background:                                                #d2d2d2;
+text-decoration:line-through;
+color:                                                #f10a41;
+display:none;
+}
+
+.variantWrapper .subOne a.box-border
+{
+border-right:            2px solid #e8e8e8;
+border-bottom: 2px solid #e8e8e8;
+}
+
+.variantBox select
+{
+min-width:                                130px;
+background:url('/Data/EditorFiles/ok.png') no-repeat right center;
+appearance:                                                none;
+-moz-appearance:none;
+-webkit-appearance:                                                none;
+font-size: 20px;
+}
+
+.imageInner
+{
+position:                                                relative;
+width:100%;
+height:                                                0;
+padding-bottom:100%;
+}
+
+.noteLine
+{
+padding-top:                                                0;
+}
+
+.noteBox textarea
+{
+min-width:                                                250px;
+height:40px;
+font-size:                                                12px;
+color:#666;
+font-family: 'Source Sans Pro', sans-serif;
+word-break:                                                break-all;
+}
+
+.productFunction
+{
+line-height:                                                15px;
+font-size:11px;
+color:                                                #b1b1b1;
+text-transform:uppercase;
+padding-left:                                                20px;
+margin-left:10px;
+background-position:                                                0 center;
+background-repeat:no-repeat;
+cursor:                                                pointer;
+}
+
+.adviceLink
+{
+background-image:url('adviceLinkIcon.png');
+}
+
+.commentLink
+{
+background-image:url('commentLinkIcon.png');
+}
+
+.priceAlertLink
+{
+background-image:url('priceAlertLinkIcon.png');
+}
+
+.shopListLink
+{
+background-image:url('shopListLinkIcon.png');
+}
+
+.shareTitle
+{
+line-height:                                                30px;
+font-size:12px;
+color:                                                #666;
+text-transform:uppercase;
+padding-left:                                                20px;
+background:url('shareIcon.png') no-repeat 0 center;
+}
+
+.smlIconSet .shareTitle
+{
+line-height:                                                20px;
+}
+
+.shareBtns .col
+{
+padding-right:                                                5px;
+}
+
+.shareBtns a
+{
+float:                                                left;
+width:30px;
+height:                                                30px;
+background-position:0 center;
+background-repeat:                                                no-repeat;
+opacity:.3;
+-webkit-filter:grayscale(100%);
+-moz-filter:grayscale(100%);
+-ms-filter:grayscale(100%);
+-o-filter:grayscale(100%);
+filter:grayscale(100%);
+}
+
+.smlIconSet .shareBtns a
+{
+width:                                                20px;
+height:20px;
+}
+
+.shareBtns a:hover
+{
+opacity:                                                1;
+-webkit-filter:grayscale(0%);
+-moz-filter:grayscale(0%);
+-ms-filter:grayscale(0%);
+-o-filter:grayscale(0%);
+filter:grayscale(0%);
+}
+#fbLikeBtn
+{
+background-image:url('fbLikeBtn.png');
+}
+
+.smlIconSet #fbLikeBtn
+{
+background-image:url('fbLikeSmlBtn.png');
+}
+#fbShareBtn
+{
+background-image:url('fbShareBtn.png');
+}
+
+.smlIconSet #fbShareBtn
+{
+background-image:url('fbShareSmlBtn.png');
+}
+#twBtn
+{
+background-image:url('twBtn.png');
+}
+
+.smlIconSet #twBtn
+{
+background-image:url('twSmlBtn.png');
+}
+#gpBtn
+{
+background-image:url('gpBtn.png');
+}
+
+.smlIconSet #gpBtn
+{
+background-image:url('gpSmlBtn.png');
+}
+#pinBtn
+{
+background-image:url('pinBtn.png');
+}
+
+.smlIconSet #pinBtn
+{
+background-image:url('pinSmlBtn.png');
+}
+#urun-tab .slide-wrapper
+{
+overflow:                                                hidden;
+}
+#tabBtn li
+{
+cursor:                                                pointer;
+}
+#tabBtn li.active
+{
+background:                                                #f3f3f3;
+border-bottom:1px solid #b7b7b7;
+}
+#tabBtn li span
+{
+text-transform:                                                uppercase;
+}
+#tabBtn li.active span
+{
+color:                                                #000;
+}
+#tabBtn li .stars
+{
+margin-top:                                                9px;
+margin-left:10px;
+}
+#tabPanel
+{
+overflow:                                                hidden;
+}
+#tabPanel li
+{
+top:                                                20px;
+left:20px;
+right:                                                20px;
+}
+#tabPanel li.current
+{
+width:100%;
+}
+#banks
+{
+line-height:                                                2;
+}
+
+.like
+{
+padding-left:                                                21px;
+background:url('likeIcon.png') no-repeat 0 center;
+}
+
+.dislike
+{
+padding-left:                                                21px;
+background:url('dislikeIcon.png') no-repeat 0 center;
+}
+#content
+{
+background-color: #f5f5f5!important;
+}
+.productThumbs
+{
+bottom: 6.3rem;
+width: 100%!important;
+padding:        0 10px;
+}
+@media screen and (min-width: 1024px){
+.add-to-cart-win
+{
+position:        relative;
+top: 0;
+height:        615px;
+left: 0;
+right:        0;
+float: right;
+width:       150px;
+}
+#mobileBuyBtn
+{
+bottom:        30px;
+position: absolute;
+left:        0;
+right: 0;
+width:        150px;
+}
+
+.buyBtn > a
+{
+background-color:        #111;
+border-radius: 0;
+padding:        0;
+float: left;
+bottom:        0;
+position: absolute;
+left:        0;
+right: 0;
+width:       150px;
+display: block;
+z-index:        999999;
+}
+
+.variantBox a, .variantBox select
+{
+float:            left;
+min-width: 50px;
+height:       50px;
+border:  none;
+box-sizing:           border-box;
+padding: 0!important;
+background-color:            whitesmoke;
+}
+
+.variantBox a p
+{
+width: 100%;
+line-height:       50px;
+text-align:  center;
+font-size:           17px;
+color: #777!important;
+font-weight:            400;
+font-family: 'Oswald', sans-serif;
+}
+
+.variantWrapper .subOne a.box-border:nth-child(1),
+.variantWrapper .subOne a.box-border:nth-child(2),
+.variantWrapper .subOne a.box-border:nth-child(3)
+{
+border-top:            2px solid #e8e8e8;
+}
+
+.variantWrapper .subOne  a.box-border:nth-child(3n+1)
+{
+box-shadow:            inset 2px 0 0 #e8e8e8;
+}
+}
+@media screen and (max-width: 1024px){
+.bilgilendirme
+{
+float:left!important;
+width:100%!important;
+margin:20px 10px!important;
+}
+
+.variantWrapper.tooltipWrapper > .variantBox.subOne > div
+{
+margin:        0 10px;
+}
+#content
+{
+background-color: #fff!important;
+}
+
+.variantWrapper.tooltipWrapper,
+.variantWrapper.tooltipWrapper .variantBox
+{
+background-color:#fff!important;
+}
+#footerMiddle .col-2
+{
+text-align: center!important;
+}
+
+.priceType
+{
+margin: 10px auto 20px!important;
+width: 100%!important;
+}
+
+.variantWrapper .subOne a.box-border
+{
+width: 50%;
+text-align:           center;
+}
+
+.variantWrapper .subOne a:not(.passive):nth-child(1)
+{
+border-top:          2px solid #e8e8e8;
+border-left:2px solid #e8e8e8;
+}
+
+.variantWrapper .subOne a:not(.passive):nth-child(2)
+{
+border-top:          2px solid #e8e8e8;
+border-right:2px solid #e8e8e8;
+}
+
+.variantWrapper .subOne a:not(.passive):nth-child(2n+1)
+{
+border-left:        2px solid #e8e8e8;
+}
+
+.variantBox a p, .qtyBtns a p
+{
+height:           50px;
+line-height: 50px;
+font-size:           24px;
+font-weight: 400;
+}
+}
+@media screen and (max-width: 1000px){
+.qtyBox
+{
+padding-right:                                                0;
+}
+}
+@media screen and (max-width: 1000px) and (min-width: 769px){
+#productInfo, #productBrand
+{
+width:100%;
+}
+#productInfo
+{
+padding-right:                                                0;
+padding-bottom:10px;
+}
+#productBrand
+{
+padding-left:                                                0;
+padding-top:10px;
+border-left:                                                0;
+border-top:1px solid #ececec;
+}
+
+.productBrandImg
+{
+float:                                                left;
+margin-bottom:0;
+}
+#threeCol #productLeft, #threeCol #productRight
+{
+width:100%;
+}
+#threeCol #productLeft
+{
+padding-right:                                                0;
+margin-bottom:10px;
+}
+#threeCol #productBrandText
+{
+font-size:                                                17px;
+}
+#threeCol #productName
+{
+font-size:                                                30px;
+}
+#threeCol #productInfo
+{
+width:100%;
+}
+#threeCol #productBrand
+{
+width:100%;
+padding-left:                                                0;
+padding-top:10px;
+border-left:                                                0;
+border-top:1px solid #ececec;
+}
+#threeCol .productBrandImg
+{
+float:                                                left;
+}
+#threeCol .productComment
+{
+clear:                                                none;
+}
+#threeCol .priceLine, #threeCol .variantLine, #threeCol .productType, #threeCol .qtyBtns input, #threeCol .noteLine
+{
+line-height:                                                30px;
+font-size:15px;
+}
+#threeCol .priceLine .col:last-child
+{
+width:100%;
+clear:                                                both;
+}
+#threeCol .priceType, #threeCol .variantType, #threeCol .noteTitle
+{
+width:                                                140px;
+}
+#threeCol .currencyPrice
+{
+font-size:                                                16px;
+}
+#threeCol .normalPrice
+{
+font-size:                                                23px;
+}
+#threeCol .discountPrice
+{
+font-size:                                                26px;
+}
+#threeCol .variantBox
+{
+padding-top:                                                10px;
+padding-bottom:10px;
+}
+#threeCol .variantBox a, #threeCol .variantBox select, #threeCol .qtyBtns a
+{
+min-width:                                                50px;
+height:50px;
+}
+#threeCol .variantBox a p, #threeCol .qtyBtns a p
+{
+height:                                                48px;
+line-height:48px;
+font-size:                                                16px;
+}
+#threeCol .variantBox select
+{
+width:100%;
+font-size:                                                16px;
+}
+#threeCol .productType
+{
+line-height:                                                50px;
+}
+#threeCol .qtyBtns a p
+{
+font-size:                                                36px;
+}
+#threeCol .qtyBtns input
+{
+height:                                                50px;
+line-height:50px;
+font-size:                                                25px;
+}
+#threeCol .buyBtn
+{
+width:100%;
+padding-right:                                                0;
+}
+#threeCol .buyBtn a
+{
+width:100%;
+text-align:                                                center;
+}
+#threeCol .noteBox
+{
+width:100%;
+padding-top:                                                10px;
+}
+#threeCol .noteBox textarea
+{
+width:100%;
+min-height:                                                100px;
+font-size:16px;
+}
+#threeCol .shareTitle
+{
+font-size:                                                16px;
+}
+#threeCol .smlIconSet .shareTitle
+{
+line-height:                                                30px;
+}
+#threeCol .smlIconSet .shareBtns a
+{
+width:                                                30px;
+height:30px;
+}
+#threeCol .smlIconSet #fbLikeBtn
+{
+background-image:url("fbLikeBtn.png");
+}
+#threeCol .smlIconSet #fbShareBtn
+{
+background-image:url("fbShareBtn.png");
+}
+#threeCol .smlIconSet #twBtn
+{
+background-image:url("twBtn.png");
+}
+#threeCol .smlIconSet #gpBtn
+{
+background-image:url("gpBtn.png");
+}
+#threeCol .smlIconSet #pinBtn
+{
+background-image:url("pinBtn.png");
+}
+#threeCol #tabBtn li
+{
+width:100%;
+}
+#threeCol #tabBtn li a
+{
+width:100%;
+font-size:                                                16px;
+}
+#threeCol #tabPanel li, #threeCol #tabPanel li *
+{
+line-height:                                                22px;
+font-size:14px;
+}
+}
+@media screen and (min-width:800px){
+#productInfo
+{
+margin-bottom: 10px!important;
+}
+#productMobileInfo
+{
+margin-top: 100px!important;
+}
+}
+@media screen and (max-width:800px){
+.productThumbs{
+bottom: 35px!important;
+padding-right:  20px;
+}
+.productThumbs li .image-wrapper
+{
+height: 4px!important;
+}
+#addCartBtn
+{
+margin-top:15px!important;
+border-radius:           3px;
+}
+#productInfo
+{
+margin-bottom: 0!important;
+}
+#mainColumn
+{
+margin-top: 0!important;
+}
+#productMobileInfo
+{
+margin-top: 30px!important;
+}
+}
+@media screen and (min-width:768px){
+.productThumbs {
+    position: absolute!important;
+    padding: 0 5px 0 0;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+#productRight > .prtck
+{
+height: 330px!important;
+}
+div.buyBtn > a > span.fast
+{
+margin-right:20px!important;
+}
+#pageContent > div.slide-wrapper
+{
+margin-top:60px!important;
+}
+}
+@media screen and (max-width: 768px)
+{
+#pageContent > div.slide-wrapper
+{
+margin-top:5px!important;
+}
+
+.buyBtn a
+{
+text-align:                                                center;
+font-size: 120%;
+}
+
+.buyBtn a > span
+{
+width: 100%;
+text-align:           center;
+padding: 0;
+}
+#productLeft
+{
+padding-right:                                                0;
+margin-bottom:10px;
+}
+#productBrandText
+{
+font-size:                                                17px;
+}
+#productName
+{
+font-size: 110%;
+text-align:                                     center;
+font-weight: 400;
+}
+
+.productComment
+{
+clear:                                                both;
+}
+
+.priceLine, .variantLine, .productType, .qtyBtns input, .noteLine
+{
+line-height:                                                30px;
+font-size:15px;
+}
+
+.priceType, .variantType, .noteTitle
+{
+width:                                                140px;
+}
+
+.currencyPrice
+{
+font-size:                                                16px;
+}
+
+.normalPrice
+{
+font-size:                                                23px;
+}
+
+.discountPrice
+{
+font-size:                                                26px;
+}
+
+.variantBox
+{
+padding-top:                                                10px;
+padding-bottom:10px;
+}
+
+.variantBox select
+{
+width: 90%;
+font-size:                                                16px;
+}
+
+.productType
+{
+line-height:                                                50px;
+}
+
+.qtyBtns a p
+{
+font-size:                                                36px;
+}
+
+.qtyBtns input
+{
+height:                                                50px;
+line-height:50px;
+font-size:                                                25px;
+}
+
+.buyBtn
+{
+padding-right:                                                0;
+}
+}
+@media screen and(max-width:320px)
+{
+.variantBox a, .variantBox select, .qtyBtns a
+{
+min-width:                                       32px;
+height: 32px;
+}
+
+.variantBox a p
+{
+width: 100%;
+height:                                       32px;
+line-height: 32px;
+text-align:                                       center;
+font-size: 12px;
+color:                                       #000;
+}
+}
+
+.noteBox
+{
+width:100%;
+padding-top:                          10px;
+}
+
+.noteBox textarea
+{
+min-height:                                                100px;
+font-size:16px;
+}
+
+.shareTitle
+{
+font-size:                                                16px;
+}
+
+.smlIconSet .shareTitle
+{
+line-height:                                                30px;
+}
+
+.smlIconSet .shareBtns a
+{
+width:                                                30px;
+height:30px;
+}
+
+.smlIconSet #fbLikeBtn
+{
+background-image:url("fbLikeBtn.png");
+}
+
+.smlIconSet #fbShareBtn
+{
+background-image:url("fbShareBtn.png");
+}
+
+.smlIconSet #twBtn
+{
+background-image:url("twBtn.png");
+}
+
+.smlIconSet #gpBtn
+{
+background-image:url("gpBtn.png");
+}
+
+.smlIconSet #pinBtn
+{
+background-image:url("pinBtn.png");
+}
+#tabBtn li:nth-child(even)
+{
+border-right:                                                0;
+}
+#tabBtn li span
+{
+font-size:                                                16px;
+}
+#tabPanel li.ozellik,
+#tabPanel li *
+{
+line-height:            1;
+font-size: 2rem;
+color: #63636e!important;
+font-family: 'Oswald', sans-serif!important;
+font-weight: 400!important;
+background-color: transparent!important;
+}
+@media screen and (max-width: 540px)
+{
+.variantBox select
+{
+font-size:                    22px;
+font-weight: 300;
+}
+#tabBtn li span
+{
+font-size:                                                15px;
+}
+}
