@@ -88,6 +88,12 @@ ul#main-menu>li>a {
     display: inline-block;
 }
 
+.space-md-60 {
+    height: 60px;
+    width: 100%;
+    display: inline-block;
+}
+
 .space-md-50 {
     height: 50px;
     width: 100%;
@@ -100,12 +106,22 @@ ul#main-menu>li>a {
     display: inline-block;
 }
 
+.space-md-30 {
+    height: 30px;
+    width: 100%;
+    display: inline-block;
+}
+
 .dp-flex-row-on-sm-column {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex: 0 0 100%;
     align-items: center;
+}
+
+.dp-flex-justify-sb {
+    justify-content: space-between!important;
 }
 
 .catalltop {
@@ -206,20 +222,7 @@ ul#main-menu>li>a {
         margin-bottom: 5px;
         overflow: hidden;
     }
-    .dp-flex-row-on-sm-column {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        flex: 0 0 100%;
-        align-items: center;
-    }
-    .catalltop {
-        background-color: #fff;
-        margin-top: 42px;
-        padding-left: 0!important;
-        padding-right: 0!important;
-    }
-    .space-md-150, .space-md-65, .space-md-50, .space-md-40 {
+    .space-md-150, .space-md-65, .space-md-60, .space-md-50, .space-md-40, .space-md-30 {
         height: 0;
         width: 0;
         display: none;
@@ -231,7 +234,7 @@ ul#main-menu>li>a {
         padding: 10px 5px;
     }
     .ortakisimresim {
-        margin-bottom: 5px;
+        margin-bottom: 0px;
         overflow: hidden;
     }
 }
@@ -239,11 +242,6 @@ ul#main-menu>li>a {
 @media screen and (max-width:860px) {
     #main-menu li>a {
         padding: 10px 3px;
-    }
-    .ortakisimresim {
-        margin-bottom: 5px;
-        ;
-        overflow: hidden;
     }
 }
 
@@ -256,23 +254,33 @@ ul#main-menu>li>a {
     }
 }
 
-@media screen and (max-width:768px) {
-    #productInfo>div {
-        font-size: 22px!important;
-        font-weight: 300!important;
-        text-align: left!important;
-        line-height: 0!important;
+@media screen and (max-width:767px) {
+    .dp-flex-row-on-sm-column {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex: 0 0 100%;
+        align-items: center;
     }
-    .ortakisimresim {
-        margin-bottom: 5px;
-        overflow: hidden;
-    }
-    .ortakisimresim>div.catall:first-child>p {
-        padding-right: 2.5px!important;
-    }
-    .ortakisimresim>div.catall:nth-child(2)>p {
-        padding-left: 2.5px!important;
+    .catalltop {
+        background-color: #fff;
+        margin-top: 2px;
+        padding-left: 0!important;
         padding-right: 0!important;
+    }
+    .catalltop>.ustkisimcat {
+        margin-bottom: 0!important;
+        padding: 0;
+    }
+    .ortakisimresim .catall.ortakisimresimdiv1,
+    .ortakisimresim .catall.ortakisimresimdiv2 {
+        margin-bottom: 0!important;
+        padding: 0;
+    }
+    .catalltop .ustkisimcat .catall.ustkisimcatdiv2,
+    .catalltop .ustkisimcat .catall.ustkisimcatdiv1 {
+        margin-bottom: 0;
+        padding: 0;
     }
 }
 
@@ -286,56 +294,6 @@ ul#main-menu>li>a {
     }
     .col.col-12.variantWrapper.tooltipWrapper.p0 {
         margin-top: 0!important;
-    }
-}
-
-@media screen and (max-width:600px) {
-    .ortakisimresim {
-        margin-bottom: 5px;
-        overflow: hidden;
-    }
-}
-
-@media screen and (min-width:540px) {
-    .catalltop>.ortakisimresim>.ortakisimresimdiv1 {
-        padding-left: 0;
-        padding-right: 11px;
-    }
-    .catalltop>.ortakisimresim>.ortakisimresimdiv2 {
-        padding-left: 11px;
-        padding-right: 0;
-    }
-    .catalltop>.ortakisimresim>.ortakisimresimdiv3 {
-        padding-left: 11px;
-        padding-right: 0;
-    }
-    .catalltop>.ustkisimcat>.ustkisimcatdiv1 {
-        padding-right: 11px;
-        padding-left: 0;
-    }
-    .catalltop>.ustkisimcat>.ustkisimcatdiv2 {
-        padding-left: 11px;
-        padding-right: 0;
-    }
-}
-
-@media screen and (max-width:540px) {
-    .catalltop>.ortakisimresim>.ortakisimresimdiv1 {
-        padding-left: 0;
-        padding-right: 0;
-    }
-    .catalltop>.ortakisimresim>.ortakisimresimdiv2 {
-        padding-left: 2.5px;
-        padding-right: 0;
-    }
-    .catalltop>.ortakisimresim>.ortakisimresimdiv3 {
-        padding: 0;
-    }
-    .catalltop>.ustkisimcat>.ustkisimcatdiv1 {
-        padding: 0;
-    }
-    .catalltop>.ustkisimcat>.ustkisimcatdiv2 {
-        padding: 0;
     }
 }
 
