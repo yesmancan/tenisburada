@@ -272,13 +272,11 @@ ul#main-menu>li>a {
         margin-bottom: 0!important;
         padding: 0;
     }
-    .ortakisimresim .catall.ortakisimresimdiv1,
-    .ortakisimresim .catall.ortakisimresimdiv2 {
+    .ortakisimresim .catall.ortakisimresimdiv1, .ortakisimresim .catall.ortakisimresimdiv2 {
         margin-bottom: 0!important;
         padding: 0;
     }
-    .catalltop .ustkisimcat .catall.ustkisimcatdiv2,
-    .catalltop .ustkisimcat .catall.ustkisimcatdiv1 {
+    .catalltop .ustkisimcat .catall.ustkisimcatdiv2, .catalltop .ustkisimcat .catall.ustkisimcatdiv1 {
         margin-bottom: 0;
         padding: 0;
     }
@@ -1142,8 +1140,6 @@ line-height:74px;
     border-top: 1px solid #aaa;
 }
 
-}
-
 @media screen and (max-width: 540px) {
     #closeMobileMenu {
         font-size: 18px;
@@ -1162,7 +1158,6 @@ line-height:74px;
         background: url("basketIconBig.png") no-repeat center center;
     }
 }
-
 .sepet {
     padding: 0 40px;
 }
