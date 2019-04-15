@@ -695,9 +695,6 @@ table.product-prop {
         left: 0;
         right: 0;
     }
-    #productRight>.prtck {
-        height: 330px!important;
-    }
     div.buyBtn>a>span.fast {
         margin-right: 20px!important;
     }
