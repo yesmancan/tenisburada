@@ -62,7 +62,6 @@
     padding-top: 10px;
 }
 
-#social li, #social li a, #social li a img {}
 
 #social li {
     padding-right: 10px;
@@ -236,7 +235,6 @@
     }
 }
 
-#tsoft-eticaret-sistemleri {}
 
 @media screen and (max-width:1366px) {
     #social>div:nth-child(1), #social>div:nth-child(2) {
@@ -430,8 +428,6 @@ div>ul>li>ul>li:nth-child(1) {
     line-height: 20px;
 }
 
-#tsoft-eticaret-sistemleri {}
-
 .pa-0 {
     padding: 0;
 }
@@ -524,4 +520,10 @@ div>ul>li>ul>li:nth-child(1) {
 #footer .icon-right-text {
     width: calc(100% - 90px);
     padding: 0;
+}
+
+@media screen and (max-width:768px) {
+    #footer .icon-w {
+        text-align: center;
+    }
 }

@@ -227,6 +227,14 @@ ul#main-menu>li>a {
         width: 0;
         display: none;
     }
+    .ustkisimcat>.catall.ustkisimcatdiv1, .ustkisimcat>.catall.ustkisimcatdiv2, .catall.ortakisimresimdiv1, .catall.ortakisimresimdiv2 {
+        padding: 0;
+    }
+    #footer-change {
+        width: calc(100% - 20px);
+        margin: 10px auto;
+        text-align: center;
+    }
 }
 
 @media screen and (max-width:940px) {
@@ -254,7 +262,7 @@ ul#main-menu>li>a {
     }
 }
 
-@media screen and (max-width:767px) {
+@media screen and (max-width:768px) {
     .dp-flex-row-on-sm-column {
         display: flex;
         flex-direction: column;
@@ -853,8 +861,20 @@ div.dynamicMenu>ul>li>a {
     .mt10 {
         margin-top: 10px!important;
     }
+    .mt-xs-10 {
+        margin-top: 10px;
+    }
     .mb10 {
         margin-bottom: 10px!important;
+    }
+    .mb-xs-10 {
+        margin-bottom: 10px;
+    }
+    .mb-xs-15 {
+        margin-bottom: 15px;
+    }
+    .mb-xs-30 {
+        margin-bottom: 30px;
     }
     .animate {
         -webkit-animation-duration: 0.5s;
@@ -1012,22 +1032,6 @@ div.dynamicMenu>ul>li>a {
     #basketMobile {
         background: url(/Data/EditorFiles/cart.png) no-repeat center center;
     }
-    #loginMobile:before {
-        /*float:           left;
-width:                                              30px;
-height:           45px;
-background:url('https://www.tenisburada.com/profileMobileIcon.png') no-repeat 0 center;
-margin-right:                                                         10px;
-content:'';*/
-    }
-    #regisMobile:before {
-        /*float:           left;
-width:                                              30px;
-height:           45px;
-background:url('https://www.tenisburada.com/registerMobileIcon.png') no-repeat 0 center;
-margin-right:                                                         10px;
-content:'';*/
-    }
     #favMobile:before {
         float: left;
         width: 30px;
@@ -1036,19 +1040,7 @@ content:'';*/
         margin-right: 10px;
         content: '';
     }
-    /*#logo a
-{
-height:                                                         74px;
-line-height:74px;
-}
-#logo p
-{
-height:                                                         74px;
-line-height:74px;
-}
-*/
     #logo a img {
-        width: auto;
         display: inline;
         vertical-align: middle;
     }
@@ -1158,6 +1150,7 @@ line-height:74px;
         background: url("basketIconBig.png") no-repeat center center;
     }
 }
+
 .sepet {
     padding: 0 40px;
 }

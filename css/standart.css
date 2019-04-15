@@ -62,8 +62,6 @@ div.buyBtn>a.fasta>span {
     margin-bottom: 20px;
 }
 
-}
-
 @media screen and (min-width: 769px) {
     div.catalogWrapper>div:nth-child(3n+3) {
         border-right: none;
@@ -98,10 +96,8 @@ div.buyBtn>a.fasta>span {
     padding-left: 0!important;
 }
 
-}
-
 .Baslik>a:hover {
-    color: #FF00000;
+    color: #FF0;
 }
 
 div.catall:hover div.Baslik {
