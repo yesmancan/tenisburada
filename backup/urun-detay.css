@@ -448,7 +448,7 @@ table.product-prop {
         font-weight: 400;
         font-family: 'Oswald', sans-serif;
     }
-    .variantWrapper .subOne a.box-border:nth-child(1), 
+    .variantWrapper .subOne a.box-border:nth-child(1),
     .variantWrapper .subOne a.box-border:nth-child(2),
     .variantWrapper .subOne a.box-border:nth-child(3) {
         border-top: 2px solid #e8e8e8;
@@ -699,6 +699,9 @@ table.product-prop {
         left: 0;
         right: 0;
     }
+    #productRight>.prtck {
+        height: 330px!important;
+    }
     div.buyBtn>a>span.fast {
         margin-right: 20px!important;
     }
@@ -841,6 +844,15 @@ table.product-prop {
     font-size: 16px;
 }
 
+#tabPanel li.ozellik, #tabPanel li * {
+    line-height: 1;
+    font-size: 2rem;
+    color: #63636e!important;
+    font-family: 'Oswald', sans-serif!important;
+    font-weight: 400!important;
+    background-color: transparent!important;
+}
+
 @media screen and (max-width: 540px) {
     .variantBox select {
         font-size: 22px;
@@ -849,25 +861,4 @@ table.product-prop {
     #tabBtn li span {
         font-size: 15px;
     }
-}
-
-#productDetailTab h2 {
-    font-size: 48px;
-    line-height: 1.08365;
-    font-weight: 600;
-    letter-spacing: -.003em;
-    font-family: "SF Pro Display", "SF Pro Icons";
-    color: #fff;
-}
-
-#productDetailTab ul li,
- #productDetailTab p,
- #productDetailTab p span {
-	margin-top: .8em;
-	color: #63636e;
-	font-size: 17px!important;
-	line-height: 1.47059;
-	font-weight: 400;
-	letter-spacing: -.022em;
-	font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif!important;
 }

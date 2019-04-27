@@ -1,0 +1,75 @@
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<div id="footerMiddle" class="col col-12" style="background-color:#313132; color:white">
+    <div class="row m0">
+        <div class="col col-12" id="catfootertop">
+            <div class="col col-ml-1 col-2 col-md-5 col-sm-6 col-xs-11">
+                <p class="col-10 col-xs-12">0532 0507380</p>
+            </div>
+            <div class="col col-ml-1 col-2 col-md-5 col-sm-6 col-xs-11">
+                <p class="col-10 col-xs-12">Kapıda Ödeme Seçeneği</p>
+            </div>
+            <div class="col col-ml-1 col-2 col-md-5 col-sm-6 col-xs-11">
+                <p class="col-10 col-xs-12">info@tenisburada.com</p>
+            </div>
+            <div class="col col-ml-1 col-2 col-md-5 col-sm-6 col-xs-11" style="clear: inherit;">
+                <p class="col-10 col-xs-12">Orjinal Ürün</p>
+            </div>
+        </div>
+        <div class="col col-ml-1 col-9 col-md-8 col-sm-12 col-xs-12">
+            {foreach $MENU as $M}
+            <div class="col col-4 col-md-4 col-sm-4 col-xs-12 catfooter">
+                <ul class="col col-12">
+                    <li class="col-sm-12 pl0">
+                        <span class="kategoryname">{$M.NAME}</span>
+                        <ul class="col col-12" style="padding: 0;margin-top: 10px;">
+                            {foreach $M.CHILDREN as $CHILD}
+                            <li class="col-sm-12">
+                                <a href="{$CHILD.URL}" {if $CHILD.IS_TARGET_BLANK} data-target="blank" {/if}>{$CHILD.NAME} </a> 
+                            </li>
+                             {/foreach} 
+                            </ul>
+                         </li> 
+                        </ul>
+                     </div> 
+                     {/foreach} 
+                    </div>
+                                    <div id="social" class="col col-2 col-md-2 col-sm-12 col-xs-12">
+                                    {foreach $SOCIAL_ICONS as $ICON}
+                                        <a href="{$ICON.URL}" rel="nofollow" data-target="blank">
+                                            <span class="fa fa-facebook" alt="Sosyal Medya - {$ICON.NUMBER}"></span>
+                                        </a>
+                                        <a href="{$ICON.URL}" rel="nofollow" data-target="blank">
+                                            <span class="fa fa-twitter" alt="Sosyal Medya - {$ICON.NUMBER}"></span>
+                                        </a>
+                                        <a href="{$ICON.URL}" rel="nofollow" data-target="blank">
+                                            <span class="fa fa-youtube" alt="Sosyal Medya - {$ICON.NUMBER}"></span>
+                                        </a>
+                                        <a href="{$ICON.URL}" rel="nofollow" data-target="blank">
+                                            <span class="fa fa-google-plus" alt="Sosyal Medya - {$ICON.NUMBER}"></span>
+                                        </a>
+                                        <a href="{$ICON.URL}" rel="nofollow" data-target="blank">
+                                            <span class="fa fa-instagram" alt="Sosyal Medya - {$ICON.NUMBER}"></span>
+                                        </a>
+                                    {/foreach}
+                                    <style>
+                                        #social>a>span {
+                                            background-color: #3c3c42;
+                                            height: 30px !important;
+                                            margin-right: 2px;
+                                            width: 30px !important;
+                                            display: inline-block;
+                                            text-align: center;
+                                            line-height: 30px;
+                                        }
+
+                                        #social {
+                                            margin-top: 5%;
+                                        }
+                                    </style>
+            </div>
+        </div>
+    </div>
+
+    <div class="col col-12 col-md-12" style="background-color:#313132; color:white">
+        <p class="col col-11 fr">tenisburada.com tüm hakları <span>DAF SPOR LTD ŞTİ</span>'e aittir </p>
+    </div>

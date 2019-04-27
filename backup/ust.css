@@ -38,7 +38,7 @@ div#logo.forMobile>a>p>img {
 }
 
 .hesap {
-    background: url('https://www.tenisburada.com/Data/EditorFiles/hesap.png') no-repeat center !important;
+    background: url('/Data/EditorFiles/hesap.png') no-repeat center !important;
     height: 50px!important;
 }
 
@@ -47,7 +47,7 @@ div#logo.forMobile>a>p>img {
 }
 
 .kategori {
-    background-color: #18171d;
+    background-color: #313132;
 }
 
 ul.desktopul li a {
@@ -74,61 +74,6 @@ ul.desktopul li a {
 ul#main-menu>li>a {
     padding-top: 17px!important;
     padding-bottom: 17px!important;
-}
-
-.space-md-150 {
-    height: 150px;
-    width: 100%;
-    display: inline-block;
-}
-
-.space-md-65 {
-    height: 65px;
-    width: 100%;
-    display: inline-block;
-}
-
-.space-md-60 {
-    height: 60px;
-    width: 100%;
-    display: inline-block;
-}
-
-.space-md-50 {
-    height: 50px;
-    width: 100%;
-    display: inline-block;
-}
-
-.space-md-40 {
-    height: 40px;
-    width: 100%;
-    display: inline-block;
-}
-
-.space-md-30 {
-    height: 30px;
-    width: 100%;
-    display: inline-block;
-}
-
-.dp-flex-row-on-sm-column {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex: 0 0 100%;
-    align-items: center;
-}
-
-.dp-flex-justify-sb {
-    justify-content: space-between!important;
-}
-
-.catalltop {
-    background-color: #fff;
-    margin-top: 42px;
-    padding-left: 22px!important;
-    padding-right: 22px!important;
 }
 
 @media screen and (min-width:2560px) {
@@ -222,42 +167,6 @@ ul#main-menu>li>a {
         margin-bottom: 5px;
         overflow: hidden;
     }
-    .space-md-150, .space-md-65, .space-md-60, .space-md-50, .space-md-40, .space-md-30 {
-        height: 0;
-        width: 0;
-        display: none;
-    }
-    .ustkisimcat>.catall.ustkisimcatdiv1, .ustkisimcat>.catall.ustkisimcatdiv2, .catall.ortakisimresimdiv1, .catall.ortakisimresimdiv2 {
-        padding: 0;
-    }
-    #footer-change {
-        width: calc(100% - 20px);
-        margin: 10px auto;
-        text-align: center;
-    }
-    .dp-flex-row-on-sm-column {
-        display: block;
-    }
-    .catalltop .ortakisimresim .ortakisimresimdiv1,
-     .catalltop .ustkisimcat .ustkisimcatdiv1,
-      .dp-flex-row-on-sm-column a:nth-child(0n),
-      .dp-flex-row-on-sm-column a:not([href*=tel]:nth-child(1n)) {
-        width: calc(50% - 1px)!important;
-        display: inline-block;
-        float: left;
-        padding-right: 1px!important;
-        padding: 0 1px 0 0!important;
-    }
-    .catalltop .ortakisimresim .ortakisimresimdiv2,
-     .catalltop .ustkisimcat .ustkisimcatdiv2,
-      .dp-flex-row-on-sm-column a:nth-child(1n),
-      .dp-flex-row-on-sm-column a:not([href*=tel]:nth-child(1n))
-       {
-        width: calc(50% - 1px)!important;
-        display: inline-block;
-        float: left;
-        padding: 0 0 0 1px!important;
-    }
 }
 
 @media screen and (max-width:940px) {
@@ -265,7 +174,7 @@ ul#main-menu>li>a {
         padding: 10px 5px;
     }
     .ortakisimresim {
-        margin-bottom: 0px;
+        margin-bottom: 5px;
         overflow: hidden;
     }
 }
@@ -273,6 +182,11 @@ ul#main-menu>li>a {
 @media screen and (max-width:860px) {
     #main-menu li>a {
         padding: 10px 3px;
+    }
+    .ortakisimresim {
+        margin-bottom: 5px;
+        ;
+        overflow: hidden;
     }
 }
 
@@ -286,23 +200,22 @@ ul#main-menu>li>a {
 }
 
 @media screen and (max-width:768px) {
-    .catalltop {
-        background-color: #fff;
-        margin-top: 2px;
-        padding-left: 0!important;
+    #productInfo>div {
+        font-size: 22px!important;
+        font-weight: 300!important;
+        text-align: left!important;
+        line-height: 0!important;
+    }
+    .ortakisimresim {
+        margin-bottom: 5px;
+        overflow: hidden;
+    }
+    .ortakisimresim>div.catall:first-child>p {
+        padding-right: 2.5px!important;
+    }
+    .ortakisimresim>div.catall:nth-child(2)>p {
+        padding-left: 2.5px!important;
         padding-right: 0!important;
-    }
-    .catalltop>.ustkisimcat {
-        margin-bottom: 0!important;
-        padding: 0;
-    }
-    .ortakisimresim .catall.ortakisimresimdiv1, .ortakisimresim .catall.ortakisimresimdiv2 {
-        margin-bottom: 0!important;
-        padding: 0;
-    }
-    .catalltop .ustkisimcat .catall.ustkisimcatdiv2, .catalltop .ustkisimcat .catall.ustkisimcatdiv1 {
-        margin-bottom: 0;
-        padding: 0;
     }
 }
 
@@ -318,19 +231,57 @@ ul#main-menu>li>a {
         margin-top: 0!important;
     }
 }
-@media screen and (max-width:425px){
-    .dp-flex-row-on-sm-column {
-        display: block;
-    }
-    .catalltop .ortakisimresim .ortakisimresimdiv1, .catalltop .ustkisimcat .ustkisimcatdiv1, .dp-flex-row-on-sm-column a:nth-child(0n) {
-        width:100%!important;
-        padding: 0!important;
-    }
-    .catalltop .ortakisimresim .ortakisimresimdiv2, .catalltop .ustkisimcat .ustkisimcatdiv2, .dp-flex-row-on-sm-column a:nth-child(1n) {
-        width:100%!important;
-        padding: 0!important;
+
+@media screen and (max-width:600px) {
+    .ortakisimresim {
+        margin-bottom: 5px;
+        overflow: hidden;
     }
 }
+
+@media screen and (min-width:540px) {
+    .catalltop>.ortakisimresim>.ortakisimresimdiv1 {
+        padding-left: 0;
+        padding-right: 2.5px;
+    }
+    .catalltop>.ortakisimresim>.ortakisimresimdiv2 {
+        padding-left: 2.5px;
+        padding-right: 0;
+    }
+    .catalltop>.ortakisimresim>.ortakisimresimdiv3 {
+        padding-left: 2.5px;
+        padding-right: 0;
+    }
+    .catalltop>.ustkisimcat>.ustkisimcatdiv1 {
+        padding-right: 2.5px;
+        padding-left: 0;
+    }
+    .catalltop>.ustkisimcat>.ustkisimcatdiv2 {
+        padding-left: 2.5px;
+        padding-right: 0;
+    }
+}
+
+@media screen and (max-width:540px) {
+    .catalltop>.ortakisimresim>.ortakisimresimdiv1 {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .catalltop>.ortakisimresim>.ortakisimresimdiv2 {
+        padding-left: 2.5px;
+        padding-right: 0;
+    }
+    .catalltop>.ortakisimresim>.ortakisimresimdiv3 {
+        padding: 0;
+    }
+    .catalltop>.ustkisimcat>.ustkisimcatdiv1 {
+        padding: 0;
+    }
+    .catalltop>.ustkisimcat>.ustkisimcatdiv2 {
+        padding: 0;
+    }
+}
+
 @media screen and (max-width:360px) and (min-width:320px) {
     .arakelime {
         min-width: 157px;
@@ -429,7 +380,7 @@ ul#main-menu>li>a {
     border: 2px solid #fff;
     padding: 0 25px 0 10px;
     border-radius: 10px;
-    background: url('https://www.tenisburada.com/right-arrow.png') no-repeat right 12px rgba(171, 160, 157, .5);
+    background: url('right-arrow.png') no-repeat right 12px rgba(171, 160, 157, .5);
     text-decoration: none;
     line-height: 40px;
 }
@@ -459,7 +410,7 @@ ul#main-menu>li>a {
 #headerTop select {
     height: 30px;
     padding: 0 30px 0 10px;
-    background: url('https://www.tenisburada.com/selectArrow.png') no-repeat right center;
+    background: url('selectArrow.png') no-repeat right center;
     border: 0;
     border-left: 1px solid #3b3b3b;
     appearance: none;
@@ -495,12 +446,12 @@ ul#main-menu>li>a {
 }
 
 #hmLinks a.authorLink {
-    background: url('https://www.tenisburada.com/userIcon.png') no-repeat center;
+    background: url('userIcon.png') no-repeat center;
     height: 50px;
 }
 
 #hmLinks a.basketLink {
-    background: url('https://www.tenisburada.com//Data/EditorFiles/cart.png') no-repeat center;
+    background: url('/Data/EditorFiles/cart.png') no-repeat center;
     height: 50px;
 }
 
@@ -572,7 +523,7 @@ ul#main-menu>li>a {
     height: 62px;
     padding-right: 0;
     padding-left: 0;
-    background-image: url('https://www.tenisburada.com//Data/EditorFiles/search.png');
+    background-image: url('/Data/EditorFiles/search.png');
     background-repeat: no-repeat;
     background-position: center center;
     border: 0;
@@ -608,7 +559,7 @@ ul#main-menu>li>a {
 #searchRight select {
     width: 150px;
     height: 28px;
-    background: url('https://www.tenisburada.com/selectArrow.png') no-repeat right center;
+    background: url('selectArrow.png') no-repeat right center;
     border: 0;
     appearance: none;
     -moz-appearance: none;
@@ -625,7 +576,7 @@ ul#main-menu>li>a {
     padding-right: 0;
     padding-bottom: 0;
     padding-left: 0;
-    background-image: url('https://www.tenisburada.com//Data/EditorFiles/search.png');
+    background-image: url('/Data/EditorFiles/search.png');
     background-repeat: no-repeat;
     background-position: center center;
     border: 0;
@@ -734,7 +685,7 @@ div.dynamicMenu>ul>li>a {
 
 #mainMenu #homeLink a {
     width: 54px;
-    background: url('https://www.tenisburada.com/homeIcon.png') no-repeat center center;
+    background: url('homeIcon.png') no-repeat center center;
 }
 
 #mainMenu .parentLink li a {
@@ -784,7 +735,7 @@ div.dynamicMenu>ul>li>a {
 
 .subMenu li li a {
     font-size: 11px;
-    background-image: url('https://www.tenisburada.com/menuSmallArrow.png');
+    background-image: url('menuSmallArrow.png');
     background-repeat: no-repeat;
     background-position: 0 center;
 }
@@ -803,7 +754,7 @@ div.dynamicMenu>ul>li>a {
 
 .subMenu li li a:hover {
     padding-left: 20px;
-    background-image: url('https://www.tenisburada.com/menuSmallArrowHover.png');
+    background-image: url('menuSmallArrowHover.png');
     background-position: 10px center;
 }
 
@@ -889,20 +840,8 @@ div.dynamicMenu>ul>li>a {
     .mt10 {
         margin-top: 10px!important;
     }
-    .mt-xs-10 {
-        margin-top: 10px;
-    }
     .mb10 {
         margin-bottom: 10px!important;
-    }
-    .mb-xs-10 {
-        margin-bottom: 10px;
-    }
-    .mb-xs-15 {
-        margin-bottom: 15px;
-    }
-    .mb-xs-30 {
-        margin-bottom: 30px;
     }
     .animate {
         -webkit-animation-duration: 0.5s;
@@ -1021,19 +960,19 @@ div.dynamicMenu>ul>li>a {
         color: #FFF;
         font-size: 30px;
         padding-left: 74px;
-        background: url('https://www.tenisburada.com//Data/EditorFiles/carpi.png') no-repeat;
+        background: url('/Data/EditorFiles/carpi.png') no-repeat;
         cursor: pointer;
     }
     #mobileMenu span, #mobileMenu a, #mobileMenu label, #mobileMenu select {
         color: #FFF;
         font-size: 16px;
         line-height: 44px;
-        /*background:url('https://www.tenisburada.com/menuArrow.png') no-repeat right center;*/
+        /*background:url('menuArrow.png') no-repeat right center;*/
         cursor: pointer;
     }
     #mobileMenu span.active {
         color: #f36d24;
-        background: url('https://www.tenisburada.com/menuArrowActive.png') no-repeat right center;
+        background: url('menuArrowActive.png') no-repeat right center;
     }
     #mobileMenu li ul {
         display: none;
@@ -1042,7 +981,7 @@ div.dynamicMenu>ul>li>a {
         color: #999;
         font-size: 16px;
         line-height: 44px;
-        background: url('https://www.tenisburada.com/menuSubArrow.png') no-repeat 0 center;
+        background: url('menuSubArrow.png') no-repeat 0 center;
     }
     #mobileMenu select {
         background: none;
@@ -1055,20 +994,48 @@ div.dynamicMenu>ul>li>a {
     }
     #mobileMenu label[for="curMobile"] {
         padding-left: 50px;
-        background: url('https://www.tenisburada.com/curMobileIcon.png') no-repeat 10px center;
+        background: url('curMobileIcon.png') no-repeat 10px center;
     }
     #basketMobile {
         background: url(/Data/EditorFiles/cart.png) no-repeat center center;
+    }
+    #loginMobile:before {
+        /*float:           left;
+width:                                               30px;
+height:           45px;
+background:url('profileMobileIcon.png') no-repeat 0 center;
+margin-right:                                                          10px;
+content:'';*/
+    }
+    #regisMobile:before {
+        /*float:           left;
+width:                                               30px;
+height:           45px;
+background:url('registerMobileIcon.png') no-repeat 0 center;
+margin-right:                                                          10px;
+content:'';*/
     }
     #favMobile:before {
         float: left;
         width: 30px;
         height: 45px;
-        background: url('https://www.tenisburada.com/favMobileIcon.png') no-repeat 0 center;
+        background: url('favMobileIcon.png') no-repeat 0 center;
         margin-right: 10px;
         content: '';
     }
+    /*#logo a
+{
+height:                                                          74px;
+line-height:74px;
+}
+#logo p
+{
+height:                                                          74px;
+line-height:74px;
+}
+*/
     #logo a img {
+        width: auto;
         display: inline;
         vertical-align: middle;
     }
@@ -1106,7 +1073,7 @@ div.dynamicMenu>ul>li>a {
     .mobilesearch {
         width: 62px!important;
         height: 44px!important;
-        background-image: url('https://www.tenisburada.com//Data/EditorFiles/search.png')!important;
+        background-image: url('/Data/EditorFiles/search.png')!important;
     }
 }
 
@@ -1158,6 +1125,8 @@ div.dynamicMenu>ul>li>a {
 
 #alterMenu .menu-list a {
     border-top: 1px solid #aaa;
+}
+
 }
 
 @media screen and (max-width: 540px) {

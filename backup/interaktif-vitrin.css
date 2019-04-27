@@ -107,7 +107,7 @@
 .slideControl span {
     width: 18px;
     height: 42px;
-    background-image: url('https://www.tenisburada.com/arrows.png');
+    background-image: url('arrows.png');
     background-repeat: no-repeat;
     cursor: pointer;
 }
@@ -171,14 +171,8 @@
     }
 }
 
-div.catalltop .ortakisimresim .ortakisimresimdiv1, div.catalltop .ustkisimcat .ustkisimcatdiv1 {
+div.catalltop .ustkisimcat .ustkisimcatdiv1, div.catalltop .ustkisimcat .ustkisimcatdiv1 {
     margin-bottom: 0;
-    padding-left: 0;
-}
-
-div.catalltop .ortakisimresim .ortakisimresimdiv2, div.catalltop .ustkisimcat .ustkisimcatdiv2 {
-    margin-bottom: 0;
-    padding-right: 0;
 }
 
 @media screen and (max-width: 768px) {
