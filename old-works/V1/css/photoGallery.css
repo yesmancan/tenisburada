@@ -1,0 +1,71 @@
+#imageControl {
+    position: absolute;
+    height: 60px;
+    top: 50%;
+    left: 0;
+    margin-top: -30px;
+    z-index: 333;
+}
+#imageControl span {
+    width: 60px;
+    height: 60px;
+    background-image: url('imageArrow.png');
+    background-repeat: no-repeat;
+    cursor: pointer;
+    opacity: .5;
+}
+#imageControl span#nextImage,
+#thumbControl span#nextThumb {
+    background-position: right 0;
+}
+#imageControl span:hover,
+#thumbControl span:hover {
+    opacity: 1;
+}
+.easyzoom {
+    position: relative;
+    min-height:80px;
+}
+.easyzoom-flyout {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    box-sizing: border-box;
+    border: 1px solid #ececec;
+    overflow: hidden;
+    cursor: zoom-in;
+    z-index: 33;
+}
+.innerZoom .easyzoom-flyout {
+    left: 0;
+    border: 0;
+}
+.easyzoom-flyout img {
+    max-width: inherit;
+}
+#productThumbs li {
+    cursor: pointer;
+}
+#productThumbs li.active .box-border {
+    border: 1px solid #6c6c6c;
+}
+#thumbControl {
+    float: left;
+}
+#thumbControl span {
+    position: absolute;
+    top: 50%;
+    margin-top: -16px;
+    width: 32px;
+    height: 32px;
+    background-image: url('thumbArrow.png');
+    background-repeat: no-repeat;
+    cursor: pointer;
+    opacity: .5;
+}
+#thumbControl span#nextThumb {
+    right: 10px;
+}

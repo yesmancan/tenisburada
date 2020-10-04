@@ -1,0 +1,1333 @@
+.box-title
+{
+margin-right:                                  1px;
+margin-bottom:1px;
+cursor:                                  pointer;
+}
+#oneCol
+{
+padding:0!important;
+}
+#content
+{
+margin:0!important;
+background-color:    #fff;
+}
+
+.box-title.passive
+{
+cursor:                                  default;
+}
+
+.productComparison
+{
+height:                                  30px;
+line-height:30px;
+font-size:                                  12px;
+color:#6c6c6c;
+padding-left:                                  22px;
+background-image:url('comparison.png');
+background-repeat:                                  no-repeat;
+background-position:0 center;
+cursor:                                  pointer;
+overflow:hidden;
+}
+
+.priceLine
+{
+text-align:                               center;
+}
+
+.showcase
+{
+height:                                  0;
+overflow:hidden;
+}
+
+.showcase.current
+{
+height:                                  auto;
+overflow:visible;
+}
+[data-layout="horizontal"] .productItem.col-3
+{
+padding-left:                                  0;
+padding-right:0;
+border-right:                                  1px solid #CCC;
+}
+[data-layout="horizontal"] .productItem.col-3:nth-child(2n)
+{
+border-right:                                  0;
+}
+[data-layout="horizontal"] .productItem.col-3:nth-child(2n+1)
+{
+clear:                                  both;
+}
+
+.resim-vitrin .col-1:nth-child(12n+1)
+{
+clear:                                  both;
+}
+[data-layout="horizontal"] .productItem.col-6 > .row
+{
+margin-left:                                  0;
+margin-right:0;
+clear:                                  none;
+width:50%;
+float:                                  left;
+}
+
+.productColItem
+{
+border-bottom:                                  1px solid #CCC;
+}
+
+.productColListItem
+{
+position:                                  relative;
+}
+#colNewsSlide .productColListItem
+{
+min-height:                                   100px;
+}
+
+.productColListItem a
+{
+padding-bottom:                                  10px;
+}
+
+.safari .image-wrapper
+{
+height:                                   auto;
+padding-bottom: 0;
+}
+
+.imgInner
+{
+/* width: 100%;
+height: 100%;*/
+top:                 0;
+left: 0;
+text-align:                 center;
+align-items: center;
+/*
+min-height:                 150px;
+display:   flex;*/
+}
+
+.safari .imgInner
+{
+position:                                   relative;
+}
+/*[data-layout="horizontal"] .image-wrapper
+{
+border-right:                                  1px solid #ececec;
+}
+*/
+.image-wrapper img
+{
+max-height:100%;
+margin:                                  0 auto;
+-webkit-transition-timing-function:ease-in-out;
+-moz-transition-timing-function:                                  ease-in-out;
+-ms-transition-timing-function:ease-in-out;
+-o-transition-timing-function:                                  ease-in-out;
+transition-timing-function:ease-in-out;
+-webkit-transition-duration:0.2s;
+-moz-transition-duration:0.2s;
+-ms-transition-duration:0.2s;
+-o-transition-duration:0.2s;
+transition-duration:0.2s;
+}
+
+.image-wrapper img.lazy
+{
+position:                                  absolute;
+top:50%;
+left:50%;
+width:                                  64px;
+height:64px;
+margin-top:                                  -32px;
+margin-left:-32px;
+}
+
+.image-wrapper img.ndImage
+{
+opacity:                                  0;
+}
+
+.safari .image-wrapper img.ndImage
+{
+display:                                  none;
+}
+
+.imgGallery:hover img.active
+{
+opacity:                                  0;
+}
+
+.imgGallery:hover img.ndImage
+{
+opacity:                                  1;
+}
+
+.icon-new
+{
+position:                       absolute;
+font-size: 18px;
+width:                       50px;
+height: 50px;
+line-height:                       50px;
+text-align: center;
+color:                       #FF7E00;
+margin-left: 10px;
+margin-top:                       10px;
+background-image: url(/Data/EditorFiles/yeni.png);
+background-position: 100%;
+background-repeat:                       no-repeat;
+z-index: 1;
+}
+
+.icon-cargo
+{
+position:                                  absolute;
+bottom:30px;
+right:                                  0;
+width:84px;
+height:                                  30px;
+background:url('cargoIcon.png') no-repeat center center;
+z-index:                                  1;
+}
+
+.out-of-stock
+{
+position:                                   absolute;
+width:100%;
+top: calc(50% - 20px);
+left:                                   0;
+line-height: 40px;
+color:                                   #fff;
+background: rgba(0,0,0,.6);
+z-index:                                   3;
+text-align: center;
+font-size:                                   17px;
+text-transform: uppercase;
+}
+
+.productListItem .icon-cargo, .resim-vitrin .icon-cargo
+{
+bottom:                                  0;
+}
+
+.image-band
+{
+position:                                  absolute;
+left:0;
+bottom:                                  0;
+line-height:20px;
+font-size:                                  14px;
+color:#fff;
+padding-top:                                  5px;
+padding-bottom:5px;
+background:rgba(0,0,0,.7);
+}
+
+.campaign-band
+{
+font-size:                                  11px;
+background:url('campaign-band.png') repeat-y;
+background-size:100%;
+}
+
+.campaign-text
+{
+padding-right:                                  5px;
+padding-left:20px;
+background:url('timer-icon.png') no-repeat 0 center;
+}
+
+.timer-block
+{
+padding-right:                                  5px;
+}
+
+.timer-value
+{
+height:                                  20px;
+padding-right:4px;
+padding-left:                                  4px;
+margin-right:4px;
+background:                                  #000;
+border:1px solid #fff;
+box-sizing:                                  border-box;
+}
+
+.productDetails
+{
+position:                                  relative;
+padding-bottom: 75px;
+}
+
+.comparisonItem .productDetails
+{
+border-right:                                  0;
+}
+
+.productColItem .productDetails, [data-layout="horizontal"] .productItem .productDetails
+{
+border-right:0
+}
+
+.variantOverlay
+{
+position:                                   fixed;
+top: 0;
+left:                                   0;
+bottom: 0;
+right:                                   0;
+background: rgba(0,0,0,.7);
+z-index:                                   999;
+display: none;
+}
+
+.variantWrapper
+{
+position:          relative;
+background: #f5f5f5;
+padding: 0 !important;
+padding-bottom: 0 !important;
+}
+
+.alturungrup1  a:hover
+{
+background-color:                 #000;
+}
+
+.alturungrup1  a:hover p
+{
+color:                 #FFF;
+}
+
+.error .variantWrapper
+{
+z-index:                                  9999;
+}
+
+.productOption
+{
+position:                                  relative;
+min-height:20px;
+padding-bottom:                                  5px;
+}
+
+.productListItem .productOption
+{
+margin-top:                                  20px;
+}
+
+.productOption span
+{
+float:                                  left;
+width:100%;
+width:                                  80px;
+height:20px;
+line-height:                                  18px;
+font-size:12px;
+color:                                  #000;
+}
+
+.optionBox
+{
+width:100%;
+box-sizing:                                  border-box;
+}
+
+.optionBox a, .optionBox select
+{
+float:                                  left;
+min-width:20px;
+height:                                  20px;
+border:1px solid #ececec;
+padding-right:                                  5px;
+padding-left:5px;
+margin-right:                                  5px;
+margin-bottom:5px;
+box-sizing:                                  border-box;
+cursor:pointer;
+}
+
+.optionBox a.selected
+{
+border:                                  1px solid #5b5b5b;
+}
+
+.optionBox a p
+{
+float:                                  left;
+width:100%;
+height:                                  20px;
+line-height:18px;
+text-align:                                  center;
+font-size:11px;
+color:                                  #000;
+}
+
+.optionBox a.selected p
+{
+font-weight:                                  700;
+}
+
+.optionBox select
+{
+width:100%;
+line-height:                                  18px;
+font-size:11px;
+color:                                  #000;
+text-transform:uppercase;
+appearance:                                   none;
+-moz-appearance: none;
+-webkit-appearance:                                   none;
+background:url('selectArrow.png') no-repeat right center;
+}
+
+.productBrand
+{
+line-height:                                  24px;
+font-size:13px;
+color:                                  #000;
+font-weight:700;
+}
+
+.productListItem .productBrand
+{
+line-height:                                  80px;
+}
+
+.productColListItem .productBrand
+{
+line-height:                                  15px;
+font-size:13px;
+margin-bottom:                                  10px;
+}
+
+.productDescription
+{
+text-align:    center;
+text-decoration: none;
+color:  #4e4e4e;
+margin: auto;
+height:  40px;
+font-size: 14px!important;
+font-family: 'Oswald', sans-serif;
+font-weight:  400;
+line-height: 1.5!important;
+}
+
+.productListItem .productDescription
+{
+margin-top:                                  34px;
+max-width:400px;
+}
+
+.productColListItem .productDescription, .productColItemTp .productDescription
+{
+line-height:                                  15px;
+font-size:12px;
+}
+
+.productColItemTp .productDescription
+{
+text-align:                                  center;
+}
+
+.proRowAct
+{
+position:                                  absolute;
+bottom: 30px;
+left:                                  0;
+}
+
+.karsilastirma
+{
+position:                                  absolute;
+visibility:hidden;
+}
+
+.productBtn
+{
+width:                                  30px;
+height:30px;
+cursor:                                  pointer;
+margin-top:2px;
+margin-left:                                  10px;
+margin-bottom:2px;
+}
+
+.productListItem .productBtn
+{
+margin-top:                                  25px;
+}
+
+.basketBtn
+{
+background:url('basketBtn.png') no-repeat;
+}
+
+.basketBtn:hover
+{
+background:url('basketBtnHover.png') no-repeat;
+}
+
+.basketBtn.success, .basketBtn.success:hover
+{
+background:url('basketBtnSuccess.png') no-repeat;
+}
+
+.basketBtn.error, .basketBtn.error:hover
+{
+background:url('basketBtnError.png') no-repeat;
+}
+
+.comparisonBtn
+{
+background:url('comparisonBtn.png') no-repeat;
+}
+
+.comparisonBtn:hover, .comparisonBtn.active
+{
+background:url('comparisonBtnHover.png') no-repeat;
+}
+
+.favouriteBtn
+{
+background:url('favouriteBtn.png') no-repeat;
+}
+
+.favouriteBtn:hover, .favouriteBtn.active
+{
+background:url('favouriteBtnHover.png') no-repeat;
+}
+
+.zoomBtn
+{
+background:url('zoomBtn.png') no-repeat;
+}
+
+.zoomBtn:hover, .zoomBtn.active
+{
+background:url('zoomBtnHover.png') no-repeat;
+}
+
+.productColItem:last-child .mb
+{
+margin-bottom:                                  0;
+}
+
+.productColItem:last-child .line-bottom
+{
+border-bottom:                                  0;
+}
+
+.productPrice
+{
+height:                 60px;
+line-height: 28px;
+vertical-align:                 middle;
+text-align: center;
+margin:                 auto;
+}
+
+.productColListItem .productPrice, .productColItemTp .productPrice
+{
+width:100%;
+line-height:                                  14px;
+padding-top:0;
+padding-right:                                  0;
+padding-bottom:0;
+}
+
+.productColItemTp .productPrice
+{
+height:                                  24px;
+line-height:12px;
+}
+
+.productPrice.discount, .productInfo
+{
+position:                                  relative;
+padding-right:67px;
+}
+
+.priceWrapper
+{
+text-align:                                  center;
+}
+
+.currentPrice
+{
+font-size: 15px!important;
+color:    #616161;
+font-family: 'Oswald', sans-serif;
+font-weight:  400;
+}
+
+.productColListItem .currentPrice
+{
+float:                                  right;
+width:50%;
+line-height:                                  17px;
+font-size:9px;
+text-align:                                  right;
+}
+
+.productColItemTp .currentPrice, .productColItemTp .discountedPrice
+{
+width:100%;
+line-height:                                  12px;
+font-size:10px;
+text-align:                                  center;
+}
+
+.discountedPrice + .currentPrice
+{
+line-height:                                  14px;
+}
+
+.discountedPrice
+{
+color:  #484848;
+font-weight: 300;
+font-size:  13px;
+text-decoration: line-through;
+}
+
+.productColListItem .discountedPrice
+{
+float:                                  left;
+width:50%;
+text-align:                                  left;
+line-height:17px;
+font-size:                                  9px;
+}
+
+.productListItem .currentPrice, .productListItem .discount .currentPrice, .productListItem .discountedPrice
+{
+float:                                  left;
+line-height:80px;
+padding-left:                                  20px;
+}
+
+.productListItem .productInfo
+{
+margin-right:                                  20px;
+}
+
+.productDiscount
+{
+position:                                  absolute;
+top:0;
+right:                                  0;
+width:57px;
+height:                                  30px;
+line-height:11px;
+color:                                  #fff;
+font-size:11px;
+text-align:                                  center;
+padding-bottom:4px;
+background:url('discountBg.png') no-repeat;
+z-index:                                  33;
+}
+
+.productInfo .productDiscount
+{
+top:                                  25px;
+}
+
+.productDiscount span
+{
+display:                                  block;
+font-size:16px;
+line-height:                                  17px;
+}
+
+.mainControl
+{
+position:                                  absolute;
+width:auto;
+top:                                  0;
+left:auto;
+right:                                  0;
+margin-left:auto;
+margin-top:                                  -50px;
+z-index:33;
+}
+#oneCol .mainControl
+{
+width:                                  1260px;
+top:50%;
+left:50%;
+right:                                  auto;
+margin-top:-21px;
+margin-left:                                  -630px;
+}
+
+.mainControl span
+{
+width:                                  50px;
+height:50px;
+cursor:                                  pointer;
+background-color:#d6d6d6;
+background-repeat:                                  no-repeat;
+background-position:center center;
+border-left:                                  1px solid #ececec;
+}
+#oneCol .mainControl span
+{
+width:                                  18px;
+height:42px;
+background-color:                                  transparent;
+border-left:0;
+}
+
+.mainPrev
+{
+background-image:url('carouselSmlArrowPrev.png');
+}
+#oneCol .mainPrev
+{
+background-image:url('carouselArrows.png');
+background-position:                                  left center;
+}
+
+.mainNext
+{
+background-image:url('carouselSmlArrowNext.png');
+}
+#oneCol .mainNext
+{
+background-image:url('carouselArrows.png');
+background-position:                                  right center;
+}
+
+.colControl
+{
+float:                                  left;
+width:100%;
+}
+
+.colControl span
+{
+position:                                  absolute;
+top:30%;
+width:                                  15px;
+height:30px;
+margin-top:                                  -15px;
+background-repeat:no-repeat;
+background-position:                                  center center;
+cursor:pointer;
+}
+
+.colControl .colPrev
+{
+background-image:url('colControlArrowPrev.png');
+}
+
+.colControl .colNext
+{
+right:                                  0;
+background-image:url('colControlArrowNext.png');
+}
+
+.colBottomControl
+{
+background:url('controlLine.png') repeat-x 0 center;
+margin-top:                                  10px;
+}
+
+.colBottomControl span
+{
+width:                                  30px;
+height:30px;
+background-image:url("colControlTp.png");
+background-repeat:                                  no-repeat;
+opacity:0.5;
+cursor:                                  pointer;
+}
+
+.colBottomControl.vertical span
+{
+background-image:url("colControlVerticalTp.png");
+}
+
+.colBottomControlLine
+{
+width:                                  80px;
+height:30px;
+margin-left:                                  auto;
+margin-right:auto;
+padding-left:                                  10px;
+padding-right:10px;
+background:                                  #fff;
+}
+
+.colBottomControl span:hover
+{
+opacity:                                  1;
+}
+
+.colBottomControl .colNext
+{
+background-position:                                  right 0px;
+}
+
+.productPager
+{
+display:                                  inline-block;
+border-right:0;
+}
+
+.productPager a, .productPager span
+{
+float:                                  left;
+width:30px;
+height:                                  28px;
+line-height:28px;
+margin-bottom:                                  -1px;
+border-right:1px solid #ececec;
+border-bottom:                                  1px solid #ececec;
+box-sizing:border-box;
+}
+
+.productPager a
+{
+color:                                  #6c6c6c;
+background-repeat:no-repeat;
+background-position:                                  center center;
+}
+
+.productPager a.first
+{
+background-image:url('firstArrow.png');
+}
+
+.productPager a.prev
+{
+background-image:url('prevArrow.png');
+}
+
+.productPager a.next
+{
+background-image:url('nextArrow.png');
+}
+
+.productPager a.last
+{
+background-image:url('lastArrow.png');
+}
+
+.productPager a:hover, .productPager span
+{
+background-color:                                  #f3f3f3;
+}
+
+.productPager span
+{
+color:                                  #000;
+border-bottom:1px solid #b7b7b7;
+cursor:                                  default;
+}
+@media screen and (max-width: 1024px)
+{
+}
+@media screen and (max-width: 1230px)
+{
+#oneCol .mainControl
+{
+width:                                  auto;
+top:0;
+left:                                  auto;
+right:0;
+margin-top:                                  -50px;
+margin-left:auto;
+}
+#oneCol .mainControl span
+{
+width:                                  50px;
+height:50px;
+cursor:                                  pointer;
+background-color:#d6d6d6;
+background-repeat:                                  no-repeat;
+background-position:center center;
+border-left:                                  1px solid #ececec;
+}
+#oneCol .mainPrev
+{
+background-image:url('carouselSmlArrowPrev.png');
+}
+#oneCol .mainNext
+{
+background-image:url('carouselSmlArrowNext.png');
+}
+}
+@media screen and (max-width: 1100px)
+{
+[data-layout="horizontal"] .productItem.col-3 .productPrice.discount
+{
+width:100%;
+height:                                  auto;
+margin-bottom:20px;
+padding-left:                                  10px;
+box-sizing:border-box;
+}
+}
+@media screen and (max-width: 1000px)
+{
+.mainControl, #oneCol .mainControl
+{
+margin-top:                                  -60px;
+}
+
+.mainControl span, #oneCol .mainControl span
+{
+width:                                  60px;
+height:60px;
+}
+
+.productListItem .productBrand
+{
+line-height:                                  40px;
+font-size:20px;
+}
+
+.productListItem .productDescription
+{
+margin-top:                                  10px;
+max-width:100%;
+font-size:                                  13px;
+line-height:16px;
+}
+
+.currentPrice
+{
+font-size:                                  16px;
+}
+
+.discountedPrice
+{
+font-size:                                  15px;
+}
+
+.resim-vitrin .currentPrice
+{
+line-height:                                  33px;
+}
+
+.resim-vitrin .discountedPrice
+{
+line-height:                                  18px;
+}
+#leftColumn .productColItem, #rightColumn .productColItem
+{
+position:                                  relative;
+}
+#leftColumn .productPrice.discount, #rightColumn .productPrice.discount
+{
+padding-right:                                  0;
+padding-bottom:0;
+margin-top:                                  0;
+position:static;
+}
+#leftColumn .productDiscount, #rightColumn .productDiscount
+{
+top:                                  10px;
+bottom:0;
+margin-top:                                  0;
+}
+}
+@media screen and (min-width: 1025px)
+{
+.productItem:nth-child(1),
+.productItem:nth-child(3),
+.productItem:nth-child(5)
+{
+border-top:      2px solid #e8e8e8;
+}
+
+.productItem:nth-child(3n+1)
+{
+box-shadow:      inset 2px 0 0 #e8e8e8;
+}
+
+.productItem:nth-child(3n+1)  .imgInner > img
+{
+padding-left: 2px!important;
+}
+
+.productItem
+{
+border-right:      2px solid #e8e8e8;
+border-bottom: 2px solid #e8e8e8;
+}
+
+.productItem > .product-container
+{
+padding: 0 0 20px 0!important;
+}
+}
+@media screen and (max-width: 1024px)
+{
+.productItem
+{
+border-right:    2px solid #e8e8e8;
+border-bottom: 2px solid #e8e8e8;
+}
+
+.productDescription
+{
+margin-top:  15px;
+}
+}
+@media screen and (min-width: 1001px)
+{
+:not(.notClear) > .col-6:nth-of-type(2n) .productDetails,
+:not(.notClear) > .col-4:nth-of-type(3n) .productDetails,
+:not(.notClear) > .col-3:nth-of-type(4n) .productDetails,
+:not(.notClear) > .col-2:nth-of-type(6n) .productDetails
+{
+border-right:                                  0;
+}
+}
+@media screen and (max-width: 1000px) and (min-width: 769px)
+{
+.resim-vitrin .col-1
+{
+padding-bottom:                                  10px;
+}
+
+.productComparison
+{
+width:                                  0;
+padding-left:17px;
+}
+:not(.notClear) > .col-md-6:nth-of-type(2n) .productDetails,
+:not(.notClear) > .col-md-4:nth-of-type(3n) .productDetails,
+:not(.notClear) > .col-md-3:nth-of-type(4n) .productDetails,
+:not(.notClear) > .col-md-2:nth-of-type(6n) .productDetails
+{
+border-right:                                  0;
+}
+}
+@media screen and (min-width: 769px)
+{
+#productRight > .prtck
+{
+height: 370px !important;
+}
+}
+@media screen and (min-width: 768px)
+{
+.image-wrapper
+{
+position:                 relative;
+width: 100%;
+padding-bottom: 0 !important;
+overflow:                 hidden;
+}
+}
+@media screen and (max-width: 768px)
+{
+.image-wrapper
+{
+position:                 relative;
+padding-bottom: 0 !important;
+overflow:                 hidden;
+}
+
+.icon-new
+{
+position:                 absolute;
+font-size: 15px;
+width:                 40px;
+height: 40px;
+line-height:                 40px;
+text-align: center;
+color:                 #FF7E00;
+margin-left: 5px;
+margin-top:                 5px;
+background-image: url(/Data/EditorFiles/yeni.png);
+background-position: 100%;
+background-repeat:                 no-repeat;
+z-index: 1;
+background-size: 100%;
+}
+
+.proRowAct
+{
+position:                                  absolute;
+bottom: 0!important;
+left:                                  0;
+}
+
+.productOption span, .optionBox a p
+{
+height:                                  24px;
+line-height:22px;
+}
+
+.productOption span
+{
+font-size:                                  14px;
+}
+
+.optionBox a, .optionBox select
+{
+height:                                  24px;
+}
+
+.optionBox a
+{
+min-width:                                  24px;
+}
+
+.optionBox a p
+{
+font-size:                                  13px;
+}
+
+.productBrand
+{
+font-size:                                  15px;
+}
+
+.productDescription
+{
+line-height:                                  16px;
+font-size:13px;
+}
+
+.productPrice.discount
+{
+height:                                  auto;
+margin-bottom:20px;
+padding-left:                                  10px;
+box-sizing:border-box;
+}
+
+.productDiscount
+{
+top:50%;
+margin-top:                                  -15px;
+}
+
+.priceWrapper
+{
+text-align:                                  left;
+}
+
+.discountedPrice
+{
+line-height:                                  13px;
+font-size:13px;
+}
+
+.discount .currentPrice
+{
+font-size:                                  20px;
+line-height:20px;
+}
+
+.productPager a, .productPager span
+{
+width:                                  40px;
+height:38px;
+line-height:                                  38px;
+font-size:15px;
+}
+
+.productListItem .productBrand
+{
+line-height:                                  50px;
+font-size:25px;
+}
+
+.productListItem .productDescription
+{
+line-height:                                  21px;
+font-size:15px;
+}
+
+.currentPrice
+{
+font-size:                                  20px;
+}
+
+.discountedPrice
+{
+font-size:                                  18px;
+}
+
+.resim-vitrin .col-1
+{
+padding-bottom:                                  10px;
+}
+
+.resim-vitrin .currentPrice
+{
+line-height:                                  38px;
+}
+
+.resim-vitrin .discountedPrice
+{
+line-height:                                  23px;
+}
+/*.col-title + div, .col-title + div .slide-wrapper, .col-title + div .carousel-wrapper
+{
+width:                                  600px;
+}
+*/
+.col-title + div .carousel li
+{
+width:                                  364px;
+}
+
+.productColItem
+{
+min-height:                                  470px;
+}
+
+.carousel .productColItem
+{
+min-height:                                  auto;
+}
+
+.productColItem .productDetails, .carousel .productColItem:nth-child(2n) .productDetails
+{
+border-right:                                  1px solid #ececec;
+}
+
+.carousel .productColItem .productDetails
+{
+padding-left:                                  20px;
+padding-right:20px;
+}
+
+.productColItem:nth-child(2n) .productDetails, .carousel .productColItem:last-child .productDetails
+{
+border-right:                                  0;
+}
+
+.productColItem .line-bottom
+{
+border-bottom:                                  0;
+}
+
+.productColItemTp .productDescription
+{
+line-height:                                  16px;
+font-size:13px;
+}
+
+.productColItemTp .productPrice
+{
+height:                                  40px;
+}
+
+.productColItemTp .currentPrice, .productColItemTp .discountedPrice
+{
+line-height:                                  20px;
+font-size:20px;
+}
+
+.productColListItem .productBrand
+{
+font-size:                                  15px;
+line-height:24px;
+}
+
+.productColListItem .productDescription, .productColItemTp .productDescription
+{
+font-size:                                  15px;
+line-height:24px;
+}
+
+.productColListItem .col-4
+{
+width:16.6667%;
+}
+
+.productColListItem .col-8
+{
+width:83.3333%;
+}
+
+.productColListItem .productPrice
+{
+padding-top:                                  10px;
+}
+
+.productColListItem .currentPrice, .productColListItem .discountedPrice
+{
+line-height:                                  20px;
+font-size:20px;
+}
+:not(.notClear) > .col-sm-6:nth-of-type(2n) .productDetails,
+:not(.notClear) > .col-sm-4:nth-of-type(3n) .productDetails,
+:not(.notClear) > .col-sm-3:nth-of-type(4n) .productDetails,
+:not(.notClear) > .col-sm-2:nth-of-type(6n) .productDetails
+{
+border-right:                                  0;
+}
+}
+@media screen and (max-width:540px)
+{
+.icon-new
+{
+position:                 absolute;
+font-size: 15px;
+width:                 40px;
+height: 40px;
+line-height:                 40px;
+text-align: center;
+color:                 #FF7E00;
+margin-left: 5px;
+margin-top:                 5px;
+background-image: url(/Data/EditorFiles/yeni.png);
+background-position: 100%;
+background-repeat:                 no-repeat;
+z-index: 1;
+background-size: 100%;
+}
+
+.productDetails
+{
+height:auto !important;
+}
+
+.productBrand
+{
+margin-bottom:                                  5px;
+}
+
+.productDescription
+{
+line-height:                                   20px;
+font-size: 13px;
+}
+
+.productPrice.fr
+{
+float:                                  left;
+padding-left:10px;
+}
+
+.discountedPrice
+{
+font-size:                                  15px;
+padding-bottom:5px;
+}
+
+.currentPrice
+{
+font-size:                                  15px;
+}
+}

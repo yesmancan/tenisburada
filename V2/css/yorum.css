@@ -1,0 +1,165 @@
+#commentSlide{
+	position:relative;
+}
+
+.commentText{
+	font-size:13px;
+	color:#6c6c6c;
+	line-height:15px;
+	border-bottom:1px solid #f3f3f3;
+}
+
+.commentName{
+	font-size:14px;
+	color:#6c6c6c;
+	font-style:italic;
+	line-height:15px;
+}
+
+.commentArrow{
+	width:30px;
+	height:30px;
+	background-image:url('commentArrow.png');
+	background-repeat:no-repeat;
+	margin-left:5px;
+	opacity:.5;
+	cursor:pointer;
+}
+
+.commentArrow:hover{
+	opacity:1;
+}
+
+#nextComment{
+	background-position:right 0;
+}
+
+.commentInfo .btn{
+	padding-right:10px;
+	padding-left:10px;
+	font-style:italic;
+}
+
+.commentInfo .box{
+	color:#6c6c6c;
+}
+
+#commentPager{
+	padding-top:5px;
+	padding-bottom:5px;
+	padding-left:0;
+	padding-right:0;
+	margin-top:0;
+	margin-bottom:0;
+}
+
+#commentPager li{
+	float:left;
+	width:18px;
+	height:18px;
+	line-height:18px;
+	text-align:center;
+	border:1px solid #6c6c6c;
+	margin-right:5px;
+	opacity:.5;
+	cursor:pointer;
+	-webkit-transition-timing-function: ease-in-out;
+	-moz-transition-timing-function: ease-in-out;
+	-ms-transition-timing-function: ease-in-out;
+	-o-transition-timing-function: ease-in-out;
+	transition-timing-function: ease-in-out;
+	-webkit-transition-duration: 0.2s;
+	-moz-transition-duration: 0.2s;
+	-ms-transition-duration: 0.2s;
+	-o-transition-duration: 0.2s;
+	transition-duration: 0.2s;
+}
+
+#commentPager li:hover{
+	opacity:1;
+}
+
+#commentPager li.active{
+	background:#6c6c6c;
+	opacity:1;
+	color:#fff;
+	cursor:default;
+}
+
+@media screen and (max-width: 1000px) {
+	
+	#threeCol #yorum .commentLeft, #threeCol #yorum .commentInfo{
+		width:100%;
+	}
+	
+	#threeCol .commentSlide{
+		border-right:0;
+		border-bottom:1px solid #F3F3F3;
+	}
+	
+	#threeCol .commentSlide > div{
+		width:100%;
+		margin-right:0;
+	}
+	
+	#threeCol .commentText{
+		font-size:14px;
+		line-height:20px;
+	}
+	
+	#threeCol .commentName{
+		font-size:20px;
+		line-height:30px;
+	}
+	
+	#threeCol #commentPager{
+		margin-left:0;
+	}
+	
+	#threeCol .commentInfo{
+		padding-left:0;
+		padding-right:0;
+		padding-top:10px;
+		font-size:15px;
+	}
+	
+}
+
+@media screen and (max-width: 768px) {
+	
+	#yorum .commentLeft, #yorum .commentInfo{
+		width:100%;
+	}
+	
+	.commentSlide{
+		border-right:0;
+		border-bottom:1px solid #F3F3F3;
+	}
+	
+	.commentSlide > div{
+		width:100%;
+		margin-right:0;
+	}
+	
+	.commentText{
+		font-size:14px;
+		line-height:20px;
+	}
+	
+	.commentName{
+		font-size:20px;
+		line-height:30px;
+	}
+	
+	#commentPager{
+		margin-left:0;
+	}
+	
+	.commentInfo{
+		padding-left:0;
+		padding-right:0;
+		padding-top:10px;
+		font-size:15px;
+	}
+	
+}
