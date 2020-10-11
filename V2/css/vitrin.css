@@ -156,11 +156,15 @@ border-right:                                  1px solid #ececec;
 .icon-new {
     position: absolute;
     text-align: center;
-    color: #666;
+    color: #000;
     z-index: 1;
     transform: rotate(90deg);
-    right: -10px;
-    top: 50px;
+    right: -45px;
+    top: 65px;
+    font-size: .8em;
+    text-rendering: optimizeLegibility;
+    -webkit-text-stroke-width: thick;
+    letter-spacing: 3px;
 }
 
 .icon-new:before {
@@ -237,7 +241,14 @@ border-right:                                  1px solid #ececec;
 
 .productDetails {
     position: relative;
-    padding-bottom: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    height: max-content!important;
+    min-height: 84px;
+    padding-bottom: 8px;
 }
 
 .comparisonItem .productDetails {
@@ -366,15 +377,12 @@ border-right:                                  1px solid #ececec;
 }
 
 .productDescription {
-    text-align: center;
     text-decoration: none;
-    color: #4e4e4e;
-    margin: auto;
-    height: 40px;
-    font-size: 14px !important;
-    font-family: 'Oswald', sans-serif;
-    font-weight: 400;
-    line-height: 1.5 !important;
+    color: #000;
+    text-rendering: optimizelegibility;
+    font: normal normal 14px/18px Oswald,Arial,Times,sans-serif;
+    letter-spacing: .5px;
+    margin: 8px 0;
 }
 
 .productListItem .productDescription {
@@ -470,11 +478,7 @@ border-right:                                  1px solid #ececec;
 }
 
 .productPrice {
-    height: 60px;
-    line-height: 28px;
-    vertical-align: middle;
-    text-align: center;
-    margin: auto;
+    margin-bottom: 8px;
 }
 
 .productColListItem .productPrice,
@@ -502,10 +506,10 @@ border-right:                                  1px solid #ececec;
 }
 
 .currentPrice {
-    font-size: 15px !important;
-    color: #616161;
-    font-family: 'Oswald', sans-serif;
-    font-weight: 400;
+    color: #000;
+    text-rendering: optimizeLegibility;
+    font: normal normal 14px/14px FuturaStd-Medium,Arial,Times,sans-serif;
+    letter-spacing: .5px;
 }
 
 .productColListItem .currentPrice {
@@ -523,18 +527,11 @@ border-right:                                  1px solid #ececec;
     font-size: 10px;
     text-align: center;
 }
-
-.discountedPrice+.currentPrice {
-    line-height: 14px;
-}
-
 .discountedPrice {
-    color: #484848;
-    font-weight: 300;
-    font-size: 13px;
     text-decoration: line-through;
+    font: normal normal 14px/14px Oswald,Arial,Times,sans-serif;
+    margin-right: 5px;
 }
-
 .productColListItem .discountedPrice {
     float: left;
     width: 50%;

@@ -2021,32 +2021,74 @@
                             </aside>
                             <div id="mainColumn">
                                 <div id="filtre">
-                                    <div class="col col-12" id="filterWrapper" style="border: 2px solid #e8e8e8!important;">
-                                        <div style="visibility: visible;" class="row angularTemplate" id="filterPanel" data-callback="myFn" data-url="/srv/service/filter/get/filters-variants-brands-categories-price">
-                                          
-                                          <label for="myCategories" class="box filter-box col-6 col-md-6 col-sm-6 col-xs-6">
-                                            <select id="myCategories" name="myCategories" class="filterCategory" data-param="category">
-                                              <option value="-1">Kategoriler</option>
-                                              <optgroup label="ERKEK TENİS AYAKKABISI">
-                                                <option value="asics-tenis-ayakkabisi">Asics</option>
-                                                <option value="nike-tenis-ayakkabisi" selected="">Nike</option>
-                                              </optgroup>
-                                              
-                                              
-                                            </select>
-                                          </label>
-                                          
-                                          
-                                          
-                                          <label for="myColors" class="box filter-box col-6 col-md-6 col-sm-6 col-xs-6" style="border-right: 0;">
-                                            <select id="myColors" name="myColors" class="filterSelect">
-                                              <option value="0">Beden</option>
-                                              <option value="93" data-param="type1" data-type="" data-filter-id="93">35.5</option><option value="107" data-param="type1" data-type="" data-filter-id="107">36</option><option value="105" data-param="type1" data-type="" data-filter-id="105">37.5</option><option value="104" data-param="type1" data-type="" data-filter-id="104">38</option><option value="103" data-param="type1" data-type="" data-filter-id="103">38.5</option><option value="102" data-param="type1" data-type="" data-filter-id="102">39</option><option value="100" data-param="type1" data-type="" data-filter-id="100">40</option><option value="98" data-param="type1" data-type="" data-filter-id="98">40.5</option><option value="97" data-param="type1" data-type="" data-filter-id="97">41</option><option value="95" data-param="type1" data-type="" data-filter-id="95">42</option><option value="94" data-param="type1" data-type="" data-filter-id="94">42.5</option><option value="111" data-param="type1" data-type="" data-filter-id="111">43</option><option value="109" data-param="type1" data-type="" data-filter-id="109">44</option><option value="108" data-param="type1" data-type="" data-filter-id="108">44.5</option><option value="117" data-param="type1" data-type="" data-filter-id="117">45</option><option value="116" data-param="type1" data-type="" data-filter-id="116">45.5</option><option value="115" data-param="type1" data-type="" data-filter-id="115">46</option><option value="113" data-param="type1" data-type="" data-filter-id="113">47</option>
-                                              
-                                            </select>
-                                          </label>
+                                    <div class="col col-12" id="filterWrapper"
+                                        style="border: 2px solid #e8e8e8!important;">
+                                        <div style="visibility: visible;" class="row angularTemplate" id="filterPanel"
+                                            data-callback="myFn"
+                                            data-url="/srv/service/filter/get/filters-variants-brands-categories-price">
+
+                                            <label for="myCategories"
+                                                class="box filter-box col-6 col-md-6 col-sm-6 col-xs-6">
+                                                <select id="myCategories" name="myCategories" class="filterCategory"
+                                                    data-param="category">
+                                                    <option value="-1">Kategoriler</option>
+                                                    <optgroup label="ERKEK TENİS AYAKKABISI">
+                                                        <option value="asics-tenis-ayakkabisi">Asics</option>
+                                                        <option value="nike-tenis-ayakkabisi" selected="">Nike</option>
+                                                    </optgroup>
+
+
+                                                </select>
+                                            </label>
+
+
+
+                                            <label for="myColors"
+                                                class="box filter-box col-6 col-md-6 col-sm-6 col-xs-6"
+                                                style="border-right: 0;">
+                                                <select id="myColors" name="myColors" class="filterSelect">
+                                                    <option value="0">Beden</option>
+                                                    <option value="93" data-param="type1" data-type=""
+                                                        data-filter-id="93">35.5</option>
+                                                    <option value="107" data-param="type1" data-type=""
+                                                        data-filter-id="107">36</option>
+                                                    <option value="105" data-param="type1" data-type=""
+                                                        data-filter-id="105">37.5</option>
+                                                    <option value="104" data-param="type1" data-type=""
+                                                        data-filter-id="104">38</option>
+                                                    <option value="103" data-param="type1" data-type=""
+                                                        data-filter-id="103">38.5</option>
+                                                    <option value="102" data-param="type1" data-type=""
+                                                        data-filter-id="102">39</option>
+                                                    <option value="100" data-param="type1" data-type=""
+                                                        data-filter-id="100">40</option>
+                                                    <option value="98" data-param="type1" data-type=""
+                                                        data-filter-id="98">40.5</option>
+                                                    <option value="97" data-param="type1" data-type=""
+                                                        data-filter-id="97">41</option>
+                                                    <option value="95" data-param="type1" data-type=""
+                                                        data-filter-id="95">42</option>
+                                                    <option value="94" data-param="type1" data-type=""
+                                                        data-filter-id="94">42.5</option>
+                                                    <option value="111" data-param="type1" data-type=""
+                                                        data-filter-id="111">43</option>
+                                                    <option value="109" data-param="type1" data-type=""
+                                                        data-filter-id="109">44</option>
+                                                    <option value="108" data-param="type1" data-type=""
+                                                        data-filter-id="108">44.5</option>
+                                                    <option value="117" data-param="type1" data-type=""
+                                                        data-filter-id="117">45</option>
+                                                    <option value="116" data-param="type1" data-type=""
+                                                        data-filter-id="116">45.5</option>
+                                                    <option value="115" data-param="type1" data-type=""
+                                                        data-filter-id="115">46</option>
+                                                    <option value="113" data-param="type1" data-type=""
+                                                        data-filter-id="113">47</option>
+
+                                                </select>
+                                            </label>
                                         </div>
-                                      </div>
+                                    </div>
                                 </div>
                                 <script type="text/javascript">
                                     var link = window.location.href;
@@ -2103,12 +2145,12 @@
                                     }
                                 </script>
                                 <!--cache-->
-                                <div class="col-12" id="katalog">
+                                <div id="katalog">
                                     <div class="catalogWrapper">
                                         <div class="productItem ease">
                                             <span class="icon-new"> </span>
                                             <div class="product-container">
-                                                <a href="/nike-mens-air-zoom-vapor-cage-4" class="image-wrapper fl">
+                                                <a href="/nike-mens-air-zoom-vapor-cage-4" class="image-wrapper">
                                                     <span class="imgInner">
                                                         <img src="https://www.tenisburada.com/nike-mens-air-zoom-vapor-cage-4-nike-nike-7016-19-O.jpg"
                                                             class="active"
@@ -2117,32 +2159,14 @@
                                                 </a>
                                             </div>
                                             <div class="productDetails loaderWrapper">
-                                                <div class="proRowName">
-                                                    <div class="row m0">
-                                                        <a href="/nike-mens-air-zoom-vapor-cage-4"
-                                                            title="Nike Air Zoom Vapor Cage 4 Erkek"
-                                                            class="col col-12 productDescription">
-                                                            Nike Air Zoom Vapor Cage 4 Erkek
-                                                        </a>
-                                                    </div>
-                                                </div>
                                                 <div class="variantOverlay" data-id="1911"></div>
-                                                <div class="proRowAct">
-                                                    <div class="tooltipWrapper">
-                                                        <div class="productPrice">
-                                                            <div class="currentPrice">
-                                                                <span
-                                                                    style="margin-right: 10px;font-size: 14px!important;font-weight: 200!important;">
-                                                                    <span class="discountedPrice">1.249,90</span>
-                                                                    <span>TL</span>
-                                                                </span>
-                                                                <span>
-                                                                    1.199,90
-                                                                    TL
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                                                <a href="/nike-mens-air-zoom-vapor-cage-4"
+                                                    title="Nike Air Zoom Vapor Cage 4 Erkek" class="productDescription">
+                                                    Nike Air Zoom Vapor Cage 4 Erkek
+                                                </a>
+                                                <div class="productPrice">
+                                                    <span class="discountedPrice">₺1.249,90</span>
+                                                    <span class="currentPrice">₺1.199,90</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -2150,7 +2174,7 @@
                                         <div class="productItem ease">
                                             <span class="icon-new"> </span>
                                             <div class="product-container">
-                                                <a href="/nike-mens-air-zoom-vapor-cage-4" class="image-wrapper fl">
+                                                <a href="/nike-mens-air-zoom-vapor-cage-4" class="image-wrapper">
                                                     <span class="imgInner">
                                                         <img src="https://www.tenisburada.com/nike-mens-air-zoom-vapor-cage-4-nike-nike-7016-19-O.jpg"
                                                             class="active"
@@ -2159,32 +2183,14 @@
                                                 </a>
                                             </div>
                                             <div class="productDetails loaderWrapper">
-                                                <div class="proRowName">
-                                                    <div class="row m0">
-                                                        <a href="/nike-mens-air-zoom-vapor-cage-4"
-                                                            title="Nike Air Zoom Vapor Cage 4 Erkek"
-                                                            class="col col-12 productDescription">
-                                                            Nike Air Zoom Vapor Cage 4 Erkek
-                                                        </a>
-                                                    </div>
-                                                </div>
                                                 <div class="variantOverlay" data-id="1911"></div>
-                                                <div class="proRowAct">
-                                                    <div class="tooltipWrapper">
-                                                        <div class="productPrice">
-                                                            <div class="currentPrice">
-                                                                <span
-                                                                    style="margin-right: 10px;font-size: 14px!important;font-weight: 200!important;">
-                                                                    <span class="discountedPrice">1.249,90</span>
-                                                                    <span>TL</span>
-                                                                </span>
-                                                                <span>
-                                                                    1.199,90
-                                                                    TL
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                                                <a href="/nike-mens-air-zoom-vapor-cage-4"
+                                                    title="Nike Air Zoom Vapor Cage 4 Erkek" class="productDescription">
+                                                    Nike Air Zoom Vapor Cage 4 Erkek
+                                                </a>
+                                                <div class="productPrice">
+                                                    <span class="discountedPrice">1.249,90 TL</span>
+                                                    <span class="currentPrice"> 1.199,90 TL</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -2192,7 +2198,7 @@
                                         <div class="productItem ease">
                                             <span class="icon-new"> </span>
                                             <div class="product-container">
-                                                <a href="/nike-mens-air-zoom-vapor-cage-4" class="image-wrapper fl">
+                                                <a href="/nike-mens-air-zoom-vapor-cage-4" class="image-wrapper">
                                                     <span class="imgInner">
                                                         <img src="https://www.tenisburada.com/nike-mens-air-zoom-vapor-cage-4-nike-nike-7016-19-O.jpg"
                                                             class="active"
@@ -2201,32 +2207,14 @@
                                                 </a>
                                             </div>
                                             <div class="productDetails loaderWrapper">
-                                                <div class="proRowName">
-                                                    <div class="row m0">
-                                                        <a href="/nike-mens-air-zoom-vapor-cage-4"
-                                                            title="Nike Air Zoom Vapor Cage 4 Erkek"
-                                                            class="col col-12 productDescription">
-                                                            Nike Air Zoom Vapor Cage 4 Erkek
-                                                        </a>
-                                                    </div>
-                                                </div>
                                                 <div class="variantOverlay" data-id="1911"></div>
-                                                <div class="proRowAct">
-                                                    <div class="tooltipWrapper">
-                                                        <div class="productPrice">
-                                                            <div class="currentPrice">
-                                                                <span
-                                                                    style="margin-right: 10px;font-size: 14px!important;font-weight: 200!important;">
-                                                                    <span class="discountedPrice">1.249,90</span>
-                                                                    <span>TL</span>
-                                                                </span>
-                                                                <span>
-                                                                    1.199,90
-                                                                    TL
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                                                <a href="/nike-mens-air-zoom-vapor-cage-4"
+                                                    title="Nike Air Zoom Vapor Cage 4 Erkek" class="productDescription">
+                                                    Nike Air Zoom Vapor Cage 4 Erkek
+                                                </a>
+                                                <div class="productPrice">
+                                                    <span class="discountedPrice">1.249,90 TL</span>
+                                                    <span class="currentPrice"> 1.199,90 TL</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -2234,7 +2222,7 @@
                                         <div class="productItem ease">
                                             <span class="icon-new"> </span>
                                             <div class="product-container">
-                                                <a href="/nike-mens-air-zoom-vapor-cage-4" class="image-wrapper fl">
+                                                <a href="/nike-mens-air-zoom-vapor-cage-4" class="image-wrapper">
                                                     <span class="imgInner">
                                                         <img src="https://www.tenisburada.com/nike-mens-air-zoom-vapor-cage-4-nike-nike-7016-19-O.jpg"
                                                             class="active"
@@ -2243,32 +2231,14 @@
                                                 </a>
                                             </div>
                                             <div class="productDetails loaderWrapper">
-                                                <div class="proRowName">
-                                                    <div class="row m0">
-                                                        <a href="/nike-mens-air-zoom-vapor-cage-4"
-                                                            title="Nike Air Zoom Vapor Cage 4 Erkek"
-                                                            class="col col-12 productDescription">
-                                                            Nike Air Zoom Vapor Cage 4 Erkek
-                                                        </a>
-                                                    </div>
-                                                </div>
                                                 <div class="variantOverlay" data-id="1911"></div>
-                                                <div class="proRowAct">
-                                                    <div class="tooltipWrapper">
-                                                        <div class="productPrice">
-                                                            <div class="currentPrice">
-                                                                <span
-                                                                    style="margin-right: 10px;font-size: 14px!important;font-weight: 200!important;">
-                                                                    <span class="discountedPrice">1.249,90</span>
-                                                                    <span>TL</span>
-                                                                </span>
-                                                                <span>
-                                                                    1.199,90
-                                                                    TL
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                                                <a href="/nike-mens-air-zoom-vapor-cage-4"
+                                                    title="Nike Air Zoom Vapor Cage 4 Erkek" class="productDescription">
+                                                    Nike Air Zoom Vapor Cage 4 Erkek
+                                                </a>
+                                                <div class="productPrice">
+                                                    <span class="discountedPrice">1.249,90 TL</span>
+                                                    <span class="currentPrice"> 1.199,90 TL</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -2276,7 +2246,7 @@
                                         <div class="productItem ease">
                                             <span class="icon-new"> </span>
                                             <div class="product-container">
-                                                <a href="/nike-mens-air-zoom-vapor-cage-4" class="image-wrapper fl">
+                                                <a href="/nike-mens-air-zoom-vapor-cage-4" class="image-wrapper">
                                                     <span class="imgInner">
                                                         <img src="https://www.tenisburada.com/nike-mens-air-zoom-vapor-cage-4-nike-nike-7016-19-O.jpg"
                                                             class="active"
@@ -2285,32 +2255,14 @@
                                                 </a>
                                             </div>
                                             <div class="productDetails loaderWrapper">
-                                                <div class="proRowName">
-                                                    <div class="row m0">
-                                                        <a href="/nike-mens-air-zoom-vapor-cage-4"
-                                                            title="Nike Air Zoom Vapor Cage 4 Erkek"
-                                                            class="col col-12 productDescription">
-                                                            Nike Air Zoom Vapor Cage 4 Erkek
-                                                        </a>
-                                                    </div>
-                                                </div>
                                                 <div class="variantOverlay" data-id="1911"></div>
-                                                <div class="proRowAct">
-                                                    <div class="tooltipWrapper">
-                                                        <div class="productPrice">
-                                                            <div class="currentPrice">
-                                                                <span
-                                                                    style="margin-right: 10px;font-size: 14px!important;font-weight: 200!important;">
-                                                                    <span class="discountedPrice">1.249,90</span>
-                                                                    <span>TL</span>
-                                                                </span>
-                                                                <span>
-                                                                    1.199,90
-                                                                    TL
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                                                <a href="/nike-mens-air-zoom-vapor-cage-4"
+                                                    title="Nike Air Zoom Vapor Cage 4 Erkek" class="productDescription">
+                                                    Nike Air Zoom Vapor Cage 4 Erkek
+                                                </a>
+                                                <div class="productPrice">
+                                                    <span class="discountedPrice">1.249,90 TL</span>
+                                                    <span class="currentPrice"> 1.199,90 TL</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -2318,7 +2270,7 @@
                                         <div class="productItem ease">
                                             <span class="icon-new"> </span>
                                             <div class="product-container">
-                                                <a href="/nike-mens-air-zoom-vapor-cage-4" class="image-wrapper fl">
+                                                <a href="/nike-mens-air-zoom-vapor-cage-4" class="image-wrapper">
                                                     <span class="imgInner">
                                                         <img src="https://www.tenisburada.com/nike-mens-air-zoom-vapor-cage-4-nike-nike-7016-19-O.jpg"
                                                             class="active"
@@ -2327,32 +2279,14 @@
                                                 </a>
                                             </div>
                                             <div class="productDetails loaderWrapper">
-                                                <div class="proRowName">
-                                                    <div class="row m0">
-                                                        <a href="/nike-mens-air-zoom-vapor-cage-4"
-                                                            title="Nike Air Zoom Vapor Cage 4 Erkek"
-                                                            class="col col-12 productDescription">
-                                                            Nike Air Zoom Vapor Cage 4 Erkek
-                                                        </a>
-                                                    </div>
-                                                </div>
                                                 <div class="variantOverlay" data-id="1911"></div>
-                                                <div class="proRowAct">
-                                                    <div class="tooltipWrapper">
-                                                        <div class="productPrice">
-                                                            <div class="currentPrice">
-                                                                <span
-                                                                    style="margin-right: 10px;font-size: 14px!important;font-weight: 200!important;">
-                                                                    <span class="discountedPrice">1.249,90</span>
-                                                                    <span>TL</span>
-                                                                </span>
-                                                                <span>
-                                                                    1.199,90
-                                                                    TL
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                                                <a href="/nike-mens-air-zoom-vapor-cage-4"
+                                                    title="Nike Air Zoom Vapor Cage 4 Erkek" class="productDescription">
+                                                    Nike Air Zoom Vapor Cage 4 Erkek
+                                                </a>
+                                                <div class="productPrice">
+                                                    <span class="discountedPrice">1.249,90 TL</span>
+                                                    <span class="currentPrice"> 1.199,90 TL</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -2360,7 +2294,7 @@
                                         <div class="productItem ease">
                                             <span class="icon-new"> </span>
                                             <div class="product-container">
-                                                <a href="/nike-mens-air-zoom-vapor-cage-4" class="image-wrapper fl">
+                                                <a href="/nike-mens-air-zoom-vapor-cage-4" class="image-wrapper">
                                                     <span class="imgInner">
                                                         <img src="https://www.tenisburada.com/nike-mens-air-zoom-vapor-cage-4-nike-nike-7016-19-O.jpg"
                                                             class="active"
@@ -2369,32 +2303,14 @@
                                                 </a>
                                             </div>
                                             <div class="productDetails loaderWrapper">
-                                                <div class="proRowName">
-                                                    <div class="row m0">
-                                                        <a href="/nike-mens-air-zoom-vapor-cage-4"
-                                                            title="Nike Air Zoom Vapor Cage 4 Erkek"
-                                                            class="col col-12 productDescription">
-                                                            Nike Air Zoom Vapor Cage 4 Erkek
-                                                        </a>
-                                                    </div>
-                                                </div>
                                                 <div class="variantOverlay" data-id="1911"></div>
-                                                <div class="proRowAct">
-                                                    <div class="tooltipWrapper">
-                                                        <div class="productPrice">
-                                                            <div class="currentPrice">
-                                                                <span
-                                                                    style="margin-right: 10px;font-size: 14px!important;font-weight: 200!important;">
-                                                                    <span class="discountedPrice">1.249,90</span>
-                                                                    <span>TL</span>
-                                                                </span>
-                                                                <span>
-                                                                    1.199,90
-                                                                    TL
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                                                <a href="/nike-mens-air-zoom-vapor-cage-4"
+                                                    title="Nike Air Zoom Vapor Cage 4 Erkek" class="productDescription">
+                                                    Nike Air Zoom Vapor Cage 4 Erkek
+                                                </a>
+                                                <div class="productPrice">
+                                                    <span class="discountedPrice">1.249,90 TL</span>
+                                                    <span class="currentPrice"> 1.199,90 TL</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -2402,7 +2318,7 @@
                                         <div class="productItem ease">
                                             <span class="icon-new"> </span>
                                             <div class="product-container">
-                                                <a href="/nike-mens-air-zoom-vapor-cage-4" class="image-wrapper fl">
+                                                <a href="/nike-mens-air-zoom-vapor-cage-4" class="image-wrapper">
                                                     <span class="imgInner">
                                                         <img src="https://www.tenisburada.com/nike-mens-air-zoom-vapor-cage-4-nike-nike-7016-19-O.jpg"
                                                             class="active"
@@ -2411,32 +2327,14 @@
                                                 </a>
                                             </div>
                                             <div class="productDetails loaderWrapper">
-                                                <div class="proRowName">
-                                                    <div class="row m0">
-                                                        <a href="/nike-mens-air-zoom-vapor-cage-4"
-                                                            title="Nike Air Zoom Vapor Cage 4 Erkek"
-                                                            class="col col-12 productDescription">
-                                                            Nike Air Zoom Vapor Cage 4 Erkek
-                                                        </a>
-                                                    </div>
-                                                </div>
                                                 <div class="variantOverlay" data-id="1911"></div>
-                                                <div class="proRowAct">
-                                                    <div class="tooltipWrapper">
-                                                        <div class="productPrice">
-                                                            <div class="currentPrice">
-                                                                <span
-                                                                    style="margin-right: 10px;font-size: 14px!important;font-weight: 200!important;">
-                                                                    <span class="discountedPrice">1.249,90</span>
-                                                                    <span>TL</span>
-                                                                </span>
-                                                                <span>
-                                                                    1.199,90
-                                                                    TL
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                                                <a href="/nike-mens-air-zoom-vapor-cage-4"
+                                                    title="Nike Air Zoom Vapor Cage 4 Erkek" class="productDescription">
+                                                    Nike Air Zoom Vapor Cage 4 Erkek
+                                                </a>
+                                                <div class="productPrice">
+                                                    <span class="discountedPrice">1.249,90 TL</span>
+                                                    <span class="currentPrice"> 1.199,90 TL</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -2444,7 +2342,7 @@
                                         <div class="productItem ease">
                                             <span class="icon-new"> </span>
                                             <div class="product-container">
-                                                <a href="/nike-mens-air-zoom-vapor-cage-4" class="image-wrapper fl">
+                                                <a href="/nike-mens-air-zoom-vapor-cage-4" class="image-wrapper">
                                                     <span class="imgInner">
                                                         <img src="https://www.tenisburada.com/nike-mens-air-zoom-vapor-cage-4-nike-nike-7016-19-O.jpg"
                                                             class="active"
@@ -2453,32 +2351,14 @@
                                                 </a>
                                             </div>
                                             <div class="productDetails loaderWrapper">
-                                                <div class="proRowName">
-                                                    <div class="row m0">
-                                                        <a href="/nike-mens-air-zoom-vapor-cage-4"
-                                                            title="Nike Air Zoom Vapor Cage 4 Erkek"
-                                                            class="col col-12 productDescription">
-                                                            Nike Air Zoom Vapor Cage 4 Erkek
-                                                        </a>
-                                                    </div>
-                                                </div>
                                                 <div class="variantOverlay" data-id="1911"></div>
-                                                <div class="proRowAct">
-                                                    <div class="tooltipWrapper">
-                                                        <div class="productPrice">
-                                                            <div class="currentPrice">
-                                                                <span
-                                                                    style="margin-right: 10px;font-size: 14px!important;font-weight: 200!important;">
-                                                                    <span class="discountedPrice">1.249,90</span>
-                                                                    <span>TL</span>
-                                                                </span>
-                                                                <span>
-                                                                    1.199,90
-                                                                    TL
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                                                <a href="/nike-mens-air-zoom-vapor-cage-4"
+                                                    title="Nike Air Zoom Vapor Cage 4 Erkek" class="productDescription">
+                                                    Nike Air Zoom Vapor Cage 4 Erkek
+                                                </a>
+                                                <div class="productPrice">
+                                                    <span class="discountedPrice">1.249,90 TL</span>
+                                                    <span class="currentPrice"> 1.199,90 TL</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -2486,7 +2366,7 @@
                                         <div class="productItem ease">
                                             <span class="icon-new"> </span>
                                             <div class="product-container">
-                                                <a href="/nike-mens-air-zoom-vapor-cage-4" class="image-wrapper fl">
+                                                <a href="/nike-mens-air-zoom-vapor-cage-4" class="image-wrapper">
                                                     <span class="imgInner">
                                                         <img src="https://www.tenisburada.com/nike-mens-air-zoom-vapor-cage-4-nike-nike-7016-19-O.jpg"
                                                             class="active"
@@ -2495,32 +2375,14 @@
                                                 </a>
                                             </div>
                                             <div class="productDetails loaderWrapper">
-                                                <div class="proRowName">
-                                                    <div class="row m0">
-                                                        <a href="/nike-mens-air-zoom-vapor-cage-4"
-                                                            title="Nike Air Zoom Vapor Cage 4 Erkek"
-                                                            class="col col-12 productDescription">
-                                                            Nike Air Zoom Vapor Cage 4 Erkek
-                                                        </a>
-                                                    </div>
-                                                </div>
                                                 <div class="variantOverlay" data-id="1911"></div>
-                                                <div class="proRowAct">
-                                                    <div class="tooltipWrapper">
-                                                        <div class="productPrice">
-                                                            <div class="currentPrice">
-                                                                <span
-                                                                    style="margin-right: 10px;font-size: 14px!important;font-weight: 200!important;">
-                                                                    <span class="discountedPrice">1.249,90</span>
-                                                                    <span>TL</span>
-                                                                </span>
-                                                                <span>
-                                                                    1.199,90
-                                                                    TL
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                                                <a href="/nike-mens-air-zoom-vapor-cage-4"
+                                                    title="Nike Air Zoom Vapor Cage 4 Erkek" class="productDescription">
+                                                    Nike Air Zoom Vapor Cage 4 Erkek
+                                                </a>
+                                                <div class="productPrice">
+                                                    <span class="discountedPrice">1.249,90 TL</span>
+                                                    <span class="currentPrice"> 1.199,90 TL</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -2528,7 +2390,7 @@
                                         <div class="productItem ease">
                                             <span class="icon-new"> </span>
                                             <div class="product-container">
-                                                <a href="/nike-mens-air-zoom-vapor-cage-4" class="image-wrapper fl">
+                                                <a href="/nike-mens-air-zoom-vapor-cage-4" class="image-wrapper">
                                                     <span class="imgInner">
                                                         <img src="https://www.tenisburada.com/nike-mens-air-zoom-vapor-cage-4-nike-nike-7016-19-O.jpg"
                                                             class="active"
@@ -2537,32 +2399,14 @@
                                                 </a>
                                             </div>
                                             <div class="productDetails loaderWrapper">
-                                                <div class="proRowName">
-                                                    <div class="row m0">
-                                                        <a href="/nike-mens-air-zoom-vapor-cage-4"
-                                                            title="Nike Air Zoom Vapor Cage 4 Erkek"
-                                                            class="col col-12 productDescription">
-                                                            Nike Air Zoom Vapor Cage 4 Erkek
-                                                        </a>
-                                                    </div>
-                                                </div>
                                                 <div class="variantOverlay" data-id="1911"></div>
-                                                <div class="proRowAct">
-                                                    <div class="tooltipWrapper">
-                                                        <div class="productPrice">
-                                                            <div class="currentPrice">
-                                                                <span
-                                                                    style="margin-right: 10px;font-size: 14px!important;font-weight: 200!important;">
-                                                                    <span class="discountedPrice">1.249,90</span>
-                                                                    <span>TL</span>
-                                                                </span>
-                                                                <span>
-                                                                    1.199,90
-                                                                    TL
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                                                <a href="/nike-mens-air-zoom-vapor-cage-4"
+                                                    title="Nike Air Zoom Vapor Cage 4 Erkek" class="productDescription">
+                                                    Nike Air Zoom Vapor Cage 4 Erkek
+                                                </a>
+                                                <div class="productPrice">
+                                                    <span class="discountedPrice">1.249,90 TL</span>
+                                                    <span class="currentPrice"> 1.199,90 TL</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -2570,7 +2414,7 @@
                                         <div class="productItem ease">
                                             <span class="icon-new"> </span>
                                             <div class="product-container">
-                                                <a href="/nike-mens-air-zoom-vapor-cage-4" class="image-wrapper fl">
+                                                <a href="/nike-mens-air-zoom-vapor-cage-4" class="image-wrapper">
                                                     <span class="imgInner">
                                                         <img src="https://www.tenisburada.com/nike-mens-air-zoom-vapor-cage-4-nike-nike-7016-19-O.jpg"
                                                             class="active"
@@ -2579,32 +2423,14 @@
                                                 </a>
                                             </div>
                                             <div class="productDetails loaderWrapper">
-                                                <div class="proRowName">
-                                                    <div class="row m0">
-                                                        <a href="/nike-mens-air-zoom-vapor-cage-4"
-                                                            title="Nike Air Zoom Vapor Cage 4 Erkek"
-                                                            class="col col-12 productDescription">
-                                                            Nike Air Zoom Vapor Cage 4 Erkek
-                                                        </a>
-                                                    </div>
-                                                </div>
                                                 <div class="variantOverlay" data-id="1911"></div>
-                                                <div class="proRowAct">
-                                                    <div class="tooltipWrapper">
-                                                        <div class="productPrice">
-                                                            <div class="currentPrice">
-                                                                <span
-                                                                    style="margin-right: 10px;font-size: 14px!important;font-weight: 200!important;">
-                                                                    <span class="discountedPrice">1.249,90</span>
-                                                                    <span>TL</span>
-                                                                </span>
-                                                                <span>
-                                                                    1.199,90
-                                                                    TL
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                                                <a href="/nike-mens-air-zoom-vapor-cage-4"
+                                                    title="Nike Air Zoom Vapor Cage 4 Erkek" class="productDescription">
+                                                    Nike Air Zoom Vapor Cage 4 Erkek
+                                                </a>
+                                                <div class="productPrice">
+                                                    <span class="discountedPrice">1.249,90 TL</span>
+                                                    <span class="currentPrice"> 1.199,90 TL</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -2612,7 +2438,7 @@
                                         <div class="productItem ease">
                                             <span class="icon-new"> </span>
                                             <div class="product-container">
-                                                <a href="/nike-mens-air-zoom-vapor-cage-4" class="image-wrapper fl">
+                                                <a href="/nike-mens-air-zoom-vapor-cage-4" class="image-wrapper">
                                                     <span class="imgInner">
                                                         <img src="https://www.tenisburada.com/nike-mens-air-zoom-vapor-cage-4-nike-nike-7016-19-O.jpg"
                                                             class="active"
@@ -2621,32 +2447,14 @@
                                                 </a>
                                             </div>
                                             <div class="productDetails loaderWrapper">
-                                                <div class="proRowName">
-                                                    <div class="row m0">
-                                                        <a href="/nike-mens-air-zoom-vapor-cage-4"
-                                                            title="Nike Air Zoom Vapor Cage 4 Erkek"
-                                                            class="col col-12 productDescription">
-                                                            Nike Air Zoom Vapor Cage 4 Erkek
-                                                        </a>
-                                                    </div>
-                                                </div>
                                                 <div class="variantOverlay" data-id="1911"></div>
-                                                <div class="proRowAct">
-                                                    <div class="tooltipWrapper">
-                                                        <div class="productPrice">
-                                                            <div class="currentPrice">
-                                                                <span
-                                                                    style="margin-right: 10px;font-size: 14px!important;font-weight: 200!important;">
-                                                                    <span class="discountedPrice">1.249,90</span>
-                                                                    <span>TL</span>
-                                                                </span>
-                                                                <span>
-                                                                    1.199,90
-                                                                    TL
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                                                <a href="/nike-mens-air-zoom-vapor-cage-4"
+                                                    title="Nike Air Zoom Vapor Cage 4 Erkek" class="productDescription">
+                                                    Nike Air Zoom Vapor Cage 4 Erkek
+                                                </a>
+                                                <div class="productPrice">
+                                                    <span class="discountedPrice">1.249,90 TL</span>
+                                                    <span class="currentPrice"> 1.199,90 TL</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -2654,7 +2462,7 @@
                                         <div class="productItem ease">
                                             <span class="icon-new"> </span>
                                             <div class="product-container">
-                                                <a href="/nike-mens-air-zoom-vapor-cage-4" class="image-wrapper fl">
+                                                <a href="/nike-mens-air-zoom-vapor-cage-4" class="image-wrapper">
                                                     <span class="imgInner">
                                                         <img src="https://www.tenisburada.com/nike-mens-air-zoom-vapor-cage-4-nike-nike-7016-19-O.jpg"
                                                             class="active"
@@ -2663,32 +2471,14 @@
                                                 </a>
                                             </div>
                                             <div class="productDetails loaderWrapper">
-                                                <div class="proRowName">
-                                                    <div class="row m0">
-                                                        <a href="/nike-mens-air-zoom-vapor-cage-4"
-                                                            title="Nike Air Zoom Vapor Cage 4 Erkek"
-                                                            class="col col-12 productDescription">
-                                                            Nike Air Zoom Vapor Cage 4 Erkek
-                                                        </a>
-                                                    </div>
-                                                </div>
                                                 <div class="variantOverlay" data-id="1911"></div>
-                                                <div class="proRowAct">
-                                                    <div class="tooltipWrapper">
-                                                        <div class="productPrice">
-                                                            <div class="currentPrice">
-                                                                <span
-                                                                    style="margin-right: 10px;font-size: 14px!important;font-weight: 200!important;">
-                                                                    <span class="discountedPrice">1.249,90</span>
-                                                                    <span>TL</span>
-                                                                </span>
-                                                                <span>
-                                                                    1.199,90
-                                                                    TL
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                                                <a href="/nike-mens-air-zoom-vapor-cage-4"
+                                                    title="Nike Air Zoom Vapor Cage 4 Erkek" class="productDescription">
+                                                    Nike Air Zoom Vapor Cage 4 Erkek
+                                                </a>
+                                                <div class="productPrice">
+                                                    <span class="discountedPrice">1.249,90 TL</span>
+                                                    <span class="currentPrice"> 1.199,90 TL</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -2696,7 +2486,7 @@
                                         <div class="productItem ease">
                                             <span class="icon-new"> </span>
                                             <div class="product-container">
-                                                <a href="/nike-mens-air-zoom-vapor-cage-4" class="image-wrapper fl">
+                                                <a href="/nike-mens-air-zoom-vapor-cage-4" class="image-wrapper">
                                                     <span class="imgInner">
                                                         <img src="https://www.tenisburada.com/nike-mens-air-zoom-vapor-cage-4-nike-nike-7016-19-O.jpg"
                                                             class="active"
@@ -2705,32 +2495,14 @@
                                                 </a>
                                             </div>
                                             <div class="productDetails loaderWrapper">
-                                                <div class="proRowName">
-                                                    <div class="row m0">
-                                                        <a href="/nike-mens-air-zoom-vapor-cage-4"
-                                                            title="Nike Air Zoom Vapor Cage 4 Erkek"
-                                                            class="col col-12 productDescription">
-                                                            Nike Air Zoom Vapor Cage 4 Erkek
-                                                        </a>
-                                                    </div>
-                                                </div>
                                                 <div class="variantOverlay" data-id="1911"></div>
-                                                <div class="proRowAct">
-                                                    <div class="tooltipWrapper">
-                                                        <div class="productPrice">
-                                                            <div class="currentPrice">
-                                                                <span
-                                                                    style="margin-right: 10px;font-size: 14px!important;font-weight: 200!important;">
-                                                                    <span class="discountedPrice">1.249,90</span>
-                                                                    <span>TL</span>
-                                                                </span>
-                                                                <span>
-                                                                    1.199,90
-                                                                    TL
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                                                <a href="/nike-mens-air-zoom-vapor-cage-4"
+                                                    title="Nike Air Zoom Vapor Cage 4 Erkek" class="productDescription">
+                                                    Nike Air Zoom Vapor Cage 4 Erkek
+                                                </a>
+                                                <div class="productPrice">
+                                                    <span class="discountedPrice">1.249,90 TL</span>
+                                                    <span class="currentPrice"> 1.199,90 TL</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -2738,7 +2510,7 @@
                                         <div class="productItem ease">
                                             <span class="icon-new"> </span>
                                             <div class="product-container">
-                                                <a href="/nike-mens-air-zoom-vapor-cage-4" class="image-wrapper fl">
+                                                <a href="/nike-mens-air-zoom-vapor-cage-4" class="image-wrapper">
                                                     <span class="imgInner">
                                                         <img src="https://www.tenisburada.com/nike-mens-air-zoom-vapor-cage-4-nike-nike-7016-19-O.jpg"
                                                             class="active"
@@ -2747,32 +2519,14 @@
                                                 </a>
                                             </div>
                                             <div class="productDetails loaderWrapper">
-                                                <div class="proRowName">
-                                                    <div class="row m0">
-                                                        <a href="/nike-mens-air-zoom-vapor-cage-4"
-                                                            title="Nike Air Zoom Vapor Cage 4 Erkek"
-                                                            class="col col-12 productDescription">
-                                                            Nike Air Zoom Vapor Cage 4 Erkek
-                                                        </a>
-                                                    </div>
-                                                </div>
                                                 <div class="variantOverlay" data-id="1911"></div>
-                                                <div class="proRowAct">
-                                                    <div class="tooltipWrapper">
-                                                        <div class="productPrice">
-                                                            <div class="currentPrice">
-                                                                <span
-                                                                    style="margin-right: 10px;font-size: 14px!important;font-weight: 200!important;">
-                                                                    <span class="discountedPrice">1.249,90</span>
-                                                                    <span>TL</span>
-                                                                </span>
-                                                                <span>
-                                                                    1.199,90
-                                                                    TL
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                                                <a href="/nike-mens-air-zoom-vapor-cage-4"
+                                                    title="Nike Air Zoom Vapor Cage 4 Erkek" class="productDescription">
+                                                    Nike Air Zoom Vapor Cage 4 Erkek
+                                                </a>
+                                                <div class="productPrice">
+                                                    <span class="discountedPrice">1.249,90 TL</span>
+                                                    <span class="currentPrice"> 1.199,90 TL</span>
                                                 </div>
                                             </div>
                                         </div>
