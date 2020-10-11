@@ -427,8 +427,18 @@
     }
 }
 
-@media screen and (min-width:1440px) and (max-width:1919px) {
+@media screen and (min-width:1440px) and (max-width:1799px) {
     .catalogWrapper .productItem:nth-of-type(3n) {
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .product-container {
+        width: calc((100vw - 20px) / 2);
+        height: 70vh;
+    }
+    .catalogWrapper .productItem:nth-of-type(2n) {
         margin-right: 0;
     }
 }

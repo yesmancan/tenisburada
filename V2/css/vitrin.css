@@ -896,23 +896,6 @@ border-right:                                  1px solid #ececec;
         overflow: hidden;
     }
 
-    .icon-new {
-        position: absolute;
-        font-size: 15px;
-        width: 40px;
-        height: 40px;
-        line-height: 40px;
-        text-align: center;
-        color: #FF7E00;
-        margin-left: 5px;
-        margin-top: 5px;
-        background-image: url(/Data/EditorFiles/yeni.png);
-        background-position: 100%;
-        background-repeat: no-repeat;
-        z-index: 1;
-        background-size: 100%;
-    }
-
     .proRowAct {
         position: absolute;
         bottom: 0 !important;
@@ -1099,23 +1082,6 @@ border-right:                                  1px solid #ececec;
 }
 
 @media screen and (max-width:540px) {
-    .icon-new {
-        position: absolute;
-        font-size: 15px;
-        width: 40px;
-        height: 40px;
-        line-height: 40px;
-        text-align: center;
-        color: #FF7E00;
-        margin-left: 5px;
-        margin-top: 5px;
-        background-image: url(/Data/EditorFiles/yeni.png);
-        background-position: 100%;
-        background-repeat: no-repeat;
-        z-index: 1;
-        background-size: 100%;
-    }
-
     .productDetails {
         height: auto !important;
     }
