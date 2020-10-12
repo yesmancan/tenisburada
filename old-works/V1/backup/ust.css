@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700&subset=latin-ext');
 #productDetailTab>h1>span, #productDetailTab>h1 {
     font-weight: 800;
 }
@@ -644,7 +643,6 @@ ul#main-menu>li>a {
     color: #FFF;
     text-align: center;
     font-weight: 400;
-    font-family: 'Oswald', sans-serif;
 }
 
 #mainMenu .parentLink li a:hover, #main-menu>.parentLink>.subMenu>.inner>.col-12>.col-12>.dynamicMenu>.notClear>li>a:hover, div.dynamicMenu>ul>li>a:hover {

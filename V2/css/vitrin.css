@@ -156,15 +156,14 @@ border-right:                                  1px solid #ececec;
 .icon-new {
     position: absolute;
     text-align: center;
-    color: #000;
+    color: #767676;
     z-index: 1;
     transform: rotate(90deg);
-    right: -45px;
-    top: 65px;
-    font-size: .8em;
+    right: -30px;
+    top: 45px;
     text-rendering: optimizeLegibility;
-    -webkit-text-stroke-width: thick;
-    letter-spacing: 3px;
+    font-size: 12px;
+    font-weight: 900;
 }
 
 .icon-new:before {
@@ -246,7 +245,7 @@ border-right:                                  1px solid #ececec;
     justify-content: flex-start;
     align-items: flex-start;
     width: 100%;
-    height: max-content!important;
+    height: max-content !important;
     min-height: 84px;
     padding-bottom: 8px;
 }
@@ -380,7 +379,7 @@ border-right:                                  1px solid #ececec;
     text-decoration: none;
     color: #000;
     text-rendering: optimizelegibility;
-    font: normal normal 14px/18px Oswald,Arial,Times,sans-serif;
+    font-size: 14px;
     letter-spacing: .5px;
     margin: 8px 0;
 }
@@ -508,7 +507,7 @@ border-right:                                  1px solid #ececec;
 .currentPrice {
     color: #000;
     text-rendering: optimizeLegibility;
-    font: normal normal 14px/14px FuturaStd-Medium,Arial,Times,sans-serif;
+    font: 14px;
     letter-spacing: .5px;
 }
 
@@ -516,6 +515,7 @@ border-right:                                  1px solid #ececec;
     float: right;
     width: 50%;
     line-height: 17px;
+
     font-size: 9px;
     text-align: right;
 }
@@ -527,11 +527,13 @@ border-right:                                  1px solid #ececec;
     font-size: 10px;
     text-align: center;
 }
+
 .discountedPrice {
     text-decoration: line-through;
-    font: normal normal 14px/14px Oswald,Arial,Times,sans-serif;
+    font-size: 14px;
     margin-right: 5px;
 }
+
 .productColListItem .discountedPrice {
     float: left;
     width: 50%;
@@ -1109,5 +1111,3 @@ border-right:                                  1px solid #ececec;
         font-size: 15px;
     }
 }
-
-

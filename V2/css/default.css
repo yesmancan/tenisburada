@@ -67,7 +67,6 @@
     -webkit-appearance: none;
     background: url('./../imgs/selectArrow.png') no-repeat right center;
     width: 100%;
-    font-family: 'Oswald', sans-serif;
 }
 
 .filter-box .input-wrap {

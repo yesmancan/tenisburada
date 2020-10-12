@@ -62,7 +62,6 @@ table.product-prop {
 	font-size: 2rem;
 	font-weight: 900;
 	color: #000;
-	font-family: 'Oswald', sans-serif;
 	position: absolute;
 	width: max-content;
 	z-index: 2;
@@ -97,7 +96,6 @@ table.product-prop {
 
 .mainPrices {
 	position: relative;
-	font-family: 'Oswald', sans-serif;
 }
 
 .priceLine,
@@ -150,12 +148,10 @@ table.product-prop {
 .prduct-code-buy-alt>span {
 	color: #616161;
 	font-size: 16px;
-	font-family: 'Oswald', sans-serif;
 	font-weight: 300;
 }
 
 #category-path {
-	font-family: 'Oswald', sans-serif;
 	color: #2b91e2;
 	font-weight: 600;
 	text-transform: lowercase !important;
@@ -419,7 +415,6 @@ table.product-prop {
 		font-size: 17px;
 		color: #777 !important;
 		font-weight: 400;
-		font-family: 'Oswald', sans-serif;
 		display: flex;
 		justify-content: center;
 		align-items: center;
