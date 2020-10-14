@@ -219,7 +219,6 @@ table.product-prop {
 	height: 40px;
 	font-size: 12px;
 	color: #666;
-	font-family: 'Source Sans Pro', sans-serif;
 	word-break: break-all;
 }
 
@@ -919,7 +918,6 @@ table.product-prop {
 	line-height: 1.08365;
 	font-weight: 600;
 	letter-spacing: -.003em;
-	font-family: "SF Pro Display", "SF Pro Icons";
 	color: #fff;
 }
 
@@ -932,7 +930,6 @@ table.product-prop {
 	line-height: 1.47059;
 	font-weight: 400;
 	letter-spacing: -.022em;
-	font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif !important;
 }
 
 #mobileBuyBtn {
