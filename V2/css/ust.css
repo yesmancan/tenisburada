@@ -689,10 +689,6 @@ span.cart-soft-count.totalAmount {
     color: #FFF;
 }
 
-div.dynamicMenu>ul>li>a:hover {
-    text-decoration: underline;
-}
-
 .menu li.parentLink>a {
     background-color: transparent;
 }
@@ -1244,6 +1240,14 @@ div.dynamicMenu>ul>li>a:hover {
     align-items: center;
     font-size: 1em;
     font-weight: 400;
+}
+
+#mainMenu #main-menu .submenu-items-in-items li a:hover {
+    text-decoration: underline;
+}
+
+#mainMenu #main-menu .submenu-items .submenu-title:hover {
+    text-decoration: underline;
 }
 
 #filtre,

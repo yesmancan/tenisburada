@@ -942,6 +942,8 @@ table.product-prop {
 	flex-wrap: wrap;
 	text-align: center;
 	justify-content: center;
+	max-width: fit-content;
+    margin: 0 auto;
 }
 
 #mobileBuyBtn .subOne a.col {
@@ -956,4 +958,11 @@ table.product-prop {
 	border: 2px solid #ccc;
 	border-radius: 45px;
 	margin: 5px;
+}
+
+#pageContent {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
 }

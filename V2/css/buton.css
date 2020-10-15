@@ -142,11 +142,11 @@
     display: flex;
     height: 90px;
     width: 90px;
-    margin: 10px auto 0 auto;
     border-radius: 90px;
     text-align: center;
     align-items: center;
     justify-content: center;
+    margin: auto;
 }
 
 #addCartBtn {
