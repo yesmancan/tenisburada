@@ -907,7 +907,10 @@ td.col {
 }
 
 #skeletonWrap {
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(100vw - 10px);
 }
 
 .loaderWrapper {
@@ -1139,7 +1142,11 @@ td.col {
     }
 
     #skeleton {
-        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: calc(100vw - 10px);
+    }
     }
 
     #footer {

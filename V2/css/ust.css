@@ -287,10 +287,6 @@ ul.desktopul li a {
         margin-top: -26px;
     }
 
-    #pageContent>div.slide-wrapper {
-        margin-top: 60px !important;
-    }
-
     .col.col-12.variantWrapper.tooltipWrapper.p0 {
         margin-top: 0 !important;
     }
@@ -821,10 +817,6 @@ span.cart-soft-count.totalAmount {
     .menu li.parentLink:hover>ul {
         display: block;
     }
-
-    #pageContent>.slide-wrapper>.loaderWrapper {
-        height: 330px;
-    }
 }
 
 @media screen and (max-width: 768px) {
@@ -1203,17 +1195,6 @@ span.cart-soft-count.totalAmount {
 
 .h-800 {
     height: 800px;
-}
-
-#productRight {
-    display: flex;
-    flex-direction: column;
-    height: 80vh;
-    justify-content: flex-end;
-}
-
-.loaderWrapper#productRight {
-    justify-content: flex-start;
 }
 
 #mainMenu #main-menu .submenu-title {

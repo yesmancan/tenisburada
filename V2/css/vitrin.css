@@ -5,7 +5,11 @@
 }
 
 #oneCol {
-    padding: 0 !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: calc(100vw - 10px);
 }
 
 #content {

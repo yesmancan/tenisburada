@@ -108,6 +108,11 @@ table.product-prop {
 #urun-tab {
 	padding-bottom: 120px;
 	background-color: #17171d;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
 }
 
 .currencyPrice {
@@ -156,7 +161,6 @@ table.product-prop {
 	font-weight: 600;
 	text-transform: lowercase !important;
 	width: max-content;
-	margin-top: 35px;
 	font-size: 1.5rem;
 }
 
@@ -391,6 +395,11 @@ table.product-prop {
 
 #content {
 	background-color: #f5f5f5 !important;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: stretch;
+	width: calc(100vw - 10px);
 }
 
 .productThumbs {
@@ -412,8 +421,8 @@ table.product-prop {
 
 	.variantBox a p {
 		font-size: 17px;
-		color: #777 !important;
-		font-weight: 400;
+		color: #707070 !important;
+		font-weight: 600;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -689,10 +698,6 @@ table.product-prop {
 	#productInfo {
 		margin-bottom: 10px !important;
 	}
-
-	#productMobileInfo {
-		margin-top: 100px !important;
-	}
 }
 
 @media screen and (max-width:800px) {
@@ -734,10 +739,6 @@ table.product-prop {
 
 	div.buyBtn>a>span.fast {
 		margin-right: 20px !important;
-	}
-
-	#pageContent>div.slide-wrapper {
-		margin-top: 60px !important;
 	}
 }
 
@@ -935,6 +936,7 @@ table.product-prop {
 #mobileBuyBtn {
 	display: flex;
 	flex: 100%;
+	width: 140px;
 }
 
 #mobileBuyBtn .subOne {
@@ -943,20 +945,20 @@ table.product-prop {
 	text-align: center;
 	justify-content: center;
 	max-width: fit-content;
-    margin: 0 auto;
+	margin: 0 auto;
 }
 
 #mobileBuyBtn .subOne a.col {
 	display: flex;
-	height: 45px;
-	width: 45px;
+	height: 60px;
+	width: 60px;
 	flex-wrap: wrap;
 	padding: 0;
 	text-align: center;
 	justify-content: center;
 	align-items: center;
-	border: 2px solid #ccc;
-	border-radius: 45px;
+	border: 4px solid #ccc;
+	border-radius: 60px;
 	margin: 5px;
 }
 
@@ -965,4 +967,15 @@ table.product-prop {
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
+}
+
+#productRight {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 70vh;
+}
+
+#productRight.loaderWrapper {
+	justify-content: flex-start;
 }
