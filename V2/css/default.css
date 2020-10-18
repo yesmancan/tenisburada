@@ -397,10 +397,6 @@
     margin: 0 auto;
 }
 
-.productItem {
-    margin-right: 10px;
-}
-
 @media screen and (min-width:1920px) {
     .container-fluid {
         max-width: 1800px;
@@ -426,9 +422,18 @@
     }
 }
 
+@media screen and (max-width:1440px) {
+    .product-container {
+        width: auto;
+        height: auto;
+    }
+
+    #skeletonWrap {
+        width: 100vw;
+    }
+}
+
 @media screen and (max-width:768px) {
-
-
     .icon-new {
         transform: unset !important;
         right: 0 !important;

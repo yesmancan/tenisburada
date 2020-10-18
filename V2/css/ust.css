@@ -81,6 +81,16 @@ div#logo.forMobile>a>p>img {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    margin: auto 0;
+}
+
+#logo a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
 }
 
 ul.desktopul li a {
@@ -986,15 +996,6 @@ span.cart-soft-count.totalAmount {
         animation-name: mobileMenu;
     }
 
-    #closeMobileMenu {
-        line-height: 54px;
-        color: #FFF;
-        font-size: 30px;
-        padding-left: 74px;
-        background: url('https://www.tenisburada.com//Data/EditorFiles/carpi.png') no-repeat;
-        cursor: pointer;
-    }
-
     #mobileMenu span,
     #mobileMenu a,
     #mobileMenu label,
@@ -1051,11 +1052,6 @@ span.cart-soft-count.totalAmount {
         content: '';
     }
 
-    #logo a img {
-        display: inline;
-        vertical-align: middle;
-    }
-
     #search {
         padding-left: 0;
         padding-right: 0;
@@ -1105,6 +1101,23 @@ span.cart-soft-count.totalAmount {
         height: 44px !important;
         background-image: url('../imgs/search.svg') !important;
     }
+}
+
+.mobilMenu-logo-close-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+#closeMobileMenu {
+    background: url(https://www.tenisburada.com//Data/EditorFiles/carpi.png) no-repeat;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    background-position: center;
+    background-size: cover;
 }
 
 #hmLinks a strong {

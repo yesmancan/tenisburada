@@ -398,7 +398,7 @@ table.product-prop {
 	flex-direction: column;
 	justify-content: center;
 	align-items: stretch;
-	width: calc(100vw - 10px);
+	width: 100vw;
 }
 
 .productThumbs {
@@ -985,7 +985,7 @@ table.product-prop {
 @media screen and (max-width:1024px) {
 	#pageContent {
 		flex-direction: column;
-		padding: 0 20px;
+		padding: 0;
 	}
 
 	.productThumbs {
@@ -1016,5 +1016,11 @@ table.product-prop {
 		border-right: 4px solid #ccc;
 		border-bottom: 4px solid #ccc;
 		margin: 0;
+	}
+	#productRight{
+		height: unset;
+	}
+	#productRight .add-to-cart-win {
+		height:unset;
 	}
 }
