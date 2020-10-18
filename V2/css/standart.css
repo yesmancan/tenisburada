@@ -904,7 +904,6 @@ td.col {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100vw;
 }
 
 .loaderWrapper {
@@ -1139,7 +1138,6 @@ td.col {
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 100vw;
     }
 
     #footer {
