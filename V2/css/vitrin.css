@@ -887,12 +887,6 @@
     }
 }
 
-@media screen and (min-width: 769px) {
-    #productRight>.prtck {
-        height: 370px !important;
-    }
-}
-
 @media screen and (min-width: 768px) {
     .image-wrapper {
         position: relative;

@@ -166,7 +166,7 @@ table.product-prop {
 .productThumbs li .image-wrapper {
 	width: 100%;
 	background-color: transparent;
-	border: 2px solid #ccc;
+	border: 2px solid #000;;
 	margin: 0 3px;
 	height: 23px;
 	width: 23px;
@@ -368,14 +368,13 @@ table.product-prop {
 	overflow: hidden;
 }
 
-#tabPanel li {
-	top: 20px;
-	left: 20px;
-	right: 20px;
-}
-
 #tabPanel li.current {
-	width: 100%;
+	text-align: justify;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 #banks {
@@ -398,7 +397,7 @@ table.product-prop {
 	flex-direction: column;
 	justify-content: center;
 	align-items: stretch;
-	width: 100vw;
+	/* width: calc(100vw - 10px); */
 }
 
 .productThumbs {
@@ -993,9 +992,10 @@ table.product-prop {
 		align-items: center;
 		text-align: center;
 		position: unset;
-		width: 100vw!important;
+		width: 100vw !important;
 	}
 
+	#content,
 	#mobileBuyBtn {
 		width: 100vw;
 	}
@@ -1017,10 +1017,25 @@ table.product-prop {
 		border-bottom: 4px solid #ccc;
 		margin: 0;
 	}
-	#productRight{
+
+	#productRight {
 		height: unset;
 	}
+
 	#productRight .add-to-cart-win {
-		height:unset;
+		height: unset;
+	}
+
+	#productRight.loaderWrapper {
+		width: 100vw;
+		justify-content: center;
+		align-items: center;
+		margin-top: 20px;
+	}
+	.productThumbs li .image-wrapper{
+		margin: 0 3px;
+		height: 10px;
+		width: 40px;
+		border-radius: unset;
 	}
 }

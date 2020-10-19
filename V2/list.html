@@ -115,7 +115,6 @@
                 <header id="header">
                     <!--cache-->
                     <div id="pageOverlay" class="col-12 animate"></div>
-
                     <div id="mobileMenu" class="forMobile p0" style="background-color: #000;">
                         <div class="mobilMenu-logo-close-btn">
                             <div id="closeMobileMenu"></div>
@@ -125,7 +124,7 @@
                                 </a>
                             </div>
                         </div>
-                        <ul class="fl menu col-10" style="margin-left: 30px;margin-top: 30px;">
+                        <ul class="fl menu col-10">
                             <li class="fl col-12 line-bottom">
                                 <span class="col col-12 ease p0">RAKET</span>
                                 <ul class="box col-12 line-top">
@@ -845,62 +844,52 @@
                                 </ul>
                             </li>
                         </ul>
-                        <div class="row mr0">
-                            <div class="box col-12">
-                                <div class="row pt0">
-                                    <div class="box col-11 sepet">
-                                        <label for="langMobile" class="col col-12 line-bottom">
-                                            <div class="fl col-5">Dil Seçimi</div>
-                                            <div class="fl col-1">:</div>
-                                            <div class="box col-6 p-right">
-                                                <select id="langMobile" class="col col-12 language">
-                                                    <option value="en">English</option>
-                                                    <option value="tr" selected>Türkçe</option>
-                                                </select>
-                                            </div>
-                                        </label>
-                                        <div id="basketMobile" class="col col-12 line-bottom">
-                                            <div class="fl col-5">
-                                                <a href="sepet" class="fl col-12 bgNone">
-                                                    <span class="bgNone">Sepet (</span>
-                                                    <span class="bgNone">0</span>
-                                                    <span>)</span>
-                                                </a>
-                                            </div>
-                                            <div class="fl col-1">
-                                                <a href="sepet" class="fl col-12 bgNone">:</a>
-                                            </div>
-                                            <div class="col col-6 p-right">
-                                                <a href="sepet" class="col col-12 bgNone">
-                                                    <label class="bgNone">0,00</label> TL
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <a id="loginMobile" href="/uye-girisi-sayfasi"
-                                            class="col col-12 line-bottom">Üye Girişi</a>
-                                        <a id="regisMobile" href="/index.php?B=YeniUye"
-                                            class="col col-12 line-bottom">Üye Ol</a>
-                                        <!--Searchbox-->
-                                        <div class="col col-12 p0">
-                                            <div id="mobileSearch" class="row mb col col-sm-12"></div>
-                                        </div>
-                                        <div id="search" class="col col-4 col-md-4 col-sm-12 m0">
-                                            <form id="FormAra" name="FormAra" action="/arama" method="get" class="row">
-                                                <span id="searchRight" class="box fr p0" style="width: 77%;">
-                                                    <input id="live-search" autocomplete="OFF" class="arakelime "
-                                                        name="q" type="text"
-                                                        placeholder="Aradığınız ürünün adını yazınız."
-                                                        http-equiv="Content-Type" content="text/html; charset=UTF-8"
-                                                        style="display: block;" />
-                                                    <input type="submit" class="btn-default fr mobilesearch" value=" "
-                                                        onblur="searchover()" />
-                                                </span>
-                                            </form>
-                                        </div>
-                                        <!--Searchbox bitiş-->
-                                    </div>
+                        <div class="sepet">
+                            <label for="langMobile" class="line-bottom">
+                                <div class="fl col-5">Dil Seçimi</div>
+                                <div class="fl col-1">:</div>
+                                <div class="box col-6 p-right">
+                                    <select id="langMobile" class="col col-12 language">
+                                        <option value="en">English</option>
+                                        <option value="tr" selected>Türkçe</option>
+                                    </select>
+                                </div>
+                            </label>
+                            <div id="basketMobile" class="line-bottom">
+                                <div class="fl col-5">
+                                    <a href="sepet" class="fl col-12 bgNone">
+                                        <span class="bgNone">Sepet (</span>
+                                        <span class="bgNone">0</span>
+                                        <span>)</span>
+                                    </a>
+                                </div>
+                                <div class="fl col-1">
+                                    <a href="sepet" class="fl col-12 bgNone">:</a>
+                                </div>
+                                <div class="col col-6 p-right">
+                                    <a href="sepet" class="col col-12 bgNone">
+                                        <label class="bgNone">0,00</label> TL
+                                    </a>
                                 </div>
                             </div>
+                            <a id="loginMobile" href="/uye-girisi-sayfasi" class="line-bottom">Üye Girişi</a>
+                            <a id="regisMobile" href="/index.php?B=YeniUye" class="line-bottom">Üye Ol</a>
+                            <!--Searchbox-->
+                            <div id="mobileSearch">
+                                <div id="search">
+                                    <form id="FormAra" name="FormAra" action="/arama" method="get">
+                                        <span id="searchRight">
+                                            <input id="live-search" autocomplete="OFF" class="arakelime " name="q"
+                                                type="text" placeholder="Aradığınız ürünün adını yazınız."
+                                                http-equiv="Content-Type" content="text/html; charset=UTF-8"
+                                                style="display: block;" />
+                                            <input type="submit" class="btn-default fr mobilesearch" value=" "
+                                                onblur="searchover()" />
+                                        </span>
+                                    </form>
+                                </div>
+                            </div>
+                            <!--Searchbox bitiş-->
                         </div>
                     </div>
                     <span id="backToTop"></span>

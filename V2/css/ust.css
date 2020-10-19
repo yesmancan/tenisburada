@@ -64,11 +64,11 @@ div#logo.forMobile>a>p>img {
 .menu {
     display: flex;
     flex-direction: row;
-    width: 100vw;
+    width: calc(100vw - 40px);
     min-height: 70px;
     align-items: center;
     justify-content: space-between;
-    padding: 0 20px;
+    padding: 0 0 0 20px;
 }
 
 
@@ -1003,7 +1003,6 @@ span.cart-soft-count.totalAmount {
         color: #FFF;
         font-size: 16px;
         line-height: 44px;
-        /*background:url('https://www.tenisburada.com/menuArrow.png') no-repeat right center;*/
         cursor: pointer;
     }
 
@@ -1024,14 +1023,7 @@ span.cart-soft-count.totalAmount {
     }
 
     #mobileMenu select {
-        background: none;
         border: 0;
-    }
-
-    #mobileMenu label[for="langMobile"] {
-        padding-left: 50px;
-        background: url(/Data/EditorFiles/cart.png) no-repeat center;
-        height: 44px;
     }
 
     #mobileMenu label[for="curMobile"] {
@@ -1094,12 +1086,6 @@ span.cart-soft-count.totalAmount {
         left: 10px;
         top: 21px;
         font-weight: 800;
-    }
-
-    .mobilesearch {
-        width: 62px !important;
-        height: 44px !important;
-        background-image: url('../imgs/search.svg') !important;
     }
 }
 
@@ -1191,7 +1177,11 @@ span.cart-soft-count.totalAmount {
 }
 
 .sepet {
-    padding: 0 40px;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
 }
 
 .mr0 {
@@ -1274,6 +1264,40 @@ span.cart-soft-count.totalAmount {
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
+}
+
+#mobileSearch #searchRight {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+#mobileSearch #searchRight #live-search {
+    display: flex;
+    position: inherit;
+    margin-right: 0;
+    top: 0;
+    height: 40px;
+    border-radius: 0;
+}
+
+#mobileSearch #searchRight .mobilesearch {
+    width: 35px !important;
+    background-image: url(../imgs/search.svg) !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: 0px -15px !important;
+    border: unset;
+    margin-top: 0;
+    height: 70px;
+}
+
+#langMobile {
+    background-color: #000; 
 }
 
 @media screen and (max-width:1899px) {
