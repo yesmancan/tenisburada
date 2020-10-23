@@ -1818,12 +1818,6 @@
                                         <meta itemprop="price" content="643.1031936" />
                                         <meta itemprop="availability" content="" />
                                         <meta itemprop="itemCondition" content="new" />
-                                        <script>
-                                            $(document).ready(function () {
-                                                $('.product-price').html($('.product-price').html().replace(',', '.'))
-                                                $('.transferPrice').html($('.transferPrice').html().replace(',', '.'))
-                                            })
-                                        </script>
                                     </div>
                                 </div>
                                 <div class="forDesktop" id="productLeft">
@@ -1968,11 +1962,14 @@
                                                 br[i].remove();
                                             }
                                             let firstSpan = document.querySelector('#productDetailTab > span');
-                                            firstSpan.innerHTML = "<h2 class='proh2'>" + firstSpan.innerText + "</h2>";
+                                            if (firstSpan) {
+                                                firstSpan.innerHTML = "<h2 class='proh2'>" + firstSpan.innerText + "</h2>";
+                                            }
                                             let items = document.querySelectorAll('#productDetailTab > p > span > b');
-                                            console.log(items)
-                                            for (let i = 0; i < items.length; i++) {
-                                                items[i].innerHTML = "<h2 class='proh2'>" + items[i].innerText + "</h2>";
+                                            if (items) {
+                                                for (let i = 0; i < items.length; i++) {
+                                                    items[i].innerHTML = "<h2 class='proh2'>" + items[i].innerText + "</h2>";
+                                                }
                                             }
                                         </script>
                                         <div class="col col-12" style="display:none;">
