@@ -166,7 +166,8 @@ table.product-prop {
 .productThumbs li .image-wrapper {
 	width: 100%;
 	background-color: transparent;
-	border: 2px solid #000;;
+	border: 2px solid #000;
+	;
 	margin: 0 3px;
 	height: 23px;
 	width: 23px;
@@ -370,11 +371,11 @@ table.product-prop {
 
 #tabPanel li.current {
 	text-align: justify;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    margin: 0 auto;
-    padding: 0 20px;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	margin: 0 auto;
+	padding: 0 20px;
 }
 
 #banks {
@@ -981,6 +982,18 @@ table.product-prop {
 	}
 }
 
+@media screen and (max-width:1899px) {
+	#productRight {
+		height: 95vh;
+	}
+}
+
+@media screen and (min-width:1025px) {
+	#productRight .add-to-cart-win {
+		margin: 0 auto 20vh;
+	}
+}
+
 @media screen and (max-width:1024px) {
 	#pageContent {
 		flex-direction: column;
@@ -1032,7 +1045,8 @@ table.product-prop {
 		align-items: center;
 		margin-top: 20px;
 	}
-	.productThumbs li .image-wrapper{
+
+	.productThumbs li .image-wrapper {
 		margin: 0 3px;
 		height: 10px;
 		width: 40px;

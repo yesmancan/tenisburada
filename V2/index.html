@@ -82,9 +82,6 @@
         var PAGE_LINK = { CART: 'sepet', ORDER: 'order' };
         var PRODUCT_DATA = [], CATEGORY_DATA = {}, BRAND_DATA = {};
     </script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap');
-    </style>
 </head>
 
 <body>
@@ -884,22 +881,6 @@
                             </div>
                             <a id="loginMobile" href="/uye-girisi-sayfasi" class="line-bottom">Üye Girişi</a>
                             <a id="regisMobile" href="/index.php?B=YeniUye" class="line-bottom">Üye Ol</a>
-                            <!--Searchbox-->
-                            <div id="mobileSearch">
-                                <div id="search">
-                                    <form id="FormAra" name="FormAra" action="/arama" method="get">
-                                        <span id="searchRight">
-                                            <input id="live-search" autocomplete="OFF" class="arakelime " name="q"
-                                                type="text" placeholder="Aradığınız ürünün adını yazınız."
-                                                http-equiv="Content-Type" content="text/html; charset=UTF-8"
-                                                style="display: block;" />
-                                            <input type="submit" class="btn-default fr mobilesearch" value=" "
-                                                onblur="searchover()" />
-                                        </span>
-                                    </form>
-                                </div>
-                            </div>
-                            <!--Searchbox bitiş-->
                         </div>
                     </div>
                     <span id="backToTop"></span>
@@ -1626,15 +1607,7 @@
                             <!-- logo searchbox hesap -->
                             <div id="hmLinks">
                                 <!--Searchbox-->
-                                <form id="FormAra" name="FormAra" action="/arama" method="get">
-                                    <span id="searchRight-desktop">
-                                        <input id="live-search-desktop" autocomplete="OFF" class="arakelime serachbox"
-                                            name="q" type="text" placeholder="Aradığınız ürünün adını yazınız."
-                                            http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-                                        <input type="submit" class="btn-default searchicon" value=" "
-                                            onblur="searchover()" />
-                                    </span>
-                                </form>
+                                <a href="javascript:void(openFullScreenSearch());" class="btn-default searchicon"></a>
                                 <!--Searchbox bitiş-->
                                 <!--login and cart-->
                                 <a data-width="500" data-url="/srv/service/customer/login-form" href="#"
@@ -1654,11 +1627,7 @@
                     <div id="mobile-menu-area" class="forMobile">
                         <!--Mobile yan menü aç-->
                         <p id="menuBtn">
-                            <span style="height: 2px;width: 25px;display: block;background-color: #000;"></span>
-                            <span
-                                style="height: 2px;width: 25px;display: block;background-color: #000;margin-top: 5px;"></span>
-                            <span
-                                style="height: 2px;width: 25px;display: block;background-color: #000;margin-top: 5px;"></span>
+                            <span class="hamburger"><span></span></span>
                         </p>
                         <!--Mobile yan menü aç bitiş-->
                         <!--Logo -->
@@ -1668,21 +1637,34 @@
                             </a>
                         </div>
                         <!--Logo Bitiş-->
-                        <!--login and cart-->
-                        <a href="/sepet" class="basketLinkmobile" id="cart-soft-count">
-                            <span class="cart-soft-count totalAmount">
-                                0
-                            </span>
-                        </a>
-                        <!--login and cart bitiş-->
+                        <div style="display: flex;flex-direction: row;justify-content: center;align-items: center;">
+                            <!--Searchbox-->
+                            <a href="javascript:void(openFullScreenSearch());"
+                                class="btn-default mobilesearch searchicon"></a>
+                            <!--Searchbox bitiş-->
+                            <!--cart-->
+                            <a href="/sepet" class="basketLinkmobile" id="cart-soft-count">
+                                <span class="cart-soft-count totalAmount">
+                                    0
+                                </span>
+                            </a>
+                            <!--cart bitiş-->
+                        </div>
+
                     </div>
                     <!-- Mobile Bitiş-->
                     <script type="text/javascript" src="./js/personalization.js"></script>
                     <script type="text/javascript">
                         function popupCallback() {
                         }
-                        function searchover() {
-                            $('#live-search')
+                        function openFullScreenSearch() {
+                            $('#full-page-search').addClass("active");
+                            $('body').css('overflow-y', 'hidden');
+                        }
+                        function closeFullScreenSearch() {
+                            $('#full-page-search').removeClass("active");
+                            $('body').css('overflow-y', 'visible');
+
                         }
                         $(document).ready(function () {
                             if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
@@ -1933,7 +1915,8 @@
                                     <li class="ozellik">
                                         <div id="productDetailTab" itemprop="description">
                                             <p>
-                                                <b class="headline-5"><br>Nike Air Max  Wildcard Kadın Tenis Ayakkabısı<br><br><br></b>
+                                                <b class="headline-5"><br>Nike Air Max Wildcard Kadın Tenis
+                                                    Ayakkabısı<br><br><br></b>
                                             </p>
                                             <p>NikeCourt Air Max Wildcard, kortta sert
                                                 vuruşlar
@@ -2078,32 +2061,7 @@
                                 }
                             </script>
                         </div>
-                        <script>
-                            document.onreadystatechange = () => {
-                                if (document.readyState === 'complete') {
-                                    let catalog = document.getElementById('list-catalog');
-                                    let benzerurunler = document.getElementById('benzerurunler');
-                                    benzerurunler.innerHTML = catalog.innerHTML;
-                                    let products = document.querySelectorAll('#benzerurunler a.image-wrapper');
-                                    let h = "";
-                                    catalog.remove();
-                                    if (products.length == 1 || products.length == 2) {
-                                        h = "h560";
-                                    } else if (products.length == 3 || products.length == 4) {
-                                        h = "h485";
-                                    } else if (products.length == 5 || products.length == 6) {
-                                        h = "h410";
-                                    }
-                                    else if (products.length == 7 || products.length == 8) {
-                                        h = "h335";
-                                    }
-                                    for (let i = 0; i < products.length; i++) {
-                                        benzerurunler.appendChild(products[i]);
-                                    }
-                                    document.querySelector('#productRight .add-to-cart-win').setAttribute("class", "" + h + " add-to-cart-win");
-                                }
-                            };
-                        </script>
+
                         <style>
                             #tabPanel {
                                 margin-top: 40px;
@@ -2122,15 +2080,6 @@
                                 font-size: 20px !important;
                                 line-height: 30px !important;
                                 letter-spacing: -.022em;
-                            }
-
-                            #benzerurunler {
-                                width: 150px;
-                                float: right;
-                            }
-
-                            #benzerurunler a.image-wrapper.fl {
-                                width: 75px;
                             }
 
                             @media screen and (min-width: 768px) {
@@ -2157,16 +2106,6 @@
                                     width: 87.5%;
                                     float: none;
                                     margin-top: 40px;
-                                }
-
-                                #benzerurunler {
-                                    width: 100% !important;
-                                }
-
-                                #benzerurunler a.image-wrapper.fl {
-                                    width: 33% !important;
-                                    float: left;
-                                    margin-right: 1px;
                                 }
 
                                 #productDetailTab h2.proh2 {
@@ -2301,8 +2240,42 @@
                 </div>
                 <div class="space-md-30"></div>
             </div>
-
         </div>
+        <section id="full-page-search">
+            <div id="full-page-search-shadow"></div>
+            <form id="FormAra" name="FormAra" action="/arama" method="get">
+                <input type="submit" class="btn-default searchicon" value=" " onblur="searchover()">
+                <input id="live-search" autocomplete="OFF" class="arakelime serachbox" name="q" type="text"
+                    placeholder="ürün adı giriniz" http-equiv="Content-Type" content="text/html; charset=UTF-8">
+                <a href="javascript:void(0);" onclick="closeFullScreenSearch()" class="close"></a>
+                <div id="live-search-box">
+                    <ul>
+                        <li><a href="/nike-zoom-vapor-95-tour-1965" target="_self">
+                                <div class="search-image"><img
+                                        src="https://www.tenisburada.com/nike-zoom-vapor-95-tour-1965-nike-nike-7245-19-K.jpg">
+                                </div>Nike Zoom Vapor 9.5 Tour
+                            </a></li>
+
+                        <li><a href="/nike-zoom-cage-1963" target="_self">
+                                <div class="search-image"><img
+                                        src="https://www.tenisburada.com/nike-zoom-cage-1963-nike-nike-7240-19-K.jpg">
+                                </div>Nike Zoom Cage 2
+                            </a></li>
+                        <li><a href="/nike-court-dry-tenis-etegi-1948" target="_self">
+                                <div class="search-image"><img
+                                        src="https://www.tenisburada.com/nike-court-dry-tenis-etegi-1948-etek-sort-nike-7198-19-K.jpg">
+                                </div>Nike Court Dry Tenis Eteği
+                            </a></li>
+                        <li><a href="/nike-pure-tenis-etegi-1947" target="_self">
+                                <div class="search-image"><img
+                                        src="https://www.tenisburada.com/nike-pure-tenis-etegi-1947-etek-sort-nike-7192-19-K.jpg">
+                                </div>Nike Pure Tenis Eteği
+                            </a></li>
+
+                    </ul>
+                </div>
+            </form>
+        </section>
     </footer>
     <script type="text/javascript">
         var YONETICI_ADSOYAD = ' ';

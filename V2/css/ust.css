@@ -48,9 +48,6 @@ div#logo.forMobile>a>p>img {
     height: 48px;
 }
 
-#live-search:hover {
-    display: block;
-}
 
 .kategori {
     background-color: #18171d;
@@ -65,7 +62,6 @@ div#logo.forMobile>a>p>img {
     display: flex;
     flex-direction: row;
     width: calc(100vw - 40px);
-    min-height: 70px;
     align-items: center;
     justify-content: space-between;
     padding: 0 0 0 20px;
@@ -105,7 +101,7 @@ ul.desktopul li a {
 #mainMenu #main-menu .parentLink {
     padding-right: 1.25em;
     font-size: 1em;
-    height: 70px;
+    height: 55px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -292,11 +288,6 @@ ul.desktopul li a {
 }
 
 @media screen and (min-width:768px) {
-    .arakelime {
-        min-width: 280px;
-        margin-top: -26px;
-    }
-
     .col.col-12.variantWrapper.tooltipWrapper.p0 {
         margin-top: 0 !important;
     }
@@ -319,20 +310,6 @@ ul.desktopul li a {
     .dp-flex-row-on-sm-column a:nth-child(1n) {
         width: 100% !important;
         padding: 0 !important;
-    }
-}
-
-@media screen and (max-width:360px) and (min-width:320px) {
-    .arakelime {
-        min-width: 157px;
-        margin-top: -26px;
-    }
-}
-
-@media screen and (min-width:320px) {
-    .arakelime {
-        min-width: 157px;
-        margin-top: -26px;
     }
 }
 
@@ -543,44 +520,37 @@ span.cart-soft-count.totalAmount {
 
 #FormAra {
     position: relative;
-}
-
-#FormAra input[type="text"] {
-    position: absolute;
-    top: 30px;
-    right: 0;
-    display: none;
-    border: 1px solid #000;
-    margin-right: 50px;
-    border-radius: 10px;
-    height: 30px;
-    width: 100%;
+    z-index: 9999;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
 
 #FormAra input[type="submit"] {
     width: 25px;
-    height: 50px;
+    height: 60px;
     background-image: url(../imgs/search.svg);
     background-position: 0 -5px;
     cursor: pointer;
     background-color: transparent;
     background-size: cover;
-    margin: 0 12.5px;
     padding: 0;
+    margin-right: -30px;
 }
 
-
 .searchicon {
-    width: 30px;
-    height: 62px;
+    width: 45px;
+    height: 55px;
     padding-right: 0;
     padding-left: 0;
-    background-image: url('../imgs/search.svg');
+    background-image: url(../imgs/search.svg);
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center 0;
+    background-size: 50%;
     border: 0;
     cursor: pointer;
-    background-color: transparent;
+    background-color: transparent !important;
 }
 
 #searchRight-desktop {
@@ -607,11 +577,6 @@ span.cart-soft-count.totalAmount {
     display: block;
 }
 
-#live-search:hover,
-#searchRight:hover>#live-search {
-    display: block;
-}
-
 #searchRight {
     position: relative;
     z-index: 33;
@@ -632,22 +597,25 @@ span.cart-soft-count.totalAmount {
 
 #live-search-box {
     position: absolute;
-    top: calc(100% + 1px);
-    left: -1px;
-    width: 100%;
-    background: #fff;
-    border: 1px solid #ececec;
-    border-bottom: 0;
-    z-index: 33333;
+    top: 63px;
+    overflow-x: auto;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: unset;
 }
 
 #live-search-box ul {
-    float: left;
     width: 100%;
+    overflow: visible;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: fit-content;
 }
 
 #live-search-box li {
-    float: left;
     width: 100%;
     border-bottom: 1px solid #ececec;
 }
@@ -658,17 +626,12 @@ span.cart-soft-count.totalAmount {
     font-weight: 600;
     display: flex;
     align-items: center;
+    color: #fff;
 }
 
-#live-search-box span {
-    width: 8%;
-    height: 0;
-    padding-bottom: 8%;
-    margin-top: 5px;
-    margin-right: 15px;
-    margin-bottom: 5px;
-    margin-left: 5px;
-    overflow: hidden;
+#live-search-box .search-image {
+    width: 100px;
+    margin-right: 13px;
 }
 
 #live-search-box img {
@@ -1074,7 +1037,7 @@ span.cart-soft-count.totalAmount {
         background-position: center;
         background-color: transparent;
         cursor: pointer;
-        width: 30px;
+        width: 24px;
         height: 60px;
         background-size: cover;
         position: relative;
@@ -1083,8 +1046,8 @@ span.cart-soft-count.totalAmount {
     .basketLinkmobile .cart-soft-count.totalAmount {
         color: #000;
         position: absolute;
-        left: 10px;
-        top: 21px;
+        left: 7px;
+        top: 22px;
         font-weight: 800;
     }
 }
@@ -1118,10 +1081,6 @@ span.cart-soft-count.totalAmount {
 #search .row {
     margin-right: -20px;
     margin-left: 0;
-}
-
-#FormAra input[type="text"] {
-    font-size: 12px;
 }
 
 #searchRight {
@@ -1186,10 +1145,6 @@ span.cart-soft-count.totalAmount {
 
 .mr0 {
     margin-right: 0px !important;
-}
-
-.serachbox {
-    margin-top: -1px;
 }
 
 .w-1000 {
@@ -1285,20 +1240,171 @@ span.cart-soft-count.totalAmount {
 }
 
 #mobileSearch #searchRight .mobilesearch {
-    width: 35px !important;
+    width: 28px !important;
     background-image: url(../imgs/search.svg) !important;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-position: 0px -15px !important;
+    background-position: 0 -80px !important;
     border: unset;
     margin-top: 0;
-    height: 70px;
+    height: 60px;
 }
 
 #langMobile {
-    background-color: #000; 
+    background-color: #000;
 }
+
+.hamburger {
+    top: 50%;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    position: relative;
+    display: block;
+    width: 35px;
+    height: 5px;
+    background: white;
+    transition: all 0.4s;
+}
+
+.hamburger span:before,
+.hamburger span:after {
+    content: '';
+    display: block;
+    height: 5px;
+    left: 0;
+    background: inherit;
+    position: absolute;
+    transition: all 0.4s;
+    -webkit-animation: gradientbgAnim 49s ease infinite;
+    -moz-animation: gradientbgAnim 49s ease infinite;
+    -o-animation: gradientbgAnim 49s ease infinite;
+    animation: gradientbgAnim 49s ease infinite;
+}
+
+.hamburger span:before {
+    background: black;
+    top: -7.5px;
+    width: 40px;
+}
+
+.hamburger span:after {
+    background: black;
+    bottom: -7.5px;
+    width: 40px;
+}
+
+.hamburger:hover span {
+    width: 50px;
+}
+
+.hamburger:hover span:before {
+    width: 50px;
+}
+
+.hamburger:hover span:after {
+    width: 50px;
+}
+
+.hamburger {
+    transform: translate(0, -50%);
+}
+
+.hamburger.close span {
+    width: 0px;
+}
+
+.hamburger.close span:before {
+    top: 0;
+    width: 50px;
+    transform: rotate(45deg);
+}
+
+.hamburger.close span:after {
+    bottom: 0;
+    width: 50px;
+    transform: rotate(-45deg);
+}
+
+#full-page-search {
+    display: flex;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    text-align: center;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 20vh;
+    margin-top: 100vh;
+    transition: 800ms all;
+    z-index: 9999;
+}
+
+#full-page-search.active {
+    margin: 0;
+}
+
+#full-page-search-shadow {
+    background-color: rgb(0 0 0 / .9);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+#live-search {
+    border: unset;
+    border-bottom: 2px solid #fff;
+    background-color: transparent;
+    padding-bottom: 12px;
+    padding-left: 50px;
+    font-size: 2em;
+    color: #fff;
+    text-indent: -40px;
+    text-align: center;
+}
+
+.close {
+    position: relative;
+    right: 32px;
+    top: -3px;
+    width: 32px;
+    height: 32px;
+    opacity: 0.3;
+    color: #fff;
+    display: block;
+}
+
+.close:hover {
+    opacity: 1;
+}
+
+.close:before,
+.close:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 33px;
+    width: 2px;
+    background-color: #fff;
+}
+
+.close:before {
+    transform: rotate(45deg);
+}
+
+.close:after {
+    transform: rotate(-45deg);
+}
+
 
 @media screen and (max-width:1899px) {
     .kategori {
@@ -1314,5 +1420,39 @@ span.cart-soft-count.totalAmount {
 @media screen and (max-width:1024px) {
     #mainMenu #main-menu .parentLink {
         padding-right: unset;
+    }
+
+    #FormAra {
+        width: 100%;
+        padding: 0 10px 0 30px;
+    }
+
+    #full-page-search {
+        padding-top: 20px;
+    }
+
+    #full-page-search .searchicon {
+        display: none;
+    }
+
+    #live-search {
+        width: 100%;
+        padding-left: 5px;
+        text-indent: 0;
+        text-align: left;
+    }
+    #live-search-box {
+        right: 0;
+        left: 0;
+        padding: 0 30px 0 30px;
+        height: 90vh;
+    }
+    
+}
+
+@media screen and (max-width:768px) {
+    .searchicon {
+        background-position: center -56px;
+        background-size: 50%;
     }
 }

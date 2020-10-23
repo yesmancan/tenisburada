@@ -10,7 +10,7 @@
       }
 
       .c {
-        fill: #86868b;
+        fill: #000;
       }
     </style>
   </defs>
