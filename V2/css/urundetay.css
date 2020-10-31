@@ -984,9 +984,9 @@ table.product-prop {
 }
 
 .btn-basket-buy .forMobile {
-    color: #fff;
-    font-weight: 500;
-    font-size: .9em;
+	color: #fff;
+	font-weight: 500;
+	font-size: .9em;
 }
 
 .headline-5 {
@@ -1054,6 +1054,15 @@ table.product-prop {
 	transform: rotate(-135deg);
 }
 
+.productImage.fade li.current {
+	position: static;
+	height: calc(100vh - 200px);
+	margin: auto;
+	justify-content: center;
+	align-items: center;
+	display: flex !important;
+}
+
 @media	screen and (min-width:1899px) {
 	.productThumbs {
 		position: absolute;
@@ -1072,6 +1081,7 @@ table.product-prop {
 		left: -5vw;
 		right: -5vw;
 	}
+
 	#productMobileInfo {
 		padding-top: 30px;
 	}
@@ -1148,6 +1158,7 @@ table.product-prop {
 		width: 40px;
 		border-radius: unset;
 	}
+
 	.next-prev-area {
 		left: -3vw;
 		right: -3vw;
