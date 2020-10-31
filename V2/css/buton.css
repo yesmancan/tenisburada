@@ -140,19 +140,16 @@
 .buyBtn {
     background-color: #000;
     display: flex;
-    height: 90px;
-    width: 90px;
-    border-radius: 90px;
+    height: 50px;
     text-align: center;
     align-items: center;
     justify-content: center;
-    margin: auto;
+    margin: 20px auto 0 auto;
+    width: calc(50vw - 60px);
 }
 
 #addCartBtn {
     justify-content: center;
     align-items: center;
     display: flex;
-    width: 90px;
-    height: 90px;
 }
