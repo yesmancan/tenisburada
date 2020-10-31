@@ -87,36 +87,7 @@
 <body>
     <input type="hidden" id="cookie-law" value="0" />
     <div id="mainWrapper">
-        <script type="text/javascript">
-            $(document).ready(function () {
-                var leftCol = true;
-                var rightCol = true;
-                var leftContent = $('#leftColumn').html().trim();
-                var rightContent = $('#rightColumn').html().trim();
-                var contentWrap = $('.contentWrapper');
-                var content = $('#mainColumn');
-                if (leftContent == '') {
-                    leftCol = false;
-                    $('#leftColumn').remove();
-                }
-                if (rightContent == '') {
-                    rightCol = false;
-                    $('#rightColumn').remove();
-                }
-                if (leftCol && rightCol) {
-                    contentWrap.attr('id', 'threeCol');
-                    content.addClass('col-8 col-md-6 col-sm-12');
-                }
-                else if (leftCol || rightCol) {
-                    contentWrap.attr('id', 'twoCol');
-                    content.addClass('col-10 col-md-9 col-sm-12');
-                }
-                else {
-                    contentWrap.attr('id', 'oneCol');
-                    content.addClass('col-12');
-                }
-            });
-        </script>
+
         <div id="skeletonWrap">
             <div id="skeleton">
                 <header id="header">
@@ -1624,16 +1595,12 @@
                     </div>
                     <!-- Masaüstü Bitiş-->
                     <!-- Mobile -->
-                    <div id="mobile-menu-area" class="forMobile">
-                        <!--Mobile yan menü aç-->
-                        <p id="menuBtn">
-                            <span class="hamburger"><span></span></span>
-                        </p>
-                        <!--Mobile yan menü aç bitiş-->
+                    <div id="mobile-menu-area" class="forMobile">  
                         <!--Logo -->
                         <div id="logo">
                             <a href="/">
-                                <img src="./imgs/mobillogo.png" width="50" />
+                                TENİSBURADA
+                                <!-- <img src="./imgs/mobillogo.png" width="50" /> -->
                             </a>
                         </div>
                         <!--Logo Bitiş-->
@@ -1650,6 +1617,11 @@
                             </a>
                             <!--cart bitiş-->
                         </div>
+                          <!--Mobile yan menü aç-->
+                          <p id="menuBtn">
+                            <span class="hamburger"><span></span></span>
+                        </p>
+                        <!--Mobile yan menü aç bitiş-->
 
                     </div>
                     <!-- Mobile Bitiş-->
@@ -1742,28 +1714,45 @@
                                                     <ul class="productImage">
                                                         <li>
                                                             <a rel="productImage" data-index="0" class="image-wrapper">
-                                                                <img src="https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/b99990f6-a0af-438b-ab58-4038402d0bd2/superrep-go-antrenman-ayakkab%C4%B1s%C4%B1-4RH1PB.jpg"
-                                                                    alt="Nike Air Max Wildcard Kadın "
-                                                                    itemprop="image" />
+                                                                <img src="./imgs/nike-air-zoom-vapor-cage-4-erkek-toprak-nike-nike-6657-17-B.jpg"
+                                                                    alt="Nike Air Max Wildcard Kadın " itemprop="image" />
                                                             </a>
                                                         </li>
                                                         <li>
                                                             <a rel="productImage" data-index="1" class="image-wrapper">
-                                                                <img src="https://www.tenisburada.com/nike-air-max-wildcard-kadin-tenis-ayakkabisi-ao7353-004-nike-nike-7030-19-B.jpg"
-                                                                    alt="Nike Air Max Wildcard Kadın "
-                                                                    itemprop="image" />
+                                                                <img src="./imgs/nike-air-zoom-vapor-cage-4-erkek-toprak-nike-nike-6658-17-B.jpg"
+                                                                    alt="Nike Air Max Wildcard Kadın " itemprop="image" />
                                                             </a>
                                                         </li>
                                                         <li>
                                                             <a rel="productImage" data-index="2" class="image-wrapper">
-                                                                <img src="https://www.tenisburada.com/nike-air-max-wildcard-kadin-tenis-ayakkabisi-ao7353-004-nike-nike-7031-19-B.jpg"
-                                                                    alt="Nike Air Max Wildcard Kadın "
-                                                                    itemprop="image" />
+                                                                <img src="./imgs/nike-air-zoom-vapor-cage-4-erkek-toprak-nike-nike-6659-17-B.jpg"
+                                                                    alt="Nike Air Max Wildcard Kadın " itemprop="image" />
                                                             </a>
                                                         </li>
+                                                        <li>
+                                                            <a rel="productImage" data-index="2" class="image-wrapper">
+                                                                <img src="./imgs/nike-air-zoom-vapor-cage-4-erkek-toprak-nike-nike-6660-17-B.jpg"
+                                                                    alt="Nike Air Max Wildcard Kadın " itemprop="image" />
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a rel="productImage" data-index="2" class="image-wrapper">
+                                                                <img src="./imgs/nike-air-zoom-vapor-cage-4-erkek-toprak-nike-nike-6661-17-B.jpg"
+                                                                    alt="Nike Air Max Wildcard Kadın " itemprop="image" />
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a rel="productImage" data-index="2" class="image-wrapper">
+                                                                <img src="./imgs/nike-air-zoom-vapor-cage-4-erkek-toprak-nike-nike-6661-17-B.jpg"
+                                                                    alt="Nike Air Max Wildcard Kadın " itemprop="image" />
+                                                            </a>
+                                                        </li>
+
+
                                                     </ul>
                                                     <ul class="productThumbs">
-                                                        <li cdata-type="0">
+                                                        <li data-type="0">
                                                             <div class="ease">
                                                                 <a data-href="https://www.tenisburada.com/nike-air-max-wildcard-kadin-tenis-ayakkabisi-ao7353-004-nike-nike-7029-19-B.jpg"
                                                                     class="image-wrapper"
@@ -1801,10 +1790,11 @@
                                                         AO7353-004</span>
                                                 </div>
                                                 <div class="price-area">
-                                                    <span style="text-decoration: line-through;font-weight: 400;">669,90
+                                                    <span style="text-decoration: line-through;font-weight: 600;">669,90
                                                         ₺</span>
-                                                    <span style="font-size: 1.2em;font-weight: 500;">643,10 ₺</span>
-                                                    <div style="margin-top: 10px;">617,38 ₺ Havale</div>
+                                                    <span style="font-size: 1.2em;font-weight: 700;">643,10 ₺</span>
+                                                    <div style="margin-top: 10px;color: #3791e2;font-weight: 600;">
+                                                        617,38 ₺ Havale</div>
                                                 </div>
 
                                                 <script>
@@ -1820,30 +1810,52 @@
                                         <meta itemprop="itemCondition" content="new" />
                                     </div>
                                 </div>
-                                <div class="forDesktop" id="productLeft">
+                                <div class="forDesktop" id="productLeft" style="margin: 0 auto;">
+                                    <div class="next-prev-area">
+                                        <div class="nextbutton pure-arrow" id="nextImage"></div>
+                                        <div class="prevbutton pure-arrow" id="prevImage"></div>
+                                    </div>
                                     <div class="loaderWrapper easyzoom">
                                         <ul class="productImage">
                                             <li>
                                                 <a rel="productImage" data-index="0" class="image-wrapper">
-                                                    <img src="./imgs/shoe.png" alt="Nike Air Max Wildcard Kadın "
-                                                        itemprop="image" />
+                                                    <img src="./imgs/nike-air-zoom-vapor-cage-4-erkek-toprak-nike-nike-6657-17-B.jpg"
+                                                        alt="Nike Air Max Wildcard Kadın " itemprop="image" />
                                                 </a>
                                             </li>
                                             <li>
                                                 <a rel="productImage" data-index="1" class="image-wrapper">
-                                                    <img src="./imgs/shoe-1.png" alt="Nike Air Max Wildcard Kadın "
-                                                        itemprop="image" />
+                                                    <img src="./imgs/nike-air-zoom-vapor-cage-4-erkek-toprak-nike-nike-6658-17-B.jpg"
+                                                        alt="Nike Air Max Wildcard Kadın " itemprop="image" />
                                                 </a>
                                             </li>
                                             <li>
                                                 <a rel="productImage" data-index="2" class="image-wrapper">
-                                                    <img src="./imgs/shoe-2.png" alt="Nike Air Max Wildcard Kadın "
-                                                        itemprop="image" />
+                                                    <img src="./imgs/nike-air-zoom-vapor-cage-4-erkek-toprak-nike-nike-6659-17-B.jpg"
+                                                        alt="Nike Air Max Wildcard Kadın " itemprop="image" />
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a rel="productImage" data-index="2" class="image-wrapper">
+                                                    <img src="./imgs/nike-air-zoom-vapor-cage-4-erkek-toprak-nike-nike-6660-17-B.jpg"
+                                                        alt="Nike Air Max Wildcard Kadın " itemprop="image" />
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a rel="productImage" data-index="2" class="image-wrapper">
+                                                    <img src="./imgs/nike-air-zoom-vapor-cage-4-erkek-toprak-nike-nike-6661-17-B.jpg"
+                                                        alt="Nike Air Max Wildcard Kadın " itemprop="image" />
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a rel="productImage" data-index="2" class="image-wrapper">
+                                                    <img src="./imgs/nike-air-zoom-vapor-cage-4-erkek-toprak-nike-nike-6661-17-B.jpg"
+                                                        alt="Nike Air Max Wildcard Kadın " itemprop="image" />
                                                 </a>
                                             </li>
                                         </ul>
                                     </div>
-                                    <ul class="productThumbs ">
+                                    <ul class="productThumbs d-none">
                                         <li class="ease" data-type="0">
                                             <a data-href="/imgs/shoe.png" class="image-wrapper"
                                                 data-standard="./imgs/shoe.png">
@@ -1895,7 +1907,7 @@
                                             <a id="addCartBtn">
                                                 <span class="btn-basket-buy">
                                                     <img src="./imgs/cart.svg" class="forDesktop" />
-                                                    <span class="forMobile">Sepete Ekle</span>
+                                                    <span class="forMobile">SEPETE EKLE</span>
                                                 </span>
                                             </a>
                                         </div>

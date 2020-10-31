@@ -99,7 +99,7 @@ ul.desktopul li a {
 }
 
 #mainMenu #main-menu .parentLink {
-    padding-right: 1.25em;
+    padding-right: 2em;
     font-size: 1em;
     height: 55px;
     display: flex;
@@ -641,7 +641,7 @@ span.cart-soft-count.totalAmount {
 #mainMenu #main-menu {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     width: 80vw;
 }
@@ -682,7 +682,7 @@ span.cart-soft-count.totalAmount {
 }
 
 #mainMenu .subMenu {
-    top: 70px;
+    top: 55px;
     border-bottom: 3px solid rgb(24 23 29);
     background-color: #fff;
 }
@@ -1419,7 +1419,7 @@ span.cart-soft-count.totalAmount {
 
 @media screen and (max-width:1024px) {
     #mainMenu #main-menu .parentLink {
-        padding-right: unset;
+        padding-right: 1em;
     }
 
     #FormAra {
@@ -1441,13 +1441,14 @@ span.cart-soft-count.totalAmount {
         text-indent: 0;
         text-align: left;
     }
+
     #live-search-box {
         right: 0;
         left: 0;
         padding: 0 30px 0 30px;
         height: 90vh;
     }
-    
+
 }
 
 @media screen and (max-width:768px) {

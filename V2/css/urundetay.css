@@ -60,7 +60,7 @@ table.product-prop {
 
 #productName {
 	font-size: 1em;
-	font-weight: 400;
+	font-weight: 900;
 	color: #000;
 	z-index: 2;
 }
@@ -941,6 +941,18 @@ table.product-prop {
 	margin: 5px;
 }
 
+#mobileBuyBtn .subOne a.col:hover,
+#mobileBuyBtn .subOne a.col:focus,
+#mobileBuyBtn .subOne a.col:active {
+	background-color: #000;
+}
+
+#mobileBuyBtn .subOne a.col:hover p,
+#mobileBuyBtn .subOne a.col:focus p,
+#mobileBuyBtn .subOne a.col:active p {
+	color: #fff !important;
+}
+
 #pageContent {
 	display: flex;
 	flex-direction: row;
@@ -972,7 +984,74 @@ table.product-prop {
 }
 
 .btn-basket-buy .forMobile {
-	color: #fff;
+    color: #fff;
+    font-weight: 500;
+    font-size: .9em;
+}
+
+.headline-5 {
+	color: #e6e6e6;
+	font-size: 1.1em;
+}
+
+.next-prev-area {
+	position: absolute;
+	left: -10vw;
+	right: -10vw;
+	top: 0;
+	bottom: 0;
+}
+
+.pure-arrow {
+	width: 4vmin;
+	height: 4vmin;
+	box-sizing: border-box;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	z-index: 999;
+	margin: auto;
+}
+
+.pure-arrow:hover {
+	cursor: pointer;
+}
+
+.pure-arrow::before {
+	content: '';
+	width: 100%;
+	height: 100%;
+	border-width: .1vmin .1vmin 0 0;
+	border-style: solid;
+	border-color: #000;
+	transition: .2s ease;
+	display: block;
+	transform-origin: 100% 0;
+}
+
+.pure-arrow::after {
+	content: '';
+	float: left;
+	position: relative;
+	top: -100%;
+	width: 100%;
+	height: 100%;
+	border-width: 0 .1vmin 0 0;
+	border-style: solid;
+	border-color: #000;
+	transform-origin: 100% 0;
+	transition: .2s ease;
+}
+
+
+.next-prev-area .pure-arrow.nextbutton {
+	right: 0;
+	transform: rotate(45deg);
+}
+
+.next-prev-area .pure-arrow.prevbutton {
+	left: 0;
+	transform: rotate(-135deg);
 }
 
 @media	screen and (min-width:1899px) {
@@ -988,9 +1067,26 @@ table.product-prop {
 	}
 }
 
+@media screen and (max-width:1600px) {
+	.next-prev-area {
+		left: -5vw;
+		right: -5vw;
+	}
+	#productMobileInfo {
+		padding-top: 30px;
+	}
+}
+
+@media screen and (max-width:1280px) {
+	.next-prev-area {
+		left: -1vw;
+		right: -1vw;
+	}
+}
+
 @media screen and (min-width:1025px) {
 	#productRight .add-to-cart-win {
-		margin: 0 auto 20vh;
+		margin: 0 auto 10vh;
 	}
 }
 
@@ -1051,5 +1147,9 @@ table.product-prop {
 		height: 10px;
 		width: 40px;
 		border-radius: unset;
+	}
+	.next-prev-area {
+		left: -3vw;
+		right: -3vw;
 	}
 }
