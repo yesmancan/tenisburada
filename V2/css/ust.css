@@ -38,14 +38,9 @@ div#logo.forMobile>a>p>img {
 }
 
 .hesap {
-    background: url(../imgs/user.svg) no-repeat center !important;
-    background-repeat: no-repeat;
-    background-position: 0;
-    cursor: pointer;
-    display: flex;
-    background-size: cover;
-    width: 50px;
-    height: 48px;
+    height: 24px;
+    width: 24px;
+    padding: 0 15px;
 }
 
 
@@ -462,17 +457,6 @@ ul.desktopul li a {
     height: 50px;
 }
 
-#hmLinks a.basketLink {
-    background: url(../imgs/cart.svg) no-repeat center;
-    background-size: cover;
-    width: 25px;
-    height: 50px;
-    margin: 5px 14.5px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 span.cart-soft-count.totalAmount {
     color: #fff;
 }
@@ -542,17 +526,11 @@ span.cart-soft-count.totalAmount {
 }
 
 .searchicon {
-    width: 45px;
-    height: 55px;
-    padding-right: 0;
-    padding-left: 0;
-    background-image: url(../imgs/search.svg);
-    background-repeat: no-repeat;
-    background-position: center 0;
-    background-size: 50%;
-    border: 0;
+  
     cursor: pointer;
-    background-color: transparent !important;
+    width: 24px;
+    height: 24px;
+    padding: 0 15px;
 }
 
 #searchRight-desktop {
@@ -779,13 +757,6 @@ span.cart-soft-count.totalAmount {
 #alterMenu .subMenu a {
     line-height: 30px;
     border-color: #e0e0e0;
-}
-
-@media screen and (max-width: 1230px) and (min-width: 769px) {
-    .menu a {
-        padding-left: 0;
-        padding-right: 0;
-    }
 }
 
 @media screen and (min-width: 769px) {
@@ -1109,12 +1080,6 @@ span.cart-soft-count.totalAmount {
         line-height: 30px;
         font-size: 16px;
     }
-
-    #hmLinks a.basketLink {
-        width: 60px;
-        height: 74px;
-        background: url("basketIconBig.png") no-repeat center center;
-    }
 }
 
 .sepet {
@@ -1239,18 +1204,13 @@ span.cart-soft-count.totalAmount {
 }
 
 .hamburger {
-    height: 20px;
-    width: 20px;
-    cursor: pointer;
-    height: 32px;
-    position: relative;
-    /* width: 32px; */
-    margin: auto;
+    width: 30px;
+    height: 30px;
+    padding: 0;
     text-align: center;
-    display: flex;
-    /* justify-content: center; */
+    justify-content: center;
     align-items: center;
-    /* padding-right: 8px; */
+    display: flex;
 }
 
 
@@ -1333,27 +1293,29 @@ span.cart-soft-count.totalAmount {
     align-items: center;
 }
 .mobilesearch {
-    height: 32px;
-    position: relative;
-    width: 32px;
-    margin: auto;
+    width: 30px;
+    height: 30px;
+    padding: 0;
     text-align: center;
-    display: flex;
-    /* justify-content: center; */
+    justify-content: center;
     align-items: center;
-    padding-right: 8px;
+    display: flex;
 }
 #cart-soft-count {
-    height: 32px;
-    position: relative;
-    width: 32px;
-    margin: auto;
-    text-align: center;
-    display: flex;
-    /* justify-content: center; */
-    align-items: center;
-    padding-right: 8px;
+    width: 24px;
+    height: 24px;
+    padding: 0 0 0 15px;
 }
+.basketLinkmobile#cart-soft-count {
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
 @media screen and (max-width:1899px) {
     .kategori {
         background-color: #18171d;
@@ -1367,7 +1329,7 @@ span.cart-soft-count.totalAmount {
 
 @media screen and (max-width:1024px) {
     #mainMenu #main-menu .parentLink {
-        padding-right: 1em;
+        padding-right: .7em;    
     }
 
     #FormAra {

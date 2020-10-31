@@ -1578,15 +1578,32 @@
                             <!-- logo searchbox hesap -->
                             <div id="hmLinks">
                                 <!--Searchbox-->
-                                <a href="javascript:void(openFullScreenSearch());" class="btn-default searchicon"></a>
+                                <a href="javascript:void(openFullScreenSearch());" class="searchicon">
+                                    <svg class="icon__content" viewBox="0 0 1 1" width="22" height="22">
+                                        <title>search</title>
+                                        <path
+                                            d="M.45 0a.486.486 0 00-.4.26.53.53 0 00-.02.39c.02.05.05.1.09.14.06.08.15.13.24.15.04.01.07.01.105.015A.489.489 0 00.78.85V.845L.86.92C.9.965.94 1 .94 1L1 .94S.965.9.92.86C.88.82.85.78.85.78s0-.01.01-.01C.91.69.94.61.95.515V.48C.95.44.95.42.945.39A.493.493 0 00.77.105.433.433 0 00.51 0H.45m0 .09C.38.1.32.12.26.16A.375.375 0 00.1.41C.09.43.09.45.09.48c0 .04 0 .06.01.09.03.11.11.205.21.255C.35.84.39.86.44.86h.075A.39.39 0 00.86.53V.42A.392.392 0 00.6.11C.57.1.55.1.52.09H.45"
+                                            fill="currentColor" fill-rule="evenodd"></path>
+                                    </svg>
+                                </a>
                                 <!--Searchbox bitiş-->
                                 <!--login and cart-->
                                 <a data-width="500" data-url="/srv/service/customer/login-form" href="#"
-                                    class="popupWin hesap"></a>
+                                    class="popupWin hesap">
+                                    <svg class="icon__content" viewBox="0 0 1 1" width="20" height="20">
+                                        <title>account</title>
+                                        <path
+                                            d="M.45 0C.4.02.36.05.33.09.29.16.29.25.33.31c.055.08.15.11.235.08C.625.37.67.32.69.26.7.24.7.22.7.2V.17A.199.199 0 00.64.055.2.2 0 00.545 0H.45m.035.1C.45.11.43.13.41.16c0 0 0 .01-.005.02C.4.18.4.19.4.2.4.215.4.22.405.23.41.26.44.29.48.3h.05C.54.3.55.29.56.285.565.28.58.27.58.26.59.25.6.24.6.23V.2.17C.59.155.585.14.57.13.56.12.54.11.53.1H.485M.46.5C.41.51.37.52.32.54a.336.336 0 00-.075.03.531.531 0 00-.235.37C0 .95 0 .975 0 .99V1h1V.98A.523.523 0 00.82.62.45.45 0 00.54.5H.46m.01.1C.42.61.37.62.33.64a.43.43 0 00-.2.22C.13.87.12.9.12.9h.76V.88A.404.404 0 00.72.67.297.297 0 00.55.605C.54.6.48.6.47.6M0 1V.99 1"
+                                            fill="currentColor" fill-rule="evenodd"></path>
+                                    </svg>
+                                </a>
                                 <a href="/sepet" class="basketLink" id="cart-soft-count">
-                                    <span class="cart-soft-count totalAmount">
-                                        0
-                                    </span>
+                                    <svg class="icon__content" viewBox="0 0 1 1" width="20" height="20">
+                                        <title>bag</title>
+                                        <path
+                                            d="M.48 0a.238.238 0 00-.09.025.285.285 0 00-.14.185V.3H0V1h1V.3H.75V.26C.75.22.75.2.74.17A.236.236 0 00.62.03C.6.02.57.01.54 0H.48m.01.1a.17.17 0 00-.13.1C.35.22.35.23.35.27V.3h.3V.27.21A.193.193 0 00.58.12.239.239 0 00.49.1M0 .65V.475.65m.1 0V.9h.8V.4H.1v.25"
+                                            fill="currentColor" fill-rule="evenodd"></path>
+                                    </svg>
                                 </a>
                                 <!--login and cart bitiş-->
                             </div>
@@ -1684,7 +1701,17 @@
                             });
                             document.getElementById('addCartBtn').addEventListener('click', function () {
                                 document.getElementById('mobileBuyBtn').scrollIntoView({ behavior: 'smooth', block: 'center' });
-                            })
+                            });
+                            let vh = window.innerHeight * 0.01;
+                            // Then we set the value in the --vh custom property to the root of the document
+                            document.documentElement.style.setProperty('--vh', `${vh}px`);
+
+                            // We listen to the resize event
+                            window.addEventListener('resize', () => {
+                                // We execute the same script as before
+                                let vh = window.innerHeight * 0.01;
+                                document.documentElement.style.setProperty('--vh', `${vh}px`);
+                            });
                         });
                         function setaCookie(cname, cvalue, exdays) {
                             var d = new Date();

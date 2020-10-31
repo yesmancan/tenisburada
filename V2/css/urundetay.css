@@ -185,12 +185,6 @@ table.product-prop {
 	color: #fff !important;
 }
 
-.variantBox a.selected,
-.variantBox a.selected p {
-	background-color: #313132;
-	color: #fff !important;
-}
-
 .variantBox a.passive {
 	background: #d2d2d2;
 	text-decoration: line-through;
@@ -465,9 +459,7 @@ table.product-prop {
 
 	.variantBox a p,
 	.qtyBtns a p {
-		height: 50px;
-		line-height: 50px;
-		font-size: 24px;
+		font-size: 1.3em;
 		font-weight: 400;
 	}
 }
@@ -1054,14 +1046,7 @@ table.product-prop {
 	transform: rotate(-135deg);
 }
 
-.productImage.fade li.current {
-	position: static;
-	height: calc(100vh - 200px);
-	margin: auto;
-	justify-content: center;
-	align-items: center;
-	display: flex !important;
-}
+
 
 @media	screen and (min-width:1899px) {
 	.productThumbs {
@@ -1162,5 +1147,16 @@ table.product-prop {
 	.next-prev-area {
 		left: -3vw;
 		right: -3vw;
+	}
+}
+
+@media screen and (max-width:768px) {
+	.productImage.fade li.current {
+		position: static;
+		height: calc(var(--vh, 1vh) * 100);
+		margin: auto;
+		justify-content: center;
+		align-items: center;
+		display: flex !important;
 	}
 }
