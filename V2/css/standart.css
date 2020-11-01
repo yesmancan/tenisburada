@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;500;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;500;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700&subset=latin-ext');
 
 html,
 body,
@@ -76,7 +77,8 @@ video {
     padding: 0;
     border: 0;
     font-size: 100%;
-    font-family: 'Red Hat Text', sans-serif;
+    /* font-family: 'Red Hat Text', sans-serif; */
+    font-family:'Oswald', sans-serif;
     vertical-align: baseline;
 }
 
@@ -89,7 +91,8 @@ td {
     margin: 0;
     padding: 0;
     font-size: 100%;
-    font-family: 'Red Hat Text', sans-serif;
+    /* font-family: 'Red Hat Text', sans-serif; */
+    font-family:'Oswald', sans-serif;
     vertical-align: baseline;
 }
 
@@ -113,7 +116,8 @@ body {
     width: 100%;
     text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
-    font-family: 'Red Hat Text', sans-serif;
+    /* font-family: 'Red Hat Text', sans-serif; */
+    font-family:'Oswald', sans-serif;
 }
 
 .tal {

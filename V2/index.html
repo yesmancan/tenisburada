@@ -1806,6 +1806,7 @@
                                                                 <a data-href="https://www.tenisburada.com/nike-air-max-wildcard-kadin-tenis-ayakkabisi-ao7353-004-nike-nike-7029-19-B.jpg"
                                                                     class="image-wrapper"
                                                                     data-standard="https://www.tenisburada.com/nike-air-max-wildcard-kadin-tenis-ayakkabisi-ao7353-004-nike-nike-7029-19-B.jpg">
+                                                                    <span class="curet"></span>
                                                                 </a>
                                                             </div>
                                                         </li>
@@ -1814,6 +1815,7 @@
                                                                 <a data-href="https://www.tenisburada.com/nike-air-max-wildcard-kadin-tenis-ayakkabisi-ao7353-004-nike-nike-7030-19-B.jpg"
                                                                     class="image-wrapper"
                                                                     data-standard="https://www.tenisburada.com/nike-air-max-wildcard-kadin-tenis-ayakkabisi-ao7353-004-nike-nike-7030-19-B.jpg">
+                                                                    <span class="curet"></span>
                                                                 </a>
                                                             </div>
                                                         </li>
@@ -1822,6 +1824,7 @@
                                                                 <a data-href="https://www.tenisburada.com/nike-air-max-wildcard-kadin-tenis-ayakkabisi-ao7353-004-nike-nike-7031-19-B.jpg"
                                                                     class="image-wrapper"
                                                                     data-standard="https://www.tenisburada.com/nike-air-max-wildcard-kadin-tenis-ayakkabisi-ao7353-004-nike-nike-7031-19-B.jpg">
+                                                                    <span class="curet"></span>
                                                                 </a>
                                                             </div>
                                                         </li>
@@ -1866,57 +1869,60 @@
                                     <div class="loaderWrapper easyzoom">
                                         <ul class="productImage">
                                             <li>
-                                                <a rel="productImage" data-index="0" class="image-wrapper">
+                                                <a rel="productImage" data-index="0" class="image-wrapper m-a d-flex">
                                                     <img src="./imgs/nike-air-zoom-vapor-cage-4-erkek-toprak-nike-nike-6657-17-B.jpg"
                                                         alt="Nike Air Max Wildcard Kadın " itemprop="image" />
                                                 </a>
                                             </li>
                                             <li>
-                                                <a rel="productImage" data-index="1" class="image-wrapper">
+                                                <a rel="productImage" data-index="1" class="image-wrapper m-a d-flex">
                                                     <img src="./imgs/nike-air-zoom-vapor-cage-4-erkek-toprak-nike-nike-6658-17-B.jpg"
                                                         alt="Nike Air Max Wildcard Kadın " itemprop="image" />
                                                 </a>
                                             </li>
                                             <li>
-                                                <a rel="productImage" data-index="2" class="image-wrapper">
+                                                <a rel="productImage" data-index="2" class="image-wrapper m-a d-flex">
                                                     <img src="./imgs/nike-air-zoom-vapor-cage-4-erkek-toprak-nike-nike-6659-17-B.jpg"
                                                         alt="Nike Air Max Wildcard Kadın " itemprop="image" />
                                                 </a>
                                             </li>
                                             <li>
-                                                <a rel="productImage" data-index="2" class="image-wrapper">
+                                                <a rel="productImage" data-index="2" class="image-wrapper m-a d-flex">
                                                     <img src="./imgs/nike-air-zoom-vapor-cage-4-erkek-toprak-nike-nike-6660-17-B.jpg"
                                                         alt="Nike Air Max Wildcard Kadın " itemprop="image" />
                                                 </a>
                                             </li>
                                             <li>
-                                                <a rel="productImage" data-index="2" class="image-wrapper">
+                                                <a rel="productImage" data-index="2" class="image-wrapper m-a d-flex">
                                                     <img src="./imgs/nike-air-zoom-vapor-cage-4-erkek-toprak-nike-nike-6661-17-B.jpg"
                                                         alt="Nike Air Max Wildcard Kadın " itemprop="image" />
                                                 </a>
                                             </li>
                                             <li>
-                                                <a rel="productImage" data-index="2" class="image-wrapper">
+                                                <a rel="productImage" data-index="2" class="image-wrapper m-a d-flex">
                                                     <img src="./imgs/nike-air-zoom-vapor-cage-4-erkek-toprak-nike-nike-6661-17-B.jpg"
                                                         alt="Nike Air Max Wildcard Kadın " itemprop="image" />
                                                 </a>
                                             </li>
                                         </ul>
                                     </div>
-                                    <ul class="productThumbs d-none">
+                                    <ul class="productThumbs">
                                         <li class="ease" data-type="0">
                                             <a data-href="/imgs/shoe.png" class="image-wrapper"
                                                 data-standard="./imgs/shoe.png">
+                                                <span class="curet"></span>
                                             </a>
                                         </li>
                                         <li class="ease" data-type="0">
                                             <a data-href="./imgs/shoe-1.png" class="image-wrapper"
                                                 data-standard="./imgs/shoe-1.png">
+                                                <span class="curet"></span>
                                             </a>
                                         </li>
                                         <li class="ease" data-type="0">
                                             <a data-href="./imgs/shoe-2.png" class="image-wrapper"
                                                 data-standard="./imgs/shoe-2.png">
+                                                <span class="curet"></span>
                                             </a>
                                         </li>
                                     </ul>
@@ -1979,7 +1985,7 @@
                                         </div>
                                     </div>
                                     <div class="forDesktop">
-                                       
+
                                         <div id="benzerurunler">
 
                                             <input type="hidden" class="myProductList" value="1551">
@@ -2159,6 +2165,7 @@
                             <script>
                                 $(document).ready(function () {
                                     $('.productImage').slide({
+                                        // slideType: 'carousel',
                                         isAuto: false,
                                         slideCtrl: {
                                             showCtrl: true,
@@ -2173,16 +2180,16 @@
                                         changeFn: function (e) {
                                         }
                                     });
-                                    $('.productThumbs').slide({
-                                        slideType: 'carousel',
-                                        isAuto: false,
-                                        slideCtrl: {
-                                            showCtrl: true,
-                                            wrapCtrl: '#thumbControl',
-                                            nextBtn: '#nextThumb',
-                                            prevBtn: '#prevThumb'
-                                        }
-                                    });
+                                    // $('.productThumbs').slide({
+                                    //     slideType: 'carousel',
+                                    //     isAuto: false,
+                                    //     slideCtrl: {
+                                    //         showCtrl: true,
+                                    //         wrapCtrl: '#thumbControl',
+                                    //         nextBtn: '#nextThumb',
+                                    //         prevBtn: '#prevThumb'
+                                    //     }
+                                    // });
                                     $('#tabPanel').slide({
                                         isAuto: false,
                                         touchEnabled: false,
