@@ -7,6 +7,11 @@
     border-bottom: 1px solid #ECECEC;
 }
 
+/*#pageOrder .pageTitle
+{
+border-right:  1px solid #dadada;
+}
+*/
 #pageOrder .pageTitle:last-child,
 #pageOrder .pageTitle.passed {
     border-right: 0;
@@ -136,9 +141,9 @@
 
 /*.currency *
 {
-line-height: 16px;
+line-height:  16px;
 font-size:12px;
-text-align: center;
+text-align:  center;
 }
 */
 /* unique css */
@@ -253,7 +258,7 @@ text-align: center;
         /*width:14px;*/
         height: 35px;
         /*background:url('filterInput.png') no-repeat right center;
-margin-right:  10px;
+margin-right:   10px;
 */
         margin-left: 10px;
     }

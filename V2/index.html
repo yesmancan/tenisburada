@@ -1927,9 +1927,10 @@
                                         </li>
                                     </ul>
                                 </div>
+
                                 <div id="productRight">
                                     <div class="forDesktop"
-                                        style="padding: 32px 0 24px;border-bottom: 1px solid #ccc;margin-bottom: 10px;width: 100%;">
+                                        style="padding: 32px 0 24px;border-bottom: 1px solid #ccc;margin-bottom: 10px;">
                                         <h1 id="productName" itemprop="name">
                                             Nike Air Max Wildcard Kadın
                                         </h1>
@@ -2067,6 +2068,7 @@
                                 </div>
                             </div>
                         </div>
+
                         <div id="urun-tab">
                             <div class="b-top slide-wrapper">
                                 <ul id="tabPanel" class="inner fade">
@@ -2148,6 +2150,7 @@
                                 </ul>
                             </div>
                         </div>
+
                         <div id="pageScripts">
                             <input type="hidden" id="urun-id" value="1914" />
                             <input type="hidden" id="urun-ad" value="Nike Air Max Wildcard Kadın " />
@@ -2164,8 +2167,8 @@
                                 src="Diger/Gzip.php?F=theme/standart/js/blok-v4/product-detail"></script>
                             <script>
                                 $(document).ready(function () {
-                                    $('.productImage').slide({
-                                        // slideType: 'carousel',
+                                    $('#productLeft .productImage').slide({
+                                        slideType: 'carousel',
                                         isAuto: false,
                                         slideCtrl: {
                                             showCtrl: true,
@@ -2175,21 +2178,11 @@
                                         },
                                         slidePaging: {
                                             showPaging: true,
-                                            wrapPaging: '.productThumbs'
+                                            wrapPaging: '#productLeft .productThumbs'
                                         },
                                         changeFn: function (e) {
                                         }
                                     });
-                                    // $('.productThumbs').slide({
-                                    //     slideType: 'carousel',
-                                    //     isAuto: false,
-                                    //     slideCtrl: {
-                                    //         showCtrl: true,
-                                    //         wrapCtrl: '#thumbControl',
-                                    //         nextBtn: '#nextThumb',
-                                    //         prevBtn: '#prevThumb'
-                                    //     }
-                                    // });
                                     $('#tabPanel').slide({
                                         isAuto: false,
                                         touchEnabled: false,
@@ -2198,7 +2191,6 @@
                                             wrapPaging: '#tabBtn'
                                         }
                                     });
-                                    //$('a[rel="productImage"]').lightbox();
                                     $('#fbShareBtn').click(function () {
                                         var shareUrl = 'https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(location.href);
                                         var winOpts = ['width=590', 'height=430', 'status=no', 'resizable=yes', 'toolbar=no', 'menubar=no', 'scrollbars=yes'].join(',');
@@ -2242,24 +2234,6 @@
                                 font-size: 20px !important;
                                 line-height: 30px !important;
                                 letter-spacing: -.022em;
-                            }
-
-                            @media screen and (min-width: 768px) {
-                                .h560 {
-                                    height: 560px !important;
-                                }
-
-                                .h485 {
-                                    height: 485px !important;
-                                }
-
-                                .h410 {
-                                    height: 410px !important;
-                                }
-
-                                .h335 {
-                                    height: 335px !important;
-                                }
                             }
 
                             @media screen and (max-width: 768px) {
@@ -2490,6 +2464,24 @@
         }
     </script>
     </div>
+    <script>
+        document.onreadystatechange = () => {
+            if (document.readyState === 'complete') {
+                let catalog = document.getElementById('list-catalog');
+                let benzerurunler = document.getElementById('benzerurunler');
+                if (catalog) {
+                    benzerurunler.innerHTML = catalog.innerHTML;
+                    let products = document.querySelectorAll('#benzerurunler a.image-wrapper');
+                    catalog.remove();
+                    for (let i = 0; i < products.length; i++) {
+                        benzerurunler.appendChild(products[i]);
+                    }
+                }else{
+                    benzerurunler.remove();
+                }
+            }
+        };
+    </script>
     <script type="text/javascript">
         if ($('.cart-soft-count').length > 0) {
             $('.cart-soft-count').text(SEPET_MIKTAR);

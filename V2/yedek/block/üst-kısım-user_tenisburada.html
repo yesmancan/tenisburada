@@ -1,0 +1,355 @@
+<div id="pageOverlay" class="col-12 animate"></div>
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i&amp;subset=latin-ext,vietnamese" rel="stylesheet"> 
+<div id="mobileMenu" class="box forMobile p0" style="background-color: #000;">
+  <div id="closeMobileMenu" class="col col-12">
+    <div id="logo" class="col col-2 col-sm-8 col-xs-8  p0">
+      <a href="/" class="col col-ml-2 col-md-ml-0">
+        {$SITE_LOGO}
+      </a>
+    </div>
+  </div>
+  <ul class="fl menu col-10" style="margin-left: 30px;margin-top: 30px;">
+    {foreach $MENU1 as $M}
+    {if $M.CHILDREN|@count > 0}
+    <li class="fl col-12 line-bottom">
+      <span class="col col-12 ease p0">{$M.NAME}</span>
+      <ul class="box col-12 line-top">
+        {foreach $M.CHILDREN as $C}
+        {if $C.CHILDREN|@count > 0}
+        <li class="fl col-12">
+          <span class="col col-12">{$C.NAME}</span>
+          <ul class="box col-12 line-top">
+            {foreach $C.CHILDREN as $C2}
+            <li class="fl col-12">
+              <a  {if $M.NEWTAB === true} target="_blank" {/if} href="{$C2.URL}" title="{$C2.NAME}" class="col col-12">{$C2.NAME}</a>
+            </li>
+            {/foreach}
+            <li class="fl col-12">
+              <a href="{$C.URL}" class="col col-12">{#show_all#} »</a>
+            </li>
+          </ul>
+        </li>
+        {else}
+        <li class="fl col-12">
+          <a {if $M.NEWTAB === true} target="_blank" {/if} href="{$C.URL}" title="{$C.NAME}" class="col col-12">{$C.NAME}</a>
+        </li>
+        {/if}
+        {/foreach}
+        <li class="fl col-12">
+          <a href="{$M.URL}" class="col col-12">{#show_all#} »</a>
+        </li>
+      </ul>
+    </li>
+    {else}
+    <li class="fl col-12 line-bottom">
+      <a {if $M.NEWTAB === true} target="_blank" {/if} href="{$M.URL}" title="{$M.NAME}" class="col col-12 p0">{$M.NAME}</a>
+    </li>
+    {/if}
+    {/foreach}
+  </ul>
+  <div class="row mr0">
+    <div class="box col-12">
+      <div class="row pt0">
+        <div class="box col-11 sepet">
+          {if $DISPLAY_LANGUAGES == 1}
+          <label for="langMobile" class="col col-12 line-bottom">
+            <div class="fl col-5">{#select_language#}</div>
+            <div class="fl col-1">:</div>
+            <div class="box col-6 p-right">
+              <select id="langMobile" class="col col-12 language">
+                {foreach $LANGUAGE_LIST as $L}
+                <option value="{$L.CODE}"{if $LANGUAGE == $L.CODE} selected{/if}>{$L.TITLE}</option>
+                {/foreach}
+              </select>
+            </div>
+          </label>
+          {/if}
+          {if count($CURRENCY_LIST) > 1}
+          <label for="curMobile" class="col col-12 line-bottom">
+            <div class="fl col-5">{#currency#}</div>
+            <div class="fl col-1">:</div>
+            <div class="box col-6 p-right">
+              <select id="curMobile" class="col col-12 currency">
+                {foreach $CURRENCY_LIST as $P}
+                <option {if $P.SELECTED==1}selected{/if} value="{$P.TITLE}">{$P.TITLE}</option>
+                {/foreach}
+              </select>
+            </div>
+          </label>
+          {/if}
+          <div id="basketMobile" class="col col-12 line-bottom">
+            <div class="fl col-5">
+              <a href="{$PAGE_LINK.CART}" class="fl col-12 bgNone">
+                <span class="bgNone">{#basket#} (</span>
+                <span class="bgNone">0</span>
+                <span>)</span>
+              </a>
+            </div>
+            <div class="fl col-1">
+              <a href="{$PAGE_LINK.CART}" class="fl col-12 bgNone">:</a>
+            </div>
+            <div class="col col-6 p-right">
+              <a href="{$PAGE_LINK.CART}" class="col col-12 bgNone">
+                <label class="bgNone">0,00</label> {$CURRENCY}
+              </a>
+            </div>
+          </div>
+          {if $IS_MEMBER_LOGGED_IN == true}
+          <a id="loginMobile" href="/{$PAGE_LINK.MEMBER_LOGIN}" class="col col-12 line-bottom">{#account#}</a>
+          <a id="favMobile" href="#" class="col col-12 line-bottom">{#my_favorites#}</a>
+          {else}
+          <a id="loginMobile" href="/{$PAGE_LINK.MEMBER_LOGIN}" class="col col-12 line-bottom">{#member_login#}</a>
+          <a id="regisMobile" href="/index.php?B=YeniUye" class="col col-12 line-bottom">{#member_register#}</a>
+          {/if}
+          <!--Searchbox-->
+          <div class="col col-12 p0">
+            <div id="mobileSearch" class="row mb col col-sm-12"></div>
+          </div>
+          <div id="search" class="col col-4 col-md-4 col-sm-12 m0">
+            <form id="FormAra" name="FormAra" action="/{$PAGE_LINK.SEARCH}" method="get" class="row">
+
+              <span id="searchRight" class="box fr p0" style="width: 77%;">
+                <input id="live-search" autocomplete="OFF" class="arakelime " name="q" type="text" placeholder="{#search_placeholder#}" http-equiv="Content-Type" content="text/html; charset=UTF-8" style="display: block;" />
+                <input type="submit" class="btn-default fr mobilesearch" value=" " onblur="searchover()"/>
+              </span>
+              {if $IS_INLINE_SEARCH_ACTIVE==1}
+              <script type="text/javascript" src="/theme/standart/js/blok-v4/live-search.js"></script>
+              <div id="live-search-box"></div>  
+              {/if}
+            </form>
+          </div>
+          <!--Searchbox bitiş-->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<span id="backToTop"></span>
+<div class="inner">
+
+  {if $MobileAppRedirect!=false && $AppMarketLink!=''}
+  <div class="MobileAppNotify">
+    <div class="container">
+      <a href="javascript:void(0)" class="mb-close MobileNotifyClose">×</a>
+      <span class="logo">
+        <div class="fitLogo">
+          {$SITE_LOGO}
+        </div>
+      </span>
+      {if $MobileAppRedirect=='ios'}
+      <a href="https://itunes.apple.com/app/id{$AppMarketLink}" class="mb-info">{#mobile_app#}</a>
+      {else if $MobileAppRedirect=='android'}
+      <a href="market://details?id={$AppMarketLink}" class="mb-info">{#mobile_app#}</a>
+      {/if}
+    </div>
+  </div>
+  {/if}
+</div>
+<!-- Masaüstü -->
+<div class="col-12 forDesktop fl">
+  <div id="mainMenu" class="col col-12 kategori p0">
+
+    <div class="menu">
+      <!--Logo -->
+      <div id="logo" class="col col-2 col-md-2 col-sm-4 col-xs-6 a-center p0">
+        <a href="/" class="col col-ml-2 col-md-ml-0">
+          {$SITE_LOGO}
+        </a>
+      </div>
+      <!--Logo Bitiş-->
+
+      <!--Kategoriler-->
+      <div class="col col-8 p0">
+        <ul class="col col-12 p0" id="main-menu">
+          {foreach $MENU1 as $M}
+          <li class="ease{if $M.CHILDREN|@count > 0} parentLink{/if}">
+            <a href="{$M.URL}" title="{$M.NAME}">{$M.NAME}</a>
+            {if $M.CHILDREN|@count > 0}                     
+            <div class="whiteBg subMenu">
+              <div class="inner">
+                <div class="col-12">
+                  <div class="col-12">
+                    <div class="col-12 dynamicMenu">
+                      <ul class="fl col-12 notClear desktopul">
+                        {foreach $M.CHILDREN as $C}
+                        <li class="col col-3">
+                          <a href="{$C.URL}" title="{$C.NAME}" class="line-bottom{if $C.CHILDREN|@count > 0} fw600{/if}">{$C.NAME}</a>    
+                          {if $C.CHILDREN|@count > 0}
+                          <ul class="box col-12">
+                            {foreach $C.CHILDREN as $C2}
+                            <li class="row">
+                              <a href="{$C2.URL}" title="{$C2.NAME}" class="col col-12">{$C2.NAME}</a>
+                            </li>
+                            {/foreach}
+                          </ul>
+                          {/if}
+                        </li>
+                        {/foreach}                                          
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/if}
+          </li>
+          {/foreach}
+        </ul>
+      </div>
+      <!--Kategoriler Bitiş-->
+
+      <!-- logo searchbox hesap -->
+      <div id="headerMain" class="col col-2 m0">
+        <div id="hmLinks" class="col col-12 col-sm-4 col-xs-3 fr p0">
+          <div class="row">
+            <!--Searchbox-->
+            <div id="search" class="col col-3 col-md-2 col-sm-12 m0">
+              <form id="FormAra" name="FormAra" action="/{$PAGE_LINK.SEARCH}" method="get" class="row">
+                <span id="searchRight-desktop" class="box fr p0">
+                  <input id="live-search-desktop" autocomplete="OFF" class="arakelime serachbox" name="q" type="text" placeholder="{#search_placeholder#}" http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+                  <input type="submit" class="btn-default fr searchicon" value=" " onblur="searchover()"/>
+                </span>
+                {if $IS_INLINE_SEARCH_ACTIVE==1}
+                <script type="text/javascript" src="/theme/standart/js/blok-v4/live-search.js"></script>
+                <div id="live-search-box"></div>  
+                {/if}
+              </form>
+            </div>
+            <!--Searchbox bitiş-->
+
+            <!--login and cart-->
+            <div class="col col-6 col-md-10 col-sm-12">
+              {if $IS_MEMBER_LOGGED_IN == true}
+              <div class="col col-6 p0">
+                <a href="/{$PAGE_LINK.MEMBER_LOGIN}" class="col fr col-12 p0 hesap"></a>
+              </div>
+              {else}
+              <div class="col col-6 p0">
+                <a data-width="500" data-url="/srv/service/customer/login-form" href="#" class="col fr popupWin col-12 p0 hesap"></a>
+              </div>
+              {/if}
+
+              <div class="col col-6 p0">
+                <a href="/{$PAGE_LINK.CART}" class="col basketLink col-12 p0" id="cart-soft-count">
+                  <p class="col col-12" style="padding-top: 20px;text-align: center;margin: auto;">
+                    <span class="cart-soft-count totalAmount" style="color: #fff;" >
+                      0
+                    </span>
+                  </p>
+                </a>
+              </div>
+            </div>
+            <!--login and cart bitiş-->
+          </div>
+        </div>
+      </div>
+      <!-- logo searchbox hesapbilgileri Bitiş-->
+
+    </div>
+
+  </div>
+</div>
+<!-- Masaüstü Bitiş-->
+
+<!-- Mobile -->
+<div class="col col-12 col-sm-12 col-xs-12 forMobile" style="background-color: #fff;">
+  <!--Mobile yan menü aç-->
+  <div class="box col-1 col-md-4 col-sm-2 col-xs-2 p0">
+    <p class="col p0" id="menuBtn">
+      <span style="height: 2px;width: 25px;display: block;background-color: #000;"></span>
+      <span style="height: 2px;width: 25px;display: block;background-color: #000;margin-top: 5px;"></span>
+      <span style="height: 2px;width: 25px;display: block;background-color: #000;margin-top: 5px;"></span>
+    </p>
+  </div>
+  <!--Mobile yan menü aç bitiş-->
+
+  <!--Logo -->
+  <div id="logo" style="text-align: center;margin: auto;" class="col-sm-8">
+    <a href="/" style="width: 20%;text-align: center;margin: auto;display: block;">
+      <img src="/Data/EditorFiles/mobil/mobillogo.png">
+    </a>
+  </div>
+  <!--Logo Bitiş-->
+
+  <!--login and cart-->
+  <div class="col col-4 col-md-4 col-sm-2 col-xs-2 p0">
+    <a href="/{$PAGE_LINK.CART}" class="col basketLinkmobile col-12 p0" id="cart-soft-count">
+      <p class="col col-12" style="padding-top: 3px;text-align: center;margin: auto;">
+        <span class="cart-soft-count totalAmount" style="color: #000;font-size: 12px !important;font-family: 'Oswald', sans-serif;" >
+          0
+        </span>
+      </p>
+    </a>
+  </div>
+  <!--login and cart bitiş-->
+
+</div>
+<!-- Mobile Bitiş-->
+<script type="text/javascript" src="/theme/standart/js/blok-v4/personalization.js"></script>
+<script type="text/javascript">
+  function popupCallback(){
+
+  }
+  function searchover(){
+    $('#live-search')
+  }
+  $(document).ready(function () {
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)){
+      if($(window).width() < 768){
+        $('#search').appendTo('#mobileSearch');
+      }
+      $('.parentLink > a, .parent > a').click(function(e){
+        e.preventDefault();
+        $(this).next('ul').slideToggle();
+      });
+    }
+    $.getJSON('/srv/service/category/get', function (result) {
+      var catList = $('#raventi_select');
+      var url1 = window.location.href;
+      $.each(result, function () {
+        var re = new RegExp('category=' + this.ID + '(\&|$)', 'g');
+        var selected = re.test(url1) ? 'selected' : '';
+        catList.append('<option value="' + this.ID + '" ' + selected + '>' + this.TITLE + '</option>');
+      });
+    });
+    if(/^.*?[\?\&]q=/ig.test(window.location.href)){
+      var sWord = window.location.href.replace(/^.*?[\?\&]q=/ig,'');
+      sWord = sWord.replace(/\&.*?$/ig,'').replace(/\+/ig,' ');
+      $('#live-search').val(decodeURI(sWord));
+    }
+    var mobileAppCookie = getaCookie('MobileNotifyClose');
+    if (mobileAppCookie == null) {
+      $('.MobileAppNotify').fadeIn();
+
+    }
+    $('.MobileNotifyClose').click(function () {
+      setaCookie('MobileNotifyClose', 'Closed', 3);
+      $('.MobileAppNotify').fadeOut();
+
+    });
+  });
+  function setaCookie(cname, cvalue, exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+    var expires = "expires=" + d.toUTCString();
+    document.cookie = cname + "=" + cvalue + "; " + expires;
+  }
+  function getaCookie(name) {
+    var dc = document.cookie;
+    var prefix = name + "=";
+    var begin = dc.indexOf("; " + prefix);
+    if (begin == -1) {
+      begin = dc.indexOf(prefix);
+      if (begin != 0)
+        return null;
+    } else {
+      begin += 2;
+      var end = document.cookie.indexOf(";", begin);
+      if (end == -1) {
+        end = dc.length;
+      }
+    }
+    return unescape(dc.substring(begin + prefix.length, end));
+  }
+</script>   

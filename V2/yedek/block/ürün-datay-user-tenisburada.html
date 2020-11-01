@@ -1,0 +1,806 @@
+{if $P.SUPPLIER_ID > 0}
+{include file='Blok/UrunDetay/Orta/Tedarikci/Mesaj.tpl'}
+<div style="margin-top:20px;margin-right:10px">
+    <a id="mesajGonder" title="Satıcıya Mesaj Gönder" href="/conn/MemberMessages/getSupplierMessageForm/{$P.SUPPLIER_ID}" class=" yeni_msj_btn ust_btn" alt="{$P.PRODUCT_CODE}: {$P.TITLE}"><span class="msj"></span></a>
+</div>
+<script type="text/javascript" src="{$THEME_STANDART}/Blok/UrunDetay/Orta/Tedarikci/Mesaj.js"></script>
+{/if}
+<div class="col-12 inner" {$GOOGLE_PRODUCT} >
+    <div id="productDetail" class="fl mb" >
+        <div class="fl col-12" id="pageContent">
+            <!-- #pageContent = Sayfa içinde belirli bir div i popup olarak açmak istediğimizde bu div içerisinden yükleniyor. Hızlı görünüm için gerekli. -->
+            <div class="fl col-12">
+
+                <div class="fl col-2 col-sm-12 loaderWrapper" id="productRight">
+                    <div  class="fl col-12 prtck">
+                        <style rel="stylesheet" property="stylesheet" type="text/css">
+                            @import url('https://fonts.googleapis.com/css?family=Barlow:100,200,300,400,500,600,700,800,900');
+                            /* font-family: 'Barlow', sans-serif; */
+                        </style>
+                        <style rel="stylesheet" property="stylesheet" type="text/css">
+                            @import url('https://yesmancan.github.io/tenisburada/fonts/fonts-sf-pro-display.css');
+                            /* font-family:'SF Pro Display' */
+                        </style>
+                        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&amp;subset=latin-ext" rel="stylesheet">
+                        {block name='firsat_sayac'}{/block}
+                        {if $P.IS_DISPLAY_PRODUCT == 0}
+                        <div class="fl col-12" itemprop="offers" itemscope itemtype="http://schema.org/Offer" id="productMobilePrices" >
+                            <div class="fl col-8 col-sm-12 forMobile" id="productLeft" style="margin-bottom:0!important;">
+                                <div class="fl col-12">
+                                    {if $P.IN_STOCK == false}
+                                    <span class="out-of-stock">{#out_of_stock#}</span>
+                                    {/if}
+                                    <div class="fl loaderWrapper easyzoom">
+                                        {if $P.HAS_MAGNIFIER==1}
+                                        <a href="{$P.IMAGE.BIG}" class="hideThis">
+                                            <img src="{$P.IMAGE.MEDIUM}" alt="{$P.IMAGE.TITLE}" />
+                                        </a>
+                                        {/if}
+                                        <ul  class="fl col-12 productImage">
+                                            {for $i=0; $i<$P.IMAGE_COUNT; $i++}
+                                        <li class="col-12 fl">
+                                            <div class="fl col-12 p-left">
+                                                <div class="fl col-12">
+                                                    <div class="fl">
+                                                        <a rel="productImage" data-index="{$i}" class="image-wrapper fl">
+                                                            <span class="fl">
+                                                                <img src="{$P.IMAGE_LIST.$i.BIG}" alt="{$P.IMAGE_LIST.$i.TITLE}" itemprop="image" />
+                                                            </span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            </li>
+                                        {/for}
+                                        </ul>
+                                        <ul class="productThumbs col col-12" style="margin: auto;text-align: center;">
+                                            {for $i=0; $i<$P.IMAGE_COUNT; $i++}
+                                            <li class="col-{12 / $P.IMAGE_COUNT } col-sm-2 fl" data-type="{$P.IMAGE_LIST.$i.VARIANT_TYPE_ID}">
+                                                <div class="fl col-12 p-left">
+                                                    <div class="fl col-12 ease">
+                                                        <div class="row m0">
+                                                            <a data-href="{$P.IMAGE_LIST.$i.BIG}" class="image-wrapper fl" data-standard="{$P.IMAGE_LIST.$i.BIG}">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        {/for}
+                                        </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="fl col-12 p-top" id="productMobileInfo">
+                            <div class="fl col-xs-12 col-md-12 col-sm-12 col-12">
+                                <div class="fl col-12 col-xs-12 p-left" id="productInfo">
+                                    {if $P.MODEL != ""}
+                                    - <a href="/?model={$P.MODEL_ID}" title="Model: {$P.MODEL}" {$GP_BRAND} class="fl col-12" id="productBrandText">{$P.MODEL}</a>
+                                    {/if}
+                                    <h1 class="fl col-12" id="productName" itemprop="name" {$GP_TITLE}>{$P.TITLE}</h1>
+                                    <h2 class="fl col-12 forDesktop" id="category-path">{$P.CATEGORY_PATH}</h2>
+                                    <script>
+                                        $(document).ready(function(){
+                                            $('#category-path').html($('#category-path').text().split(' >')[1]);
+                                        });
+                                    </script>
+                                <div class="col col-12 mainPrices forMobile">
+                                <div class="row priceLine">
+                                    
+                                    {if $P.DISPLAY_VAT === "1"}
+                                        <div class="discountPrice"  style="margin: 10px 0;font-size: 17px;color: #000;font-weight: 500;">
+                                            <span class="product-not-dicount" style="text-decoration: line-through;">{vat price=$P.PRICE_NOT_DISCOUNTED vat=$P.VAT} {$P.TARGET_CURRENCY}</span>  
+                                            <span class="product-price">{vat price=$P.PRICE_SELL vat=$P.VAT} </span>{$P.TARGET_CURRENCY}
+                                        </div>
+                                    {else}
+                                        <div class="discountPrice" style="font-size: 28px;">
+                                            <span class="product-price-not-vat">{format price=$P.PRICE_SELL} </span>  {$P.TARGET_CURRENCY} + {#kdv#}
+                                        </div>
+                                    {/if}
+                                    
+                                    <div class="fl priceLine" style="width: 100%;margin-top: -10px;">
+                                        <div class="priceType" style="font-size: 14px;color: #000;text-align: center;">
+                                            <span style="text-align: center;width: 100%;">veya</span> 
+                                            <span class="transferPrice" style="font-size: 14px;color: #0070c9;text-align: center;width: 100%;">
+                                                {vat price=$P.PRICE_MONEY_ORDER vat=$P.VAT} {$P.TARGET_CURRENCY}
+                                                {if $P.MONEY_ORDER_PERCENT>0} 
+                                                    <span class="danger" style="text-align: center;width: 100%;">%{$P.MONEY_ORDER_PERCENT} {#discounted#}</span>
+                                                {/if}
+                                            </span>
+                                            <span>&nbsp;&nbsp; havale fiyatı &nbsp;&nbsp;</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                </div>
+
+                                {if $P.DEAL == 1}    
+                                {block name='firsat_sayac'}
+                                <!--FIRSAT URUNU-->
+                                <link rel="stylesheet" type="text/css" href="{$THEME_V4}css/FirsatUrunSayac.css"/>
+                                <script type="text/javascript">
+                                    dateFuture1 = new Date({$P.DEAL_END_DATE|date_format:'Y,m-1,d,H,i,s'});
+                                    window.onload = function () {
+                                        GetCount(dateFuture1, 'tsoft_counter');
+                                    };
+                                </script>
+                                <div class="col col-12">
+                                    <div class="box col-12 fw700 danger">
+                                        <div class="row mb">
+                                            {if $TOTAL_SALE > 0}
+                                            Bu fırsatı {$TOTAL_SALE} kişi değerlendirdi.
+                                            {else}
+                                            Bu fırsatı ilk sen satın al!
+                                            {/if}
+                                        </div>
+                                    </div>
+                                    <div class="box col-12 loaderWrapper">
+                                        <span id="tsoft_counter" class="col col-12 image-band campaign-band"></span>
+                                    </div>
+                                </div>
+                                <!--FIRSAT URUNU-->                                
+                                {/block}
+                                {/if}
+
+                            </div>
+                        </div>
+                            <meta itemprop="priceCurrency" content="{if $P.TARGET_CURRENCY=='TL'}TRY{else}{$P.TARGET_CURRENCY}{/if}" />
+                            <meta itemprop="price" content="{vat price=$P.PRICE_SELL vat=$P.VAT integer=true}" />
+                            <meta itemprop="availability" content="{if $P.IN_STOCK == true}{#in_stock#}{else}{#out_of_stock#}{/if}" />
+                            <meta itemprop="itemCondition" content="new" />
+                            <div class="col col-12 mainPrices forDesktop" style="margin-top: 20px;">
+                                <div class="row priceLine">
+                                    {if $P.DISPLAY_VAT === "1"}
+                                    <div class="fl discountPrice">
+                                        <span class="product-not-dicount" style="text-decoration: line-through;">{vat price=$P.PRICE_NOT_DISCOUNTED vat=$P.VAT} {$P.TARGET_CURRENCY}</span>  
+                                        <span class="product-price">{vat price=$P.PRICE_SELL vat=$P.VAT} </span>{$P.TARGET_CURRENCY}
+                                    </div>
+                                    {else}
+                                    <div class="fl discountPrice">
+                                        <span class="product-price-not-vat">{format price=$P.PRICE_SELL} </span>  {$P.TARGET_CURRENCY} + {#kdv#}
+                                    </div>
+                                    {/if}
+                                 <!--<div class="fl priceLine">
+                                        {if $P.IS_DISCOUNT_ACTIVE == 1}
+                                        {if $P.DISPLAY_VAT == 1}
+                                        <div class="col currencyPrice discountedPrice" data-old="{$P.PRICE_BUY}">
+                                            <span>{vat price=$P.PRICE_NOT_DISCOUNTED vat=$P.VAT}</span>  {$P.TARGET_CURRENCY}
+                                        </div>
+                                        {else}
+                                        <div class="col currencyPrice discountedPrice" data-old="{$P.PRICE_BUY}">
+                                            <span>{format price=$P.PRICE_NOT_DISCOUNTED}</span> {$P.TARGET_CURRENCY} + {#kdv#}
+                                        </div>
+                                        {/if}
+                                        {/if}
+                                    </div>-->
+                                </div>
+
+                                <div class="row priceLine">
+                                    <div class="fl priceType" style="font-size: 14px;color: #2b91e2;text-align: center;margin: auto;font-weight: 500;">
+                                        <span class="transferPrice">
+                                            {vat price=$P.PRICE_MONEY_ORDER vat=$P.VAT} {$P.TARGET_CURRENCY}
+                                            {if $P.MONEY_ORDER_PERCENT>0} 
+                                            <span class="danger" style="text-align: center;width: 100%;">%{$P.MONEY_ORDER_PERCENT} {#discounted#}</span>
+                                            {/if}
+                                        </span>
+                                        <span style="font-weight: 400;"> &nbsp;&nbsp; HAVALE FİYATI &nbsp;&nbsp;</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <script>
+                                $(document).ready(function(){
+                                    $('.product-price').html($('.product-price').html().replace(',','.'))
+                                    $('.transferPrice').html($('.transferPrice').html().replace(',','.'))
+                                })
+                            </script>
+                            {if $P.DISPLAY_GAIN &&  $P.DISCOUNT_PERCENT > 0}
+                            <div class="row priceLine">
+                                <div class="col currencyPrice danger">{vat price=$P.PRICE_NOT_DISCOUNTED-$P.PRICE_SELL vat=$P.VAT} {$P.TARGET_CURRENCY}</div>
+                            </div>
+                            {/if}
+
+                            {if $P.IS_CASH_POINT_ACTIVE}
+                            <div class="row priceLine">
+                                <div class="col priceType">
+                                    <span class="forMobile">{$P.CASH_POINT} </span>
+                                    {#cash_point#}
+                                </div>
+                                <div class="col dn-xs">:</div>
+                                <div class="col currencyPrice danger dn-xs">{$P.CASH_POINT}</div>
+                            </div>
+                            {/if}
+                            {block name="kargo_fiyat"}{/block}
+                    </div>
+                
+                </div>
+                <div class="fl col-8 col-sm-12 forDesktop" id="productLeft">
+                    
+                    <div class="fl col-12">
+                        {if $P.IN_STOCK == false}
+                            <span class="out-of-stock">{#out_of_stock#}</span>
+                        {/if}
+                        <div class="row loaderWrapper easyzoom" style="margin: auto;text-align: center;">
+                            {if $P.HAS_MAGNIFIER==1}
+                            <a class="hideThis">
+                                <img src="{$P.IMAGE.MEDIUM}" alt="{$P.IMAGE.TITLE}" />
+                            </a>
+                            {/if}
+                            <ul  class="fl col-12 productImage">
+                                {for $i=0; $i<$P.IMAGE_COUNT; $i++}
+                                 <li class="fl col-12 fl">
+                                    <a rel="productImage" data-index="{$i}" class="image-wrapper fl col-12">
+                                        <span class="fl col-12" style="max-height: 800px;">
+                                            <img src="{$P.IMAGE_LIST.$i.BIG}" alt="{$P.IMAGE_LIST.$i.TITLE}" itemprop="image" />
+                                        </span>
+                                    </a>
+                                </li>
+                            {/for}
+                            </ul>
+                        </div>
+                    {if $P.IMAGE_COUNT > 1}
+                    <div class="col col-12" style="height:0;">
+                        <div class="col col-12">
+                            <style>
+                                .productThumbs{
+                                    bottom: 6.3rem;
+                                    width: 100%!important;
+                                    padding: 0 10px;
+                                }
+                            </style>
+
+                            <ul class="productThumbs col col-12" style="margin: auto;text-align: center;">
+                                {for $i=0; $i<$P.IMAGE_COUNT; $i++}
+                                <li class="col-{12 / $P.IMAGE_COUNT } col-sm-2 fl" data-type="{$P.IMAGE_LIST.$i.VARIANT_TYPE_ID}" style="padding-right:5px;">
+                                    <div class="fl col-12 p-left">
+                                        <div class="fl col-12 ease">
+                                            <div class="row m0" style="padding-right: 5px;">
+                                                <a data-href="{$P.IMAGE_LIST.$i.BIG}" class="image-wrapper fl" data-standard="{$P.IMAGE_LIST.$i.BIG}">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            {/for}
+                            </ul>
+
+                    </div>
+                    {if $P.IMAGE_COUNT > 4}
+                    <div id="thumbControl" class="col-12">
+                        <div class="col col-12 p-left">
+                            <span id="prevThumb" class="fl ease"></span>
+                            <span id="nextThumb" class="fr ease"></span>
+                        </div>
+                    </div>
+                    {/if}
+                </div>
+                    {/if}
+                    </div>
+                
+                </div>
+                <div class="fl col-2 col-sm-12" id="productRight">
+                <input type="hidden" name="subPro{$P.ID}" id="subPro{$P.ID}" value="0" />
+                <div class="fl col-12">
+                    <div class="fr col-xs-12 tooltipWrapper">
+                        <input type="hidden" id="IS_STOCK_NOTIFICATION_SUBPRODUCT" value="{$IS_STOCK_NOTIFICATION_SUBPRODUCT}"/>
+                        {if $P.HAS_VARIANT == true && $IS_STOCK_NOTIFICATION_SUBPRODUCT == 1}
+                        <div class="subProductStockAlert row" style="display:none">
+                            <span class="box productFunction">{#out_of_stock#}</span>
+                            {if $IS_MEMBER_LOGGED_IN != true}
+                            <a data-width="500" data-url="/srv/service/customer/login-form" class="popupWin box  productFunction  popupHide priceAlertLink">{#stock_notification#}</a>
+                            {else}
+                            <a data-width="450" data-url="/srv/service/profile/add-to-stock-alarm-list/" class="popupWin box productFunction subProductAlert  popupHide priceAlertLink">{#stock_notification#}</a>
+                            {/if}
+                        </div>
+                        {/if}
+                        {if $P.IN_STOCK != true}
+                        <span class="box productFunction">{#out_of_stock#}</span>
+                        {if $IS_MEMBER_LOGGED_IN != true}
+                        <a data-width="500" data-url="/srv/service/customer/login-form" class="popupWin box productFunction popupHide priceAlertLink">{#stock_notification#}</a>
+                        {else}
+                        <a data-width="450" data-url="/srv/service/profile/add-to-stock-alarm-list/{$P.ID}-{$P.VARIANT_ID}" class="popupWin box productFunction popupHide priceAlertLink">{#stock_notification#}</a>
+                        {/if}
+                        {elseif $P.DEAL_PREV_DATE != ''}
+                        <div class="box productFunction priceAlertLink">Bu ürün için fırsatı {$P.DEAL_PREV_DATE} tarihinde kaçırdınız.</div>
+                        {elseif $P.DEAL_NEXT_DATE != ''}
+                        <div class="box productFunction priceAlertLink">Bu ürün için fırsatı {$P.DEAL_NEXT_DATE} tarihinde yakalayabilirisiniz.</div>
+                        {elseif $IS_ADD_TO_CART_VISIBLE == 1}
+                        <div class="add-to-cart-win">
+
+                            <div class="box col-12 p-top p-left qtyBox" style="display:none;">
+                                <div class="box col-12 box-border">
+                                    <div class="col col-3 p-left productType">{if $P.STOCK_UNIT != ''}{$P.STOCK_UNIT}{else}{#count#}{/if}:</div>
+                                    <div class="fl col-9 qtyBtns" data-increment="{$P.STOCK_INCREMENT}"{if $P.IS_MULTIPLE_DISCOUNT_ACTIVE == 1} data-multiple-disc="true"{/if}>
+                                        <a title="-" data-id="{$P.ID}" class="col-4"><p>-</p></a>
+                                        <input type="text" id="Adet{$P.ID}" name="Adet{$P.ID}" value="{$P.MIN_ORDER_COUNT}" class="col-4 detayAdet{$P.ID}" />
+                                        <a title="+" data-id="{$P.ID}" class="col-4"><p>+</p></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {if $P.IS_MULTIPLE_DISCOUNT_ACTIVE == 1}
+                            <div class="box col-12 p-top p-left discBox">
+                                <div class="col col-12 box-border b-bottom b-right">
+                                    <div class="row line-bottom">
+                                        <div class="box col-12 line-right lightBg">
+                                            <img src="/theme/standart/sub_theme/urundetay/astana/mavi/toptan.png" title="Toptan Alın İndirim Kazanın" class="fl" />
+                                            <div class="btn btn-small">
+                                                {#title_for_multi_products#}
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="fl col-3 col-sm-12">
+                                            <div class="box col-12 col-sm-6 line-right line-bottom fw700">{#amount#}</div>
+                                            <div class="box col-12 col-sm-6 line-right line-bottom fw700">{#discount#}</div>
+                                        </div>
+                                        {foreach $P.MULTIPLE_DISCOUNT as $C}
+                                        {$genis = $P.MULTIPLE_DISCOUNT|@count * 60}
+                                        {/foreach}
+                                        <div class="fl col-9 col-sm-12">
+                                            {$count = 0}
+                                            {foreach $P.MULTIPLE_DISCOUNT as $C}
+                                            {$count = $count +1}
+                                            <div class="fl col-3 col-sm-12 discounts" data-min="{$C.MIN}" data-max="{$C.MAX}">
+                                                <div class="box col-12 col-sm-6 line-right line-bottom miktar"><span class="basMiktar">{$C.MIN}</span> - <span class="bitMiktar">{$C.MAX}</span></div>
+                                                <div class="box col-12 col-sm-6 line-right line-bottom indirimYuzde">%{$C.PERCENT}</div>
+                                            </div>
+                                            {/foreach}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {/if}
+                            <div class="fl col-12" id="mobileBuyBtn">
+                                <div class="fl col-12 p0" style="padding-bottom: 30px!important;">
+                                    {if $P.HAS_VARIANT == true}
+                                    <div class="variantOverlay" data-id="{$P.ID}"></div>
+                                    <div class="fl col-12 variantWrapper tooltipWrapper">
+                                        <textarea id="json{$P.ID}" class="hideThis">{$P.VARIANT_DATA}</textarea>
+                                        {if $P.VARIANT_FEATURE1_LIST|@count > 0}
+                                        <div class="fl variantLine p0"
+                                            <div class="fl variantType" style="display:none;">{if $P.VARIANT_FEATURE1_TITLE != ''}{$P.VARIANT_FEATURE1_TITLE}{else}Seçiniz{/if}</div>
+                                            <div class="fl col-md-12 variantBox subOne pt0 pb0" data-order="1" style="background-color: #f5f5f5;">
+                                                <!-- user_2.tpl -->
+                                                <div>
+                                                    {include file='theme/v4/Blok/UrunDetay/Orta/_alturun/user_1.tpl' VARIANT_LIST=$P.VARIANT_FEATURE1_LIST SELECTED=$P.VARIANT_FEATURE1_SELECTED GRUP_TIP_NO=1}
+                                                </div>
+                                            </div>
+                                        </div>
+                                        {/if}
+                                        {if $P.VARIANT_FEATURE2_LIST|@count > 0}
+                                        <div class="fl variantLine p0" style="margin-bottom: 30px;">
+                                            <div class="fl variantType" style="display:none;">{if $P.VARIANT_FEATURE2_TITLE != ''}{$P.VARIANT_FEATURE2_TITLE}{else}Seçiniz{/if}</div>
+                                            <div class="fl col-md-12 variantBox subTwo pt0 pb0" data-order="2" style="background-color: #f5f5f5;">
+                                                {include file='theme/v4/Blok/UrunDetay/Orta/_alturun/user_1.tpl' VARIANT_LIST=$P.VARIANT_FEATURE2_LIST SELECTED=$P.VARIANT_FEATURE2_SELECTED GRUP_TIP_NO=2}
+                                            </div>
+                                        </div>
+                                        {/if}
+                                    </div>
+                                    {/if}
+                                </div>
+                                {if $P.HAS_VARIANT == true}
+                                <div class="col col-12 p0">
+                                    <!-- Satın Al başlangıç-->
+                                    <div class="col col-12 p0">
+                                            <div class="col col-12 p0">
+                                                <div style="margin:0 10px;">
+                                                    <div class="col col-12 col-sm-12 p0 buyBtn">
+                                                        <a onclick="Add2Cart({$P.ID}, $('#subPro{$P.ID}').val(), $('.detayAdet{$P.ID}').val());" class="btn col-12 btn-big btn-radius" id="addCartBtn" style="margin-top:0!important;">
+                                                            <span class="fl btn-basket-buy">SATIN AL</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    </div>
+                                    <!-- Satın Al bitiş-->
+                                </div>
+                                {else}
+                                <div class="col col-12 p0">
+                                    <!-- Satın Al başlangıç-->
+                                    <div class="col col-12 p0">
+                                            <div class="col col-12 p0">
+                                                <div class="col col-12 col-sm-12 p0 buyBtn">
+                                                    <a onclick="Add2Cart({$P.ID}, $('#subPro{$P.ID}').val(), $('.detayAdet{$P.ID}').val());" class="btn col-12 btn-big btn-radius" id="addCartBtn">
+                                                        <span class="fl btn-basket-buy">SATIN AL</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                    </div>
+                                    <!-- Satın Al bitiş-->
+                                </div>
+                                {/if}
+                            </div>
+                        </div>
+                        {/if}
+                        <div style="width: 100%;">
+                            <div class="fr col-12 bilgilendirme" style="margin-top: 50px;width:150px!important;">
+                                {if $P.SUPPLIER_PRODUCT_CODE != ''}
+                                <div class="fl col-12">
+                                    <div class="col-12 btn-upper fw700 prduct-code-buy-alt">
+                                        <span>Ürün Kodu : </span>
+                                        <span class="supplier_product_code" itemprop="mpn"> {$P.SUPPLIER_PRODUCT_CODE}</span>
+                                    </div>
+                                </div>
+                                {/if}
+                                {if $P.IN_STOCK == false}
+                                <span class="fl col-12" style="color:#616161;font-weight:300;font-size:14px;letter-spacing:-0.9px;font-family:'Oswald',sans-serif;">STOKTA YOK</span>
+                                {else}
+                                <span class="fl col-12"  style="color:#616161;font-weight:300;font-size:14px;letter-spacing:-0.9px;font-family:'Oswald',sans-serif;">STOKTA VAR</span>
+                                {/if}
+                                {if $P.CARGO_FREE == 1}
+                                <span class="fl col-12"  style="color:#616161;font-weight:300;font-size:14px;letter-spacing:-0.9px;font-family:'Oswald',sans-serif;margin-top: 5px;">KARGO BEDAVA</span>
+                                {/if}
+                            </div>
+                            <div id="benzerurunler">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {if $IS_ADD_TO_CART_VISIBLE == 1 && $P.IS_ORDER_NOTE_ACTIVE==1}
+                <div class="col col-12">
+                    <div class="row mb noteLine">
+                        <div class="col noteTitle">{#note#}</div>
+                        <div class="col">:</div>
+                        <div class="col noteBox">
+                            <textarea id="order-note{$P.ID}" class="box col-sm-12 box-border" placeholder="{#note_placeholder#}"></textarea>
+                        </div>
+                    </div>
+                </div>
+                {/if}
+                {if $P.IS_PERSONALIZATION_ACTIVE}
+                <div class="col col-12">
+                    <div id="myPersonalizationForm"></div>
+                </div>
+                <script>
+                    new PersonalizationForm({
+                        form_id: parseInt('{$P.PERSONALIZATION_ID}'),
+                        product_id: '{$P.ID}',
+                        sub_product_id: '{$P.VARIANT_ID}',
+                        data: [],
+                        selector: '#myPersonalizationForm'
+                    });
+                </script>
+                {/if}
+                {/if}
+                </div>
+</div>
+</div>
+</div>
+</div>
+<div class="fl col-12">
+    {block name="tablar"}
+    <div class="fl col-12">
+        <div id="urun-tab" class="fl col-12">
+            <div class="inner col-12">
+                <div class="b-top slide-wrapper">
+                    <div class="fl col-12">
+                        <ul id="tabPanel" class="box col-12 p0" >
+                            <li class="fl ozellik"{$GP_DESCRIPTION}>
+                                {block name="tab1"}
+                                <div class="fl col-12">
+                                    <div class="fl col-12" id="productDetailTab" itemprop="description">
+                                        {$P.DETAIL}
+                                    </div>
+                                    <script>
+                                        let br=document.querySelectorAll('#productDetailTab br');
+                                        for (let i = 0; i < br.length; i++) {
+                                           br[i].remove();
+                                            
+                                        }
+                                    let firstSpan=document.querySelector('#productDetailTab > span');
+                                    firstSpan.innerHTML = "<h2 class='proh2'>"+firstSpan.innerText+"</h2>";
+                                    let items = document.querySelectorAll('#productDetailTab > p > span > b');
+                                    console.log(items)
+                                    for (let i = 0; i < items.length; i++) {
+                                         items[i].innerHTML="<h2 class='proh2'>"+items[i].innerText+"</h2>";
+                                    }
+                                    </script>
+                                    <div class="col col-12" style="display:none;">
+                                        <div class="col col-12 box-border b-bottom">
+                                            {if $P.IS_PRODUCT_SIZE_ACTIVE == true}
+                                            <div class="row line-bottom">
+                                                <div class="box col-4 fw700">{#dimension#}</div>
+                                                <div class="box col-1 line-right fw700">:</div>
+                                                <div class="box col-7">{$P.WIDTH} x {$P.WIDTH} x {$P.DEPTH}</div>
+                                            </div>
+                                            {/if}
+                                            {if $P.WEIGHT != ''}
+                                            <div class="row line-bottom">
+                                                <div class="box col-4 fw700">{#weight#}</div>
+                                                <div class="box col-1 line-right fw700">:</div>
+                                                <div class="box col-7">{$P.WEIGHT}</div>
+                                            </div>
+                                            {/if}
+                                            {if $P.WARRANTY_INFO != ''}
+                                            <div class="row line-bottom">
+                                                <div class="box col-4 fw700">{#warranty#}</div>
+                                                <div class="box col-1 line-right fw700">:</div>
+                                                <div class="box col-7">{$P.WARRANTY_INFO}</div>
+                                            </div>
+                                            {/if}
+                                            {if $P.DELIVERY_INFO != ''}
+                                            <div class="row line-bottom">
+                                                <div class="box col-4 fw700">{#delivery#}</div>
+                                                <div class="box col-1 line-right fw700">:</div>
+                                                <div class="box col-7">{$P.DELIVERY_INFO}</div>
+                                            </div>
+                                            {/if}
+                                        </div>
+                                        {if $FILTER_PROPERTY_LIST|@count > 0}
+                                        <div class="box col-12 line-bottom p-bottom">
+                                            <div class="row box-border b-bottom">
+                                                <div class="box col-12 fw700">{#product_features#}</div>
+                                            </div>
+                                            {foreach $FILTER_PROPERTY_LIST as $F}
+                                            <div class="row box-border b-bottom">
+                                                <div class="box col-4 fw700">{$F.KEY}</div>
+                                                <div class="box col-1 line-right fw700">:</div>
+                                                <div class="box col-7">{$F.VALUE}</div>
+                                            </div>
+                                            {/foreach}
+                                        </div>
+                                        {/if}
+                                        {if $P.TAGS|@count >0}
+                                        <div class="box col-12 line-bottom p-bottom">
+                                            <div class="row box-border b-bottom">
+                                                <div class="box col-12 fw700">{#product_tags#}</div>
+                                            </div>
+                                            <div class="row box-border b-bottom">
+                                                {foreach name=outer item=TAG from=$P.TAGS}
+                                                {if !$smarty.foreach.outer.first}
+                                                <span class="box p-left">,</span> 
+                                                {/if}
+                                                <a class="box" href="/{$TAG.URL}" target="_blank">{$TAG.TITLE}</a> 
+                                                {/foreach}
+                                            </div>
+                                        </div>
+                                        {/if}
+                                    </div>
+                                </div>
+                                {/block}
+                            </li>
+                            {if $P.IS_DISPLAY_PRODUCT != true}
+                            <li class="fl loaderWrapper"></li>
+                            {/if}
+                            <li class="fl loaderWrapper"></li>
+                            <li class="fl loaderWrapper"></li>
+                            <li class="fl loaderWrapper"></li>
+                            {if $P.DOCUMENT_INFO != ''}
+                            <li class="fl loaderWrapper">
+                                <div class="row">
+                                    <div class="box col-12">
+                                        {$P.DOCUMENT_INFO}
+                                    </div>
+                                </div>
+                            </li>
+                            {/if}
+                            {if $P.IS_RELATED_PRODUCTS_ACTIVE != ''}
+                            <li class="fl loaderWrapper"></li>
+                            {/if}
+                            {if $P.IS_VIDEO_ACTIVE == 1}
+                            <li class="fl loaderWrapper"></li>
+                            {/if}
+                            {if $IS_CALL_ME_ACTIVE == 1}
+                            <li class="fl loaderWrapper"></li>
+                            {/if}
+                            {if $IS_QUICK_MESSAGE_ACTIVE == 1}
+                            <li class="fl loaderWrapper"></li>
+                            {/if}
+                            {if $IS_SUGGESTION_BOX_ACTIVE == 1}
+                            <li class="fl loaderWrapper"></li>
+                            {/if}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {/block}
+</div>
+</div>
+<div id="pageScripts">
+    <input type="hidden" id="urun-id" value="{$P.ID}" />
+    <input type="hidden" id="urun-ad" value="{$P.TITLE}" />
+    <input type="hidden" id="urun-kategori" value="{$P.CATEGORY_NAME}" />
+    <input type="hidden" id="urun-kur" value="{$P.CURRENCY}" />
+    <input type="hidden" id="urun-fiyat" value="{$P.PRICE_SELL}" />
+    <input type="hidden" id="urun-tedarikci-kod" value="{$P.SUPPLIER_PRODUCT_CODE}" />
+    <!-- #pageScripts = Sayfa scriptleri bu div içerisinden yükleniyor. Hızlı görünüm için gerekli. -->
+    <link rel="stylesheet" property="stylesheet" type="text/css" href="/theme/{$THEME_PRODUCT|default:v4}/sub_theme/urundetay/{$SUBTHEME_PRODUCT}/urundetay.css" />
+    <link rel="stylesheet" property="stylesheet" type="text/css" href="{$THEME_GENERAL}/sub_theme/genel/{$SUBTHEME_GENERAL}/photoGallery.css" />
+    <script type="text/javascript" src="/srv/service/conf/load/Blok_UrunDetay/1" charset="utf-8"></script>
+    {if $P.HAS_MAGNIFIER==1}
+    <script type="text/javascript" src="/theme/standart/js/easyzoom.js"></script>
+    <script type="text/javascript">
+        var thumbZoom = false;
+        var innerZoom = false;
+        var $easyzoom;
+        var api1;
+        function changeSubProImg(parent, subIndex) {
+            if (thumbZoom) {
+
+            }
+            if (innerZoom) {
+                $('.easyzoom').addClass('innerZoom');
+            }
+            var $this = $(parent).children('li:eq(' + subIndex + ')').find('a');
+            api1.swap($this.data('standard'), $this.attr('data-href'));
+            loading.show($('.easyzoom'));
+            api1.teardown();
+            setTimeout(function () {
+                api1._init();
+                loading.hide($('.easyzoom'));
+            }, 250);
+        }
+    </script>
+    {/if}
+    <script type="text/javascript" src="Diger/Gzip.php?F=theme/standart/js/blok-v4/product-detail"></script>
+    <script>
+        $(document).ready(function () {
+         
+            $('.productImage').slide({
+                isAuto: false,
+                slideCtrl: {
+                    showCtrl: true,
+                    wrapCtrl: '#imageControl',
+                    nextBtn: '#nextImage',
+                    prevBtn: '#prevImage'
+                },
+                slidePaging: {
+                    showPaging: true,
+                    wrapPaging: '.productThumbs'
+                },
+                changeFn: function (e) {
+                    {if $P.HAS_MAGNIFIER==1}
+                    changeSubProImg('.productThumbs', e);
+                     {/if}
+                     }
+                    });
+                    $('.productThumbs').slide({
+                        slideType: 'carousel',
+                        isAuto: false,
+                        slideCtrl: {
+                            showCtrl: true,
+                            wrapCtrl: '#thumbControl',
+                            nextBtn: '#nextThumb',
+                            prevBtn: '#prevThumb'
+                        }
+                    });
+                    $('#tabPanel').slide({
+                        isAuto: false,
+                        touchEnabled: false,
+                        slidePaging: {
+                            showPaging: true,
+                            wrapPaging: '#tabBtn'
+                        }
+                    });
+                    {if $P.HAS_MAGNIFIER==1}
+                    if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
+                        $easyzoom = $('.easyzoom').easyZoom();
+                        api1 = $easyzoom.filter('.easyzoom').data('easyZoom');
+                    }
+                     {/if}
+                     //$('a[rel="productImage"]').lightbox();
+                     $('#fbShareBtn').click(function () {
+                         var shareUrl = 'https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(location.href);
+                         var winOpts = ['width=590', 'height=430', 'status=no', 'resizable=yes', 'toolbar=no', 'menubar=no', 'scrollbars=yes'].join(',');
+                         window.open(shareUrl, 'Share on Facebook', winOpts);
+                     });
+                      $('#gpBtn').click(function () {
+                          var shareUrl = 'https://plus.google.com/share?url=' + encodeURIComponent(location.href);
+                          var winOpts = ['width=525', 'height=430', 'status=no', 'resizable=yes', 'toolbar=no', 'menubar=no', 'scrollbars=yes'].join(',');
+                          window.open(shareUrl, 'Share on Google', winOpts);
+                      });
+                      if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
+                          $('#tabBtn li').click(function () {
+                              $('html, body').animate({
+                                  scrollTop: $(this).offset().top - 20
+                              }, 500);
+                          });
+                      }
+                       $('.productThumbs').removeAttr( 'style' );
+                      $('.productThumbs > li').removeAttr( 'style' );
+                     });
+                     function zoomCallback() {
+
+                     }
+                     
+    </script>
+</div>
+<script>
+  document.onreadystatechange = () => {
+  if (document.readyState === 'complete') {
+        let catalog=document.getElementById('list-catalog');
+        let benzerurunler=document.getElementById('benzerurunler');
+        benzerurunler.innerHTML=catalog.innerHTML;
+        let products = document.querySelectorAll('#benzerurunler a.image-wrapper');
+        let h="";
+        catalog.remove();
+        if (products.length == 1 || products.length == 2) {
+            h="h560";
+        }else if(products.length == 3 || products.length == 4) {
+            h="h485";
+        }else if(products.length == 5|| products.length == 6) {
+            h="h410";
+        }
+        else if(products.length == 7|| products.length == 8) {
+            h="h335";
+        }
+        for (let i = 0; i < products.length; i++) {
+            benzerurunler.appendChild(products[i]);
+        }
+        document.querySelector('#productRight .add-to-cart-win').setAttribute("class", ""+h+" add-to-cart-win");
+  }
+};
+</script>
+<style>
+#tabPanel{
+    margin-top: 40px;
+}
+#productDetailTab {
+    margin-left: auto;
+    margin-right: auto;
+    width: 87.5%;
+}
+    #productDetailTab h2.proh2{
+        margin-top: 20px;
+        margin-bottom: 15px;
+        font-size: 28px;
+        line-height: 1.08365;
+        font-weight: 600!important;
+        letter-spacing: -.04em;
+    }
+    #productDetailTab .urun-detay-p {
+    font-size: 20px!important;
+    line-height: 30px!important;
+    letter-spacing: -.022em;
+    }
+    #benzerurunler {
+    width: 150px;
+    float: right;
+}
+    #benzerurunler a.image-wrapper.fl {
+    width: 75px;
+}
+@media screen and (min-width: 768px) {
+    .h560{
+    height: 560px!important;
+    }
+    .h485{
+        height: 485px!important;
+    }
+    .h410{
+        height: 410px!important;
+    }
+    .h335{
+        height: 335px!important;
+    }
+}
+@media screen and (max-width: 768px) {
+    #urun-tab > .inner{
+    margin: 0 auto;
+    width:87.5%;
+    float: none;
+    margin-top:  40px;
+    }
+    #benzerurunler {
+        width: 100%!important;
+    }
+    #benzerurunler a.image-wrapper.fl {
+        width: 33%!important;
+        float: left;
+        margin-right: 1px;
+    }
+    #productDetailTab h2.proh2{
+        font-size: 28px;;
+        line-height: 1.125;
+        font-weight: 600!important;
+        text-align: left;
+        letter-spacing: .004em;
+    }
+    #tabPanel {
+        margin-top: 0;
+    }
+}
+</style>

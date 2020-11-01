@@ -1,0 +1,1343 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700&subset=latin-ext');
+#productDetailTab>h1>span, #productDetailTab>h1
+{
+font-weight:  800;
+}
+
+.m0
+{
+margin: 0!important;
+}
+
+.p0
+{
+padding: 0!important;
+}
+
+.pl0
+{
+padding-left: 0!important
+}
+
+.pr0
+{
+padding-right: 0!important
+}
+
+.pt0
+{
+padding-top: 0!important;
+}
+
+.pb0
+{
+padding-bottom: 0!important;
+}
+div#logo.forMobile>a>p>img
+{
+width: 50%;
+margin-top:  10px;
+}
+
+.nextOrder
+{
+color: #FFF!important;
+background-color: #000!important;
+}
+
+.hesap
+{
+background: url('https://www.tenisburada.com/Data/EditorFiles/hesap.png') no-repeat center !important;
+height: 50px!important;
+}
+#live-search:hover
+{
+display:  block;
+}
+
+.kategori
+{
+background-color:  #18171d;
+}
+ul.desktopul li a
+{
+color: #000!important;
+line-height: 10px !important;
+}
+
+.menu-list
+{
+z-index:  33;
+}
+
+.menu li
+{
+float:  left;
+}
+#main-menu li>a
+{
+padding:  10px 22px;
+}
+
+.col.col-12.variantWrapper.tooltipWrapper.p0
+{
+margin-top: 275px!important;
+}
+ul#main-menu>li>a
+{
+padding-top: 17px!important;
+padding-bottom: 17px!important;
+}
+
+.space-md-150
+{
+height:  150px;
+width: 100%;
+}
+
+.space-md-65
+{
+height:  65px;
+width: 100%;
+}
+
+.space-md-60
+{
+height:  60px;
+width: 100%;
+}
+
+.space-md-50
+{
+height:  50px;
+width: 100%;
+}
+
+.space-md-40
+{
+height:  40px;
+width: 100%;
+}
+
+.space-md-30
+{
+height:  30px;
+width: 100%;
+}
+
+.dp-flex-row-on-sm-column
+{
+display:  flex;
+flex-direction: row;
+justify-content:  space-between;
+flex: 0 0 100%;
+align-items:  center;
+border-bottom: 15px solid #fff;
+}
+
+.dp-flex-row-on-sm-column a:not(.footer-link):nth-child(1)
+{
+border-right:  15px solid #fff;
+}
+
+.dp-flex-row-on-sm-column a:not(.footer-link):nth-child(2)
+{
+border-right: 7.5px solid #fff;
+}
+
+.dp-flex-row-on-sm-column a:not(.footer-link):nth-child(3)
+{
+border-left: 7.5px solid #fff;
+}
+
+.dp-flex-row-on-sm-column a:not(.footer-link):nth-child(4)
+{
+border-left:  15px solid #fff;
+}
+#footer-second-row .dp-flex-row-on-sm-column
+{
+border-bottom:  unset;
+}
+
+.dp-flex-justify-sb
+{
+justify-content: space-between!important;
+}
+
+.catalltop
+{
+display:  table;
+background-color: #fff;
+border-top:  15px solid #fff;
+border-right: 30px solid #fff;
+border-left:  30px solid #fff;
+}
+
+.ortakisimresim
+{
+border-bottom:  15px solid #fff;
+}
+@media screen and (min-width:2560px)
+{
+#main-menu li>a
+{
+padding:  10px 65px;
+}
+}
+@media screen and (max-width:1920px)
+{
+#main-menu li>a
+{
+padding:  10px 40px;
+}
+}
+@media screen and (min-width:1504px)
+{
+#main-menu li>a
+{
+padding:  10px 28px;
+}
+}
+@media screen and (max-width:1504px)
+{
+#main-menu li>a
+{
+padding:  10px 25px;
+}
+}
+@media screen and (max-width:1440px)
+{
+#main-menu li>a
+{
+padding:  10px 22px;
+}
+}
+@media screen and (max-width:1315px)
+{
+#main-menu li>a
+{
+padding:  10px 20px;
+}
+}
+@media screen and (max-width:1280px)
+{
+#main-menu li>a
+{
+padding:  10px 17px;
+}
+}
+@media screen and (max-width:1180px)
+{
+#main-menu li>a
+{
+padding:  10px;
+}
+}
+@media screen and (max-width:1024px)
+{
+#productInfo>div, #productInfo>#productName
+{
+font-weight: 500!important;
+font-size: 18px!important;
+text-align:  center;
+}
+#main-menu li>a
+{
+padding:  10px 7px;
+}
+
+.space-md-150, .space-md-65, .space-md-60, .space-md-50, .space-md-40, .space-md-30
+{
+height:  0;
+width: 0;
+display:  none;
+}
+
+.ustkisimcat>.catall.ustkisimcatdiv1, .ustkisimcat>.catall.ustkisimcatdiv2, .catall.ortakisimresimdiv1, .catall.ortakisimresimdiv2
+{
+padding:  0;
+}
+#footer-change
+{
+width: calc(100% - 20px);
+margin:  10px auto;
+text-align: center;
+}
+}
+@media screen and (max-width:940px)
+{
+#main-menu li>a
+{
+padding:  10px 5px;
+}
+}
+@media screen and (max-width:860px)
+{
+#main-menu li>a
+{
+padding:  10px 3px;
+}
+}
+@media screen and (max-width:805px)
+{
+#main-menu li>a
+{
+padding:  10px 1px;
+}
+
+.col.col-12.variantWrapper.tooltipWrapper.p0
+{
+margin-top: 200px!important;
+}
+}
+@media screen and (max-width:768px)
+{
+.dp-flex-row-on-sm-column
+{
+display:  block;
+border-bottom: unset!important;
+}
+
+.catalltop
+{
+background-color:  #fff;
+padding-left: 0!important;
+padding-right: 0!important;
+border-right:  0;
+border-left: 0;
+}
+
+.catalltop>.ustkisimcat
+{
+margin-bottom: 0!important;
+padding:  0;
+}
+
+.ortakisimresim .catall.ortakisimresimdiv1, .ortakisimresim .catall.ortakisimresimdiv2
+{
+margin-bottom: 0!important;
+padding:  0;
+border-bottom: 15px solid #fff;
+}
+
+.catalltop .ustkisimcat .catall.ustkisimcatdiv2, .catalltop .ustkisimcat .catall.ustkisimcatdiv1
+{
+margin-bottom:  0;
+padding: 0;
+border-bottom:  15px solid #fff;
+}
+
+.dp-flex-row-on-sm-column a:not(.footer-link)
+{
+border-right: unset!important;
+border-left: unset!important;
+border-bottom:  15px solid #fff;
+display: block;
+}
+
+.ortakisimresim
+{
+border-bottom: unset!important;
+}
+}
+@media screen and (min-width:768px)
+{
+.arakelime
+{
+min-width:  280px;
+margin-top: -26px;
+}
+#pageContent>div.slide-wrapper
+{
+margin-top: 60px!important;
+}
+
+.col.col-12.variantWrapper.tooltipWrapper.p0
+{
+margin-top: 0!important;
+}
+}
+@media screen and (max-width:425px)
+{
+.dp-flex-row-on-sm-column
+{
+display:  block;
+}
+
+.catalltop .ortakisimresim .ortakisimresimdiv1, .catalltop .ustkisimcat .ustkisimcatdiv1, .dp-flex-row-on-sm-column a:nth-child(0n)
+{
+width: 100%!important;
+padding: 0!important;
+}
+
+.catalltop .ortakisimresim .ortakisimresimdiv2, .catalltop .ustkisimcat .ustkisimcatdiv2, .dp-flex-row-on-sm-column a:nth-child(1n)
+{
+width: 100%!important;
+padding: 0!important;
+}
+}
+@media screen and (max-width:360px) and (min-width:320px)
+{
+.arakelime
+{
+min-width:  157px;
+margin-top: -26px;
+}
+}
+@media screen and (min-width:320px)
+{
+.arakelime
+{
+min-width:  157px;
+margin-top: -26px;
+}
+}
+
+.menu li.parentLink>ul
+{
+position:  absolute;
+/*top: 100%;*/
+left:  0;
+width: 200px;
+display:  none;
+}
+
+.menu li.parentLink li a
+{
+width: 100%;
+}
+
+.menu li.parentLink li.parentLink ul
+{
+float:  left;
+position: relative;
+box-sizing:  border-box;
+border-left: 10px solid #dedede;
+}
+
+.MobileAppNotify
+{
+position:  fixed;
+left: 0;
+width: 100%;
+height:  70px;
+background-color: rgba(124, 122, 122, .9);
+z-index:  999999;
+font-family: "Source Sans Pro", Arial;
+}
+
+.MobileAppNotify .container
+{
+position:  relative;
+width: 100%;
+height: 100%;
+z-index:  9999;
+}
+
+.MobileAppNotify .container .mb-close
+{
+position:  absolute;
+left: 15px;
+top:  20px;
+display: block;
+color:  #fff;
+font-size: 30px;
+text-decoration:  none;
+}
+
+.MobileAppNotify .container .logo
+{
+position:  absolute;
+left: 55px;
+top:  5px;
+width: 60px;
+background:  #fff;
+border-radius: 10px;
+height:  60px;
+display: block;
+}
+
+.MobileAppNotify .container .logo .fitLogo
+{
+display:  table-cell;
+width: 60px;
+height:  60px;
+text-align: center;
+vertical-align:  middle;
+}
+
+.MobileAppNotify .container .logo .fitLogo p
+{
+margin: 0px !important;
+padding: 0px !important;
+}
+
+.MobileAppNotify .container .logo img
+{
+max-width:  60px;
+max-height: 60px;
+}
+
+.MobileAppNotify .mb-info
+{
+position:  absolute;
+right: 15px;
+top:  13px;
+color: #fff;
+font-size:  19px;
+border: 2px solid #fff;
+padding:  0 25px 0 10px;
+border-radius: 10px;
+background: url('https://www.tenisburada.com/right-arrow.png') no-repeat right 12px rgba(171, 160, 157, .5);
+text-decoration:  none;
+line-height: 40px;
+}
+#headerTop
+{
+background:  #000;
+}
+#topMenu, #topMenu li, #topMenu a
+{
+float:  left;
+height: 30px;
+}
+#topMenu a
+{
+line-height:  30px;
+color: #fff;
+font-size:  11px;
+padding-left: 20px;
+padding-right:  20px;
+border-right: 1px solid #3b3b3b;
+}
+#topMenu ul li:hover>span, #topMenu ul li:hover>a
+{
+background:  #3b3b3b;
+}
+#headerTop select
+{
+height:  30px;
+padding: 0 30px 0 10px;
+background: url('https://www.tenisburada.com/selectArrow.png') no-repeat right center;
+border:  0;
+border-left: 1px solid #3b3b3b;
+appearance:  none;
+-moz-appearance: none;
+-webkit-appearance:  none;
+color: #fff;
+font-size:  11px;
+}
+#headerTop select option
+{
+background:  #000;
+}
+#headerPhone
+{
+color:  #fff;
+font-size: 11px;
+line-height:  30px;
+}
+#headerMain
+{
+margin-top:  20px;
+margin-bottom: 20px;
+}
+#hmLinks
+{
+padding-top:  20px;
+padding-bottom: 20px;
+position:  relative;
+}
+#hmLinks>a
+{
+padding-top:  34px;
+}
+#hmLinks a.authorLink
+{
+background: url('https://www.tenisburada.com/userIcon.png') no-repeat center;
+height:  50px;
+}
+#hmLinks a.basketLink
+{
+background: url('https://www.tenisburada.com//Data/EditorFiles/cart.png') no-repeat center;
+height:  50px;
+}
+#hmLinks>a strong
+{
+line-height:  16px;
+color: #666;
+font-size:  11px;
+}
+#basketList
+{
+display:  none;
+position: absolute;
+top:  80px;
+left: 0;
+background:  #fff;
+z-index: 3333;
+}
+#logo p
+{
+float:  left;
+width: 100%;
+height:  50px;
+padding-bottom: 0;
+}
+#logo a
+{
+width: 100%;
+text-align:  center;
+vertical-align: middle;
+padding-bottom:  0;
+}
+#logo img
+{
+width:  100px;
+margin-top: 10px;
+}
+#mobilecategory
+{
+color: #737373!important;
+text-transform:  lowercase;
+font-weight: 300;
+}
+#search
+{
+margin-top:  20px;
+margin-bottom: 20px;
+}
+#FormAra
+{
+height: 100%;
+position:  relative;
+}
+#FormAra input[type="text"]
+{
+position:  absolute;
+top: 30px;
+right:  0;
+font-family: "Open Sans", sans-serif;
+display:  none;
+border: 1px solid #000;
+margin-right:  50px;
+border-radius: 10px;
+height:  30px;
+width: 100%;
+}
+
+.searchicon
+{
+width:  30px;
+height: 62px;
+padding-right:  0;
+padding-left: 0;
+background-image: url('https://www.tenisburada.com//Data/EditorFiles/search.png');
+background-repeat:  no-repeat;
+background-position: center center;
+border:  0;
+cursor: pointer;
+background-color:  transparent;
+}
+#live-search-desktop
+{
+top: 8px !important;
+display:  none;
+border: 1px solid #FFF !important;
+margin-right: 30px !important;
+height: 30px !important;
+width: 180px !important;
+background-color:  #000;
+color: #FFF;
+padding-left:  5px;
+}
+#live-search-desktop:hover, #searchRight-desktop:hover>#live-search-desktop
+{
+display:  block;
+}
+#live-search:hover, #searchRight:hover>#live-search
+{
+display:  block;
+}
+#searchRight
+{
+position:  relative;
+z-index: 33;
+}
+#searchRight select
+{
+width:  150px;
+height: 28px;
+background: url('https://www.tenisburada.com/selectArrow.png') no-repeat right center;
+border:  0;
+appearance: none;
+-moz-appearance:  none;
+-webkit-appearance: none;
+color:  #666;
+font-size: 13px;
+font-family: "Open Sans", sans-serif;
+}
+#FormAra input[type="submit"]
+{
+width:  30px;
+height: 50px;
+padding-top:  0;
+padding-right: 0;
+padding-bottom:  0;
+padding-left: 0;
+background-image: url('https://www.tenisburada.com//Data/EditorFiles/search.png');
+background-repeat:  no-repeat;
+background-position: center center;
+border:  0;
+cursor: pointer;
+background-color:  transparent;
+}
+#live-search-box
+{
+position:  absolute;
+top: calc(100% + 1px);
+left:  -1px;
+width: 100%;
+background:  #fff;
+border: 1px solid #ececec;
+border-bottom:  0;
+z-index: 33333;
+}
+#live-search-box ul
+{
+float:  left;
+width: 100%;
+}
+#live-search-box li
+{
+float:  left;
+width: 100%;
+border-bottom:  1px solid #ececec;
+}
+#live-search-box a
+{
+float:  left;
+width: 100%;
+font-weight:  600;
+display: flex;
+align-items:  center;
+}
+#live-search-box span
+{
+width: 8%;
+height:  0;
+padding-bottom: 8%;
+margin-top:  5px;
+margin-right: 15px;
+margin-bottom:  5px;
+margin-left: 5px;
+overflow:  hidden;
+}
+#live-search-box img
+{
+margin:  0 auto;
+}
+#mainMenu .menu>li
+{
+padding:  21px 0;
+}
+#mainMenu .menu>li:hover
+{
+background:  #f9f9f9;
+}
+#mainMenu a
+{
+height:  auto;
+line-height: 44px;
+font-size:  12px;
+color: #FFF;
+text-align:  center;
+font-weight: 400;
+font-family: 'Oswald', sans-serif;
+}
+#mainMenu .parentLink li a:hover, #main-menu>.parentLink>.subMenu>.inner>.col-12>.col-12>.dynamicMenu>.notClear>li>a:hover, div.dynamicMenu>ul>li>a:hover
+{
+text-decoration:  underline;
+line-height: 0;
+color:  #000;
+}
+div.dynamicMenu>ul>li>a
+{
+color: #202020 !important;
+font-size: 15px !important;
+line-height: 30px !important;
+height: 30px !important;
+border-bottom: 3px solid rgba(0, 0, 0, 0.8);
+width: auto !important;
+padding:  0;
+margin: 0;
+line-height:  0;
+color: #000;
+}
+div.dynamicMenu>ul>li>a:hover
+{
+text-decoration:  underline;
+}
+div.dynamicMenu>ul>li>a
+{
+color: #202020 !important;
+font-size: 15px !important;
+line-height: 30px !important;
+height: 30px !important;
+padding:  0;
+margin: 0;
+}
+
+.menu li.parentLink>a
+{
+background-color:  transparent;
+}
+#mainMenu #homeLink a
+{
+width:  54px;
+background: url('https://www.tenisburada.com/homeIcon.png') no-repeat center center;
+}
+#mainMenu .parentLink li a
+{
+border-right:  0;
+padding-right: 0!important;
+padding-left: 0!important;
+}
+
+.subMenu
+{
+position:  absolute;
+left: 0;
+right:  0;
+max-width: 100%;
+box-shadow: 0 2px 2px 0px rgba(0, 0, 0, .1);
+display:  none;
+z-index: 3;
+}
+
+.subMenu *:not(.dynamicMenu)
+{
+background-color:  transparent;
+}
+#mainMenu .subMenu
+{
+top:  50px;
+padding: 0;
+margin:  0;
+background-color: rgba(255, 255, 255, 0.95);
+border-bottom: 3px solid rgba(0, 0, 0, 0.95);
+}
+:hover>.subMenu
+{
+display:  block;
+}
+
+.menuTitle
+{
+font-size:  20px;
+padding-bottom: 10px;
+}
+
+.subMenu a
+{
+padding-right:  10px;
+padding-left: 10px;
+font-size:  12px;
+font-family: 'Open Sans', sans-serif;
+box-sizing:  border-box;
+}
+
+.subMenu li li a
+{
+font-size:  11px;
+background-image: url('https://www.tenisburada.com/menuSmallArrow.png');
+background-repeat:  no-repeat;
+background-position: 0 center;
+}
+
+.subMenu a:hover
+{
+color:  #FFF;
+}
+#mainMenu .subMenu a:hover
+{
+color:  #ff7200;
+}
+
+.subMenu .dynamicMenu
+{
+background-color:  transparent;
+}
+
+.subMenu li li a:hover
+{
+padding-left:  20px;
+background-image: url('https://www.tenisburada.com/menuSmallArrowHover.png');
+background-position:  10px center;
+}
+#alterMenu
+{
+background-color:  #6c6c6c;
+border-top: 1px solid #aaa;
+border-bottom:  1px solid #575757;
+}
+#alterMenu .menu>li
+{
+padding-top:  4px;
+padding-bottom: 4px;
+}
+#alterMenu .menu>li:hover
+{
+background:  #f5f5f5;
+}
+#alterMenu a
+{
+line-height:  21px;
+font-size: 12px;
+color:  #f3f3f3;
+border-right: 1px solid #aaa;
+}
+#alterMenu .menu>li:hover a
+{
+color:  #444;
+}
+#alterMenu .menu>li:hover .subMenu
+{
+top:  29px;
+z-index: 3333;
+}
+#alterMenu .menu>li:hover .subMenu a
+{
+border-right:  0;
+}
+#alterMenu .menu>li:hover .subMenu a:hover
+{
+color:  #f37121;
+}
+#alterMenu .subMenu li, #alterMenu .subMenu a
+{
+line-height:  30px;
+border-color: #e0e0e0;
+}
+@media screen and (max-width: 1230px) and (min-width: 769px)
+{
+.menu a
+{
+padding-left:  0;
+padding-right: 0;
+}
+li.ease>a
+{
+padding-left:  5px;
+padding-right: 5px;
+}
+}
+@media screen and (max-width: 1000px)
+{
+}
+@media screen and (min-width: 769px)
+{
+.menu li.parentLink:hover>ul
+{
+display:  block;
+}
+#pageContent>.slide-wrapper>.loaderWrapper
+{
+height:  330px;
+}
+}
+@media screen and (max-width: 768px)
+{
+#pageContent>.slide-wrapper>.loaderWrapper
+{
+height:  auto;
+}
+#mainColumn #filtre
+{
+margin-top: -37px!important;
+}
+
+.menu-list, .menu-list li, .menu-list a
+{
+width: 100%;
+}
+
+.menu-list.show, .menu li.parentLink ul.show
+{
+display:  block;
+}
+
+.mt10
+{
+margin-top: 10px!important;
+}
+
+.mt-xs-10
+{
+margin-top:  10px;
+}
+
+.mb10
+{
+margin-bottom: 10px!important;
+}
+
+.mb-xs-10
+{
+margin-bottom:  10px;
+}
+
+.mb-xs-15
+{
+margin-bottom:  15px;
+}
+
+.mb-xs-30
+{
+margin-bottom:  30px;
+}
+
+.animate
+{
+-webkit-animation-duration: 0.5s;
+animation-duration: 0.5s;
+-webkit-animation-fill-mode:  both;
+animation-fill-mode: both;
+}
+#menuBtn
+{
+width:  54px;
+height: 44px!important;
+padding: 12px 13px !important;
+cursor:  pointer;
+}
+@-webkit-keyframes pageOverlayDefault
+{
+from
+{
+opacity:  1;
+}
+to
+{
+opacity:  0;
+}
+}
+@keyframes pageOverlayDefault
+{
+from
+{
+opacity:  1;
+}
+to
+{
+opacity:  0;
+}
+}
+#pageOverlay
+{
+position:  fixed;
+top: 0;
+right:  0;
+bottom: 0;
+left:  0;
+background: rgba(0, 0, 0, .7);
+z-index:  3333;
+opacity: 0;
+display:  none;
+-webkit-animation-duration: 1.5s;
+animation-duration: 1.5s;
+-webkit-animation-name:  pageOverlayDefault;
+animation-name: pageOverlayDefault;
+}
+@-webkit-keyframes pageOverlay
+{
+from
+{
+opacity:  0;
+}
+to
+{
+opacity:  1;
+}
+}
+@keyframes pageOverlay
+{
+from
+{
+opacity:  0;
+}
+to
+{
+opacity:  1;
+}
+}
+
+.menuShow #pageOverlay
+{
+display:  block;
+-webkit-animation-name: pageOverlay;
+animation-name:  pageOverlay;
+}
+@-webkit-keyframes mobileMenuDefault
+{
+from
+{
+left:  0;
+}
+to
+{
+left: -100%;
+}
+}
+@keyframes mobileMenuDefault
+{
+from
+{
+left:  0;
+}
+to
+{
+left: -100%;
+}
+}
+#mobileMenu
+{
+position:  fixed;
+left: -100%;
+top:  0;
+bottom: 0;
+width: 100%;
+background:  #fff;
+overflow-y: auto;
+z-index:  4444;
+-webkit-animation-name: mobileMenuDefault;
+animation-name:  mobileMenuDefault;
+}
+@-webkit-keyframes mobileMenu
+{
+from
+{
+left: -100%;
+}
+to
+{
+left:  0;
+}
+}
+@keyframes mobileMenu
+{
+from
+{
+left: -100%;
+}
+to
+{
+left:  0;
+}
+}
+
+.menuShow #mobileMenu
+{
+-webkit-animation-name:  mobileMenu;
+animation-name: mobileMenu;
+}
+#closeMobileMenu
+{
+line-height:  54px;
+color: #FFF;
+font-size:  30px;
+padding-left: 74px;
+background: url('https://www.tenisburada.com//Data/EditorFiles/carpi.png') no-repeat;
+cursor:  pointer;
+}
+#mobileMenu span, #mobileMenu a, #mobileMenu label, #mobileMenu select
+{
+color:  #FFF;
+font-size: 16px;
+line-height:  44px;
+/*background:url('https://www.tenisburada.com/menuArrow.png') no-repeat right center;*/
+cursor:  pointer;
+}
+#mobileMenu span.active
+{
+color:  #f36d24;
+background: url('https://www.tenisburada.com/menuArrowActive.png') no-repeat right center;
+}
+#mobileMenu li ul
+{
+display:  none;
+}
+#mobileMenu li ul a
+{
+color:  #999;
+font-size: 16px;
+line-height:  44px;
+background: url('https://www.tenisburada.com/menuSubArrow.png') no-repeat 0 center;
+}
+#mobileMenu select
+{
+background:  none;
+border: 0;
+}
+#mobileMenu label[for="langMobile"]
+{
+padding-left:  50px;
+background: url(/Data/EditorFiles/cart.png) no-repeat center;
+height:  44px;
+}
+#mobileMenu label[for="curMobile"]
+{
+padding-left:  50px;
+background: url('https://www.tenisburada.com/curMobileIcon.png') no-repeat 10px center;
+}
+#basketMobile
+{
+background: url(/Data/EditorFiles/cart.png) no-repeat center center;
+}
+#favMobile:before
+{
+float:  left;
+width: 30px;
+height:  45px;
+background: url('https://www.tenisburada.com/favMobileIcon.png') no-repeat 0 center;
+margin-right:  10px;
+content: '';
+}
+#logo a img
+{
+display:  inline;
+vertical-align: middle;
+}
+#search
+{
+padding-left:  0;
+padding-right: 0;
+margin-top:  0;
+margin-bottom: 0;
+}
+#hmLinks
+{
+padding-top:  0;
+padding-bottom: 0;
+}
+#hmLinks>a
+{
+padding-top:  48px;
+}
+#hmLinks a.authorLink
+{
+background: url("userIconBig.png") no-repeat center 10px;
+}
+a.basketLink
+{
+background: url("basketIconBig.png") no-repeat center 9px;
+}
+a.basketLinkmobile
+{
+background-image: url(/Data/EditorFiles/mobil/sepet.png);
+background-repeat:  no-repeat;
+background-position: center;
+background-color:  transparent;
+cursor: pointer;
+position:  absolute;
+right: 7px;
+width:  40px;
+top: 10px;
+background-size:  cover;
+}
+
+.mobilesearch
+{
+width: 62px!important;
+height: 44px!important;
+background-image: url('https://www.tenisburada.com//Data/EditorFiles/search.png')!important;
+}
+}
+#hmLinks a strong
+{
+line-height:  22px;
+font-size: 14px;
+}
+#hmLinks a:hover strong
+{
+color:  #000;
+}
+#search .row
+{
+margin-right:  -20px;
+margin-left: 0;
+}
+#FormAra input[type="text"]
+{
+font-size:  12px;
+}
+#searchRight
+{
+width:  auto;
+}
+#searchRight select
+{
+display:  none;
+}
+#mainMenu .menu-wrap
+{
+position:  absolute;
+left: 55px;
+right:  0;
+}
+#mainMenu a, #alterMenu a
+{
+background-image:  none;
+border-right: 0;
+}
+#mainMenu .menu-list
+{
+padding-top:  10px;
+padding-bottom: 10px;
+}
+#mainMenu .menu-list a
+{
+border-top:  1px solid #dedede;
+}
+#alterMenu .menu-list a
+{
+border-top:  1px solid #aaa;
+}
+@media screen and (max-width: 540px)
+{
+#closeMobileMenu
+{
+font-size:  18px;
+}
+#mobileMenu span, #mobileMenu a, #mobileMenu label, #mobileMenu select
+{
+line-height:  45px;
+font-size: 18px;
+}
+#mobileMenu li ul a
+{
+line-height:  30px;
+font-size: 16px;
+}
+#hmLinks a.basketLink
+{
+width:  60px;
+height: 74px;
+background: url("basketIconBig.png") no-repeat center center;
+}
+}
+
+.sepet
+{
+padding:  0 40px;
+}
+
+.mr0
+{
+margin-right: 0px!important;
+}
+
+.serachbox
+{
+margin-top:  -1px;
+}

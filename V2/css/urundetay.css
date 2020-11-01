@@ -971,16 +971,20 @@ table.product-prop {
 	margin-right: 5px;
 	margin-bottom: 5px;
 }
-
+#mobileBuyBtn .subOne a.col.passive {
+	pointer-events: none
+}
 #mobileBuyBtn .subOne a.col:hover,
 #mobileBuyBtn .subOne a.col:focus,
-#mobileBuyBtn .subOne a.col:active {
+#mobileBuyBtn .subOne a.col:active,
+#mobileBuyBtn .subOne a.col.selected {
 	background-color: #000;
 }
 
 #mobileBuyBtn .subOne a.col:hover p,
 #mobileBuyBtn .subOne a.col:focus p,
-#mobileBuyBtn .subOne a.col:active p {
+#mobileBuyBtn .subOne a.col:active p,
+#mobileBuyBtn .subOne a.col.selected p {
 	color: #fff !important;
 }
 
@@ -1079,8 +1083,6 @@ table.product-prop {
 }
 
 #benzerurunler {
-	margin: 0 0 24px;
-	padding: 0 0 24px;
 	margin-bottom: 10px;
 	display: flex;
 	display: -webkit-flex;
@@ -1192,6 +1194,13 @@ table.product-prop {
 	}
 }
 
+@media only screen and (min-device-width : 768px)  and (max-device-width : 1024px) and (-webkit-min-device-pixel-ratio: 2) { 
+	.productImage.fade li.current {
+		height: unset !important;
+		max-height: unset !important;
+	}
+}
+
 @media screen and (min-width:769px) {
 	.productThumbs {
 		position: absolute;
@@ -1229,7 +1238,8 @@ table.product-prop {
 
 	#mobileBuyBtn {
 		border-bottom: 1px solid #ccc;
-		padding: 0 0 24px !important;
+		padding: 24px 0 24px !important;
+		border-top: 1px solid #ccc;
 	}
 
 	#mobileBuyBtn .subOne {
@@ -1238,6 +1248,11 @@ table.product-prop {
 }
 
 @media screen and (max-width:768px) {
+	#benzerurunler {
+		max-width: 100%;
+		justify-content: center;
+		align-items: center;
+	}
 	.productImage.fade li.current {
 		position: static;
 		height: calc(calc(var(--vh, 1vh) * 100) - 90px);

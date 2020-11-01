@@ -1,0 +1,67 @@
+<div class="IcerikSayfaYol">
+  {if $FiltrelemePaneli==true}
+  <div class="Arac">
+    <div class="stok_arka">
+      <select name="Sr" id="Sr" >
+        {foreach from=$ListelemeSecenek item="L" name="AyarSecenek"}
+        <option value="{$L.0}" {if $L.0==$SR}selected{/if}>{$L.1}</option>
+        {/foreach}
+      </select>
+    </div>
+    
+    <div class="kategori">
+      <input type="checkbox" name="St" id="St">{#stoktakiler#}
+    </div>
+    
+    <div class="BlokSecim">
+      {if $Gorunum1_Simge==true}
+      <a href="#" class="YatayAktif" title="{#yatay_gorunum#}"></a>
+      <a href="#" class="Liste" title="{#liste_gorunum#}" data-onclick="replaced"></a>return false;" ></a>
+    <a href="#" class="Katalog" title="{#katalog_gorunum#}" data-onclick="replaced"></a>return false;" ></a>
+  {elseif $Gorunum2_Simge==true}
+  <a href="#" class="Yatay" title="{#yatay_gorunum#}" data-onclick="replaced"></a>return false;"></a>
+<a href="#" class="ListeAktif" title="{#liste_gorunum#}"></a>
+<a href="#" class="Katalog" title="{#katalog_gorunum#}" data-onclick="replaced"></a>return false;" ></a>
+{else}
+<a href="#" class="Yatay" title="{#yatay_gorunum#}"  data-onclick="replaced"></a>return false;"></a>
+<a href="#" class="Liste" title="{#liste_gorunum#}"  data-onclick="replaced"></a>return false;"></a>
+<a href="#"  class="KatalogAktif" title="{#katalog_gorunum#}"></a>
+{/if}
+</div>
+<script>if(getVar('St')=='1') document.getElementById('St').checked=true;</script>
+{/if}
+<div class="Sayfa">
+  {if $Total==0}
+  <div class="bilgi"></div>
+  {elseif $SayfalamaYok==true}
+  <div class="bilgi"></div>
+  {else}
+  <div class="bilgi"></div>
+  {$paginator}
+  {/if}
+</div>
+</div>
+</div>
+
+{if $URUN_SAYFA_BASLIK!=''}
+<div class="IcerikSayfaYol">
+  <div class="Arac" style="font-size:15px; font-weight:bold;">{$URUN_SAYFA_BASLIK}</div>
+</div>
+{/if}
+{* Ürünleri göster *}
+{include file="$UrunGosterimTpl"}
+{* Sayfalama göster *}
+<div class="IcerikSayfaYol">
+  <div class="Arac">
+    <div class="Sayfa">
+      {if $Total==0}
+      <div class="Bilgi">{#urun_yok#}</div>
+      {elseif $SayfalamaYok==true}
+      <div class="Bilgi">{#urun_toplam1#}<b>{$Total}</b>{#urun_toplam2#}</div>
+      {else}
+      <div class="Bilgi">{#urun_toplam1#}<b>{$Total}</b>{#urun_toplam2#}</div>
+      {$paginator}
+      {/if}
+    </div>
+  </div>
+</div>

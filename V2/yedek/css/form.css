@@ -1,0 +1,1194 @@
+/* ios & macos reset */
+.form-control input[type="text"],
+.form-control input[type="password"],
+.form-control input[type="tel"],
+.form-control input[type="number"],
+.form-control select,
+.form-control textarea,
+.form input[type="text"],
+.form input[type="password"],
+.form input[type="tel"],
+.form input[type="number"],
+.form select,
+.form textarea
+{
+background-color:#fff !important;
+background-image:none !important;
+border:1px solid #ccc !important;
+border-radius:0 !important;
+box-shadow:none !important;
+}
+/* ios & macos reset */
+.form-control,
+.form
+{
+line-height:   20px;
+font-size:12px;
+cursor:   pointer;
+}
+
+.form-control.medium,
+.form.medium
+{
+line-height:   30px;
+font-size:13px;
+}
+
+.form-control.large,
+.form.large
+{
+line-height:   40px;
+font-size:15px;
+}
+
+.form-control.xlarge,
+.form.xlarge
+{
+line-height:   50px;
+font-size:15px;
+}
+#invoiceForm .form-control.xlarge,
+#invoiceForm .form.xlarge
+{
+padding-top:    9px;
+padding-bottom: 9px;
+}
+
+.input-icon
+{
+position:   relative;
+}
+
+.icon
+{
+position:   absolute;
+top:0;
+left:   0;
+width:20px;
+height:   20px;
+background-color:#ccc;
+background-repeat:   no-repeat;
+background-position:center center;
+z-index:   0;
+}
+
+.medium .icon
+{
+width:   30px;
+height:30px;
+}
+
+.large .icon
+{
+width:   40px;
+height:40px;
+}
+
+.xlarge .icon
+{
+width:   50px;
+height:50px;
+}
+
+.invalid .icon
+{
+background-color:   #d9534f;
+}
+
+.icon-firstname
+{
+background-image:url('icons/firstname.png');
+}
+
+.icon-lastname
+{
+background-image:url('icons/lastname.png');
+}
+
+.icon-mail
+{
+background-image:url('icons/mail.png');
+}
+
+.icon-pen
+{
+background-image:url('icons/pen.png');
+}
+
+.icon-message
+{
+background-image:url('icons/message.png');
+}
+
+.icon-attach
+{
+background-image:url('icons/attach.png');
+}
+
+.icon-code
+{
+background-image:url('icons/code.png');
+}
+
+.icon-pass
+{
+background-image:url('icons/password.png');
+}
+
+.icon-passConfirm
+{
+background-image:url('icons/passConfirm.png');
+}
+
+.icon-company
+{
+background-image:url('icons/company.png');
+}
+
+.icon-taxOffice
+{
+background-image:url('icons/taxOffice.png');
+}
+
+.icon-taxId
+{
+background-image:url('icons/taxId.png');
+}
+
+.icon-tc
+{
+background-image:url('icons/tc.png');
+}
+
+.icon-birthday
+{
+background-image:url('icons/birthday.png');
+}
+
+.icon-gender
+{
+background-image:url('icons/gender.png');
+}
+
+.icon-mobilePhone
+{
+background-image:url('icons/mobilePhone.png');
+}
+
+.icon-homePhone
+{
+background-image:url('icons/homePhone.png');
+}
+
+.icon-officePhone
+{
+background-image:url('icons/officePhone.png');
+}
+
+.icon-address
+{
+background-image:url('icons/address.png');
+}
+
+.icon-map
+{
+background-image:url('icons/map.png');
+}
+
+.icon-zipCode
+{
+background-image:url('icons/zipCode.png');
+}
+
+.icon-fb
+{
+background-color:   #3c599b;
+background-image:url('icons/facebook.png');
+}
+
+.icon-tw
+{
+background-color:   #29aae3;
+background-image:url('icons/twitter.png');
+}
+
+.icon-star
+{
+background-image:url('icons/star.png');
+}
+
+.myFlagIcon
+{
+float:   left;
+width:100%;
+height:100%;
+}
+
+.myFlagIcon i
+{
+position:   absolute;
+top:50%;
+left:50%;
+width:   16px;
+height:11px;
+margin-top:   -5px;
+margin-left:-8px;
+background-image:url("/theme/standart/images/blok/flags.png");
+background-repeat:   no-repeat;
+}
+
+.flagList
+{
+position:   absolute;
+width:600%;
+top:100%;
+left:   0;
+background:#fff;
+border-color:   #ccc;
+z-index:33;
+}
+
+.flagList li
+{
+line-height:   20px;
+}
+
+.flagList li:hover
+{
+background-color:   #ececec;
+}
+
+.flag
+{
+float:   left;
+width:16px;
+height:   11px;
+background-image:url("/theme/standart/images/blok/flags.png");
+background-repeat:   no-repeat;
+margin-top:5px;
+margin-right:   10px;
+}
+
+.country
+{
+float:   left;
+height:20px;
+}
+
+.code
+{
+float:   right;
+height:20px;
+}
+
+.required
+{
+background:url('required.png') no-repeat right center;
+}
+#secCode
+{
+position:   absolute;
+top:0;
+left:   0;
+}
+
+.form-control input[type="text"],
+.form-control input[type="password"],
+.form-control select,
+.form-control textarea,
+.form input[type="text"],
+.form input[type="password"],
+.form select,
+.form textarea
+{
+height:   20px;
+margin:0;
+padding-top:   0;
+padding-left:5px;
+padding-bottom:   0;
+padding-right:5px;
+border:   1px solid #ccc;
+box-sizing:border-box;
+}
+
+.placeholder
+{
+position:    absolute;
+top:1px;
+right:    1px;
+bottom: 1px;
+left:    1px;
+background:#fff;
+z-index:    33;
+display:none;
+}
+
+.form-control textarea,
+.form textarea
+{
+height:   90px;
+line-height:18px;
+}
+
+.icon + input[type="text"],
+.icon + input[type="password"],
+.icon + textarea,
+.ie .icon + select,
+.input-icon .placeholder
+{
+padding-left:   25px;
+}
+
+.icon + select
+{
+text-indent:   25px;
+}
+
+.form-control.medium input[type="text"],
+.form-control.medium input[type="password"],
+.form-control.medium select,
+.form.medium input[type="text"],
+.form.medium input[type="password"],
+.form.medium select
+{
+height:   30px;
+}
+
+.form-control.medium textarea,
+.form.medium textarea
+{
+height:   120px;
+line-height:20px;
+padding-top:   4px;
+padding-bottom:4px;
+}
+
+.medium .icon + input[type="text"],
+.medium .icon + input[type="password"],
+.medium .icon + textarea,
+.ie .medium .icon + select,
+.medium .input-icon .placeholder
+{
+padding-left:   35px;
+}
+
+.medium .icon + select
+{
+text-indent:   35px;
+}
+
+.form-control.large input[type="text"],
+.form-control.large input[type="password"],
+.form-control.large select,
+.form.large input[type="text"],
+.form.large input[type="password"],
+.form.large select
+{
+height:   40px;
+padding-left:10px;
+padding-right:   10px;
+}
+
+.form-control.large textarea,
+.form.large textarea
+{
+height:   150px;
+line-height:20px;
+padding-top:   9px;
+padding-bottom:9px;
+}
+
+.large .icon + input[type="text"],
+.large .icon + input[type="password"],
+.large .icon + textarea,
+.ie .large .icon + select,
+.large .input-icon .placeholder
+{
+padding-left:   50px;
+}
+
+.large .icon + select
+{
+text-indent:   50px;
+}
+
+.form-control.xlarge input[type="text"],
+.form-control.xlarge input[type="password"],
+.form-control.xlarge select,
+.form.xlarge input[type="text"],
+.form.xlarge input[type="password"],
+.form.xlarge select
+{
+height:   50px;
+padding-left:10px;
+padding-right:   10px;
+}
+
+.form-control.xlarge textarea,
+.form.xlarge textarea
+{
+height:   180px;
+line-height:20px;
+padding-top:   14px;
+padding-bottom:14px;
+}
+
+.xlarge .icon + input[type="text"],
+.xlarge .icon + input[type="password"],
+.xlarge .icon + textarea,
+.ie .xlarge .icon + select,
+.xlarge .input-icon .placeholder
+{
+padding-left:   60px;
+}
+
+.xlarge .icon + select
+{
+text-indent:   60px;
+}
+#secCode + input[type="text"],
+#secCode + input[type="password"],
+#secCode + select,
+#secCode + textarea
+{
+padding-left:   105px;
+}
+
+.form-control.invalid input[type="text"],
+.form-control.invalid input[type="password"],
+.form-control.invalid select,
+.form-control.invalid textarea,
+.form.invalid input[type="text"],
+.form.invalid input[type="password"],
+.form.invalid select,
+.form.invalid textarea,
+.ng-invalid
+{
+border:   1px solid #d9534f;
+background-color:#FFCAC8;
+color:   #fff;
+}
+
+.form-control input[type="file"],
+.form input[type="file"]
+{
+visibility:   hidden;
+position:absolute;
+top:   0;
+left:0;
+width:100%;
+height:100%;
+}
+
+.input-wrap,
+.input-wrap input
+{
+width:   17px;
+height:20px;
+}
+
+.medium .input-wrap,
+.medium .input-wrap input
+{
+height:   30px;
+}
+
+.large .input-wrap,
+.large .input-wrap input
+{
+height:   40px;
+}
+
+.input-wrap
+{
+float:   left;
+margin-right:10px;
+}
+
+.input-wrap.radio
+{
+background:url('radio.png') no-repeat center center;
+}
+
+.form-control:hover .input-wrap.radio
+{
+background:url('radioHover.png') no-repeat center center;
+}
+
+.input-wrap.radio.active,
+.form-control:hover .input-wrap.radio.active,
+.active > .form-control .input-wrap.radio
+{
+background:url('radioActive.png') no-repeat center center;
+}
+
+.input-wrap.checkbox
+{
+background:url('checkbox.png') no-repeat center center;
+}
+
+.form-control:hover .input-wrap.checkbox
+{
+background:url('checkboxHover.png') no-repeat center center;
+}
+
+.input-wrap.checkbox.active,
+.form-control:hover .input-wrap.checkbox.active,
+.active > .form-control .input-wrap.checkbox
+{
+background:url('checkboxActive.png') no-repeat center center;
+}
+
+.input-wrap input
+{
+visibility:   hidden;
+margin:0;
+}
+
+.form-link
+{
+line-height:   30px;
+font-size:15px;
+color:   #666;
+}
+
+.info:before
+{
+content:'';
+display:   inline-block;
+min-height:13px;
+min-width:   12px;
+background:url('info.png') no-repeat 0 center;
+margin-right:   10px;
+vertical-align:middle;
+}
+
+.ask:before
+{
+content:'';
+display:   inline-block;
+min-height:15px;
+min-width:   15px;
+background:url('infoAsk.png') no-repeat 0 center;
+margin-right:   10px;
+vertical-align:middle;
+}
+
+.social-btn
+{
+height:   20px;
+padding-left:29px;
+}
+
+.medium .social-btn
+{
+height:   30px;
+padding-left:39px;
+}
+
+.large .social-btn
+{
+height:   40px;
+padding-left:49px;
+}
+
+.xlarge .social-btn
+{
+height:   50px;
+padding-left:59px;
+}
+
+.removeBtn
+{
+width:   20px;
+height:20px;
+background-image:url('removeIcon.png');
+background-repeat:   no-repeat;
+background-position:center center;
+}
+
+.hasDatepicker
+{
+padding-right:   26px;
+background:url('calendarIcon.png') no-repeat right center;
+}
+@media screen and (max-width: 768px)
+{
+.form-control input[type="text"],
+.form-control input[type="password"],
+.form-control select,
+.form-control textarea,
+.form input[type="text"],
+.form input[type="password"],
+.form select,
+.form textarea
+{
+font-size:   17px;
+}
+
+.icon:not(.myFlag)
+{
+display:    none;
+}
+
+.icon:not(.myFlag) + input[type="text"],
+.icon:not(.myFlag) + input[type="password"],
+.icon:not(.myFlag) + textarea,
+.icon:not(.myFlag) + select,
+.medium .icon:not(.myFlag) + input[type="text"],
+.medium .icon:not(.myFlag) + input[type="password"],
+.medium .icon:not(.myFlag) + textarea,
+.medium .icon:not(.myFlag) + select,
+.large .icon:not(.myFlag) + input[type="text"],
+.large .icon:not(.myFlag) + input[type="password"],
+.large .icon:not(.myFlag) + textarea,
+.large .icon:not(.myFlag) + select,
+.xlarge .icon:not(.myFlag) + input[type="text"],
+.xlarge .icon:not(.myFlag) + input[type="password"],
+.xlarge .icon:not(.myFlag) + textarea,
+.xlarge .icon:not(.myFlag) + select
+{
+padding-left:   10px;
+}
+
+.icon + select,
+.medium .icon + select,
+.large .icon + select,
+.xlarge .icon + select
+{
+text-indent:   0;
+}
+}
+
+.form-control input[type="email"],
+.form-control input[type="search"],
+.form input[type="email"],
+.form input[type="search"]
+{
+background-color:#fff !important;
+background-image:none !important;
+border:1px solid #ccc !important;
+border-radius:0 !important;
+box-shadow:none !important;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button
+{
+-webkit-appearance:  none;
+margin: 0;
+}
+input[type="number"][type=number]
+{
+-moz-appearance: textfield;
+}
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration
+{
+display:  none;
+}
+
+.form-control input[type="tel"],
+.form-control input[type="number"],
+.form-control input[type="email"],
+.form-control input[type="search"],
+.form input[type="tel"],
+.form input[type="number"],
+.form input[type="email"],
+.form input[type="search"]
+{
+height: 20px;
+margin:0;
+padding-top: 0;
+padding-left:5px;
+padding-bottom: 0;
+padding-right:5px;
+border: 1px solid #ccc;
+box-sizing:border-box;
+}
+
+.form-control input[type="tel"].loadedPlace,
+.form-control input[type="number"].loadedPlace,
+.form-control input[type="email"].loadedPlace,
+.form-control input[type="search"].loadedPlace,
+.form input[type="tel"].loadedPlace,
+.form input[type="number"].loadedPlace,
+.form input[type="email"].loadedPlace,
+.form input[type="search"].loadedPlace
+{
+padding-top: 14px;
+}
+
+.form-control.medium input[type="tel"].loadedPlace,
+.form-control.medium input[type="number"].loadedPlace,
+.form-control.medium input[type="email"].loadedPlace,
+.form-control.medium input[type="search"].loadedPlace,
+.form.medium input[type="tel"].loadedPlace,
+.form.medium input[type="number"].loadedPlace,
+.form.medium input[type="email"].loadedPlace,
+.form.medium input[type="search"].loadedPlace
+{
+padding-top: 14px;
+}
+
+.form-control.xlarge input[type="tel"].loadedPlace,
+.form-control.xlarge input[type="number"].loadedPlace,
+.form-control.xlarge input[type="email"].loadedPlace,
+.form-control.xlarge input[type="search"].loadedPlace,
+.form.xlarge input[type="tel"].loadedPlace,
+.form.xlarge input[type="number"].loadedPlace,
+.form.xlarge input[type="email"].loadedPlace,
+.form.xlarge input[type="search"].loadedPlace
+{
+padding-top: 14px;
+}
+
+.icon + input[type="tel"],
+.icon + input[type="number"],
+.icon + input[type="email"],
+.icon + input[type="search"]
+{
+padding-left: 25px;
+}
+[dir="rtl"] .icon + input[type="tel"],
+[dir="rtl"] .icon + input[type="number"],
+[dir="rtl"] .icon + input[type="email"],
+[dir="rtl"] .icon + input[type="search"]
+{
+padding-right: 25px;
+padding-left:5px;
+}
+
+.form-control.medium input[type="tel"],
+.form-control.medium input[type="number"],
+.form-control.medium input[type="email"],
+.form-control.medium input[type="search"],
+.form.medium input[type="tel"],
+.form.medium input[type="number"],
+.form.medium input[type="email"],
+.form.medium input[type="search"]
+{
+height: 30px;
+}
+
+.medium .icon + input[type="tel"],
+.medium .icon + input[type="number"],
+.medium .icon + input[type="email"],
+.medium .icon + input[type="search"]
+{
+padding-left: 35px;
+}
+[dir="rtl"] .medium .icon + input[type="tel"],
+[dir="rtl"] .medium .icon + input[type="number"],
+[dir="rtl"] .medium .icon + input[type="email"],
+[dir="rtl"] .medium .icon + input[type="search"]
+{
+padding-right: 35px;
+padding-left:5px;
+}
+
+.form-control.large input[type="tel"],
+.form-control.large input[type="number"],
+.form-control.large input[type="email"],
+.form-control.large input[type="search"],
+.form.large input[type="tel"],
+.form.large input[type="number"],
+.form.large input[type="email"],
+.form.large input[type="search"]
+{
+height: 40px;
+padding-left:10px;
+padding-right: 10px;
+}
+
+.large .icon + input[type="tel"],
+.large .icon + input[type="number"],
+.large .icon + input[type="email"],
+.large .icon + input[type="search"]
+{
+padding-left: 50px;
+}
+[dir="rtl"] .large .icon + input[type="tel"],
+[dir="rtl"] .large .icon + input[type="number"],
+[dir="rtl"] .large .icon + input[type="email"],
+[dir="rtl"] .large .icon + input[type="search"]
+{
+padding-right: 50px;
+padding-left:10px;
+}
+
+.form-control.xlarge input[type="tel"],
+.form-control.xlarge input[type="number"],
+.form-control.xlarge input[type="email"],
+.form-control.xlarge input[type="search"],
+.form.xlarge input[type="tel"],
+.form.xlarge input[type="number"],
+.form.xlarge input[type="email"],
+.form.xlarge input[type="search"]
+{
+height: 50px;
+padding-left:10px;
+padding-right: 10px;
+}
+
+.xlarge .icon + input[type="tel"],
+.xlarge .icon + input[type="number"],
+.xlarge .icon + input[type="email"],
+.xlarge .icon + input[type="search"]
+{
+padding-left: 60px;
+}
+
+.xlarge .icon + input[type="tel"],
+.xlarge .icon + input[type="number"],
+.xlarge .icon + input[type="email"],
+.xlarge .icon + input[type="search"]
+{
+padding-left: 60px;
+}
+[dir="rtl"] .xlarge .icon + input[type="tel"],
+[dir="rtl"] .xlarge .icon + input[type="number"],
+[dir="rtl"] .xlarge .icon + input[type="email"],
+[dir="rtl"] .xlarge .icon + input[type="search"]
+{
+padding-right: 60px;
+padding-left:10px;
+}
+
+.secCode + input[type="tel"],
+.secCode + input[type="number"],
+.secCode + input[type="email"],
+.secCode + input[type="search"],
+#secCode + input[type="tel"],
+#secCode + input[type="number"],
+#secCode + input[type="email"],
+#secCode + input[type="search"],
+#codeRecommend + input[type="tel"],
+#codeRecommend + input[type="number"],
+#codeRecommend + input[type="email"],
+#codeRecommend + input[type="search"]
+{
+padding-left: 105px;
+}
+
+.form-control.invalid input[type="tel"],
+.form-control.invalid input[type="number"],
+.form-control.invalid input[type="email"],
+.form-control.invalid input[type="search"],
+.form.invalid input[type="tel"],
+.form.invalid input[type="number"],
+.form.invalid input[type="email"],
+.form.invalid input[type="search"]
+{
+border: 1px solid #d9534f;
+background-color:#FFCAC8;
+color: #fff;
+}
+@media screen and (max-width: 768px)
+{
+.icon:not(.myFlag) + input[type="tel"],
+.icon:not(.myFlag) + input[type="number"],
+.icon:not(.myFlag) + input[type="email"],
+.icon:not(.myFlag) + input[type="search"],
+.medium .icon:not(.myFlag) + input[type="tel"],
+.medium .icon:not(.myFlag) + input[type="number"],
+.medium .icon:not(.myFlag) + input[type="email"],
+.medium .icon:not(.myFlag) + input[type="search"],
+.large .icon:not(.myFlag) + input[type="tel"],
+.large .icon:not(.myFlag) + input[type="number"],
+.large .icon:not(.myFlag) + input[type="email"],
+.large .icon:not(.myFlag) + input[type="search"],
+.xlarge .icon:not(.myFlag) + input[type="tel"],
+.xlarge .icon:not(.myFlag) + input[type="number"],
+.xlarge .icon:not(.myFlag) + input[type="email"],
+.xlarge .icon:not(.myFlag) + input[type="search"]
+{
+padding-left: 10px;
+}
+}
+
+.form-control input[type="email"],
+.form-control input[type="search"],
+.form input[type="email"],
+.form input[type="search"]
+{
+background-color:#fff !important;
+background-image:none !important;
+border:1px solid #ccc !important;
+border-radius:0 !important;
+box-shadow:none !important;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button
+{
+-webkit-appearance:  none;
+margin: 0;
+}
+input[type="number"][type=number]
+{
+-moz-appearance: textfield;
+}
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration
+{
+display:  none;
+}
+
+.form-control input[type="tel"],
+.form-control input[type="number"],
+.form-control input[type="email"],
+.form-control input[type="search"],
+.form input[type="tel"],
+.form input[type="number"],
+.form input[type="email"],
+.form input[type="search"]
+{
+height: 20px;
+margin:0;
+padding-top: 0;
+padding-left:5px;
+padding-bottom: 0;
+padding-right:5px;
+border: 1px solid #ccc;
+box-sizing:border-box;
+}
+
+.form-control input[type="tel"].loadedPlace,
+.form-control input[type="number"].loadedPlace,
+.form-control input[type="email"].loadedPlace,
+.form-control input[type="search"].loadedPlace,
+.form input[type="tel"].loadedPlace,
+.form input[type="number"].loadedPlace,
+.form input[type="email"].loadedPlace,
+.form input[type="search"].loadedPlace
+{
+padding-top: 14px;
+}
+
+.form-control.medium input[type="tel"].loadedPlace,
+.form-control.medium input[type="number"].loadedPlace,
+.form-control.medium input[type="email"].loadedPlace,
+.form-control.medium input[type="search"].loadedPlace,
+.form.medium input[type="tel"].loadedPlace,
+.form.medium input[type="number"].loadedPlace,
+.form.medium input[type="email"].loadedPlace,
+.form.medium input[type="search"].loadedPlace
+{
+padding-top: 14px;
+}
+
+.form-control.xlarge input[type="tel"].loadedPlace,
+.form-control.xlarge input[type="number"].loadedPlace,
+.form-control.xlarge input[type="email"].loadedPlace,
+.form-control.xlarge input[type="search"].loadedPlace,
+.form.xlarge input[type="tel"].loadedPlace,
+.form.xlarge input[type="number"].loadedPlace,
+.form.xlarge input[type="email"].loadedPlace,
+.form.xlarge input[type="search"].loadedPlace
+{
+padding-top: 14px;
+}
+
+.icon + input[type="tel"],
+.icon + input[type="number"],
+.icon + input[type="email"],
+.icon + input[type="search"]
+{
+padding-left: 25px;
+}
+[dir="rtl"] .icon + input[type="tel"],
+[dir="rtl"] .icon + input[type="number"],
+[dir="rtl"] .icon + input[type="email"],
+[dir="rtl"] .icon + input[type="search"]
+{
+padding-right: 25px;
+padding-left:5px;
+}
+
+.form-control.medium input[type="tel"],
+.form-control.medium input[type="number"],
+.form-control.medium input[type="email"],
+.form-control.medium input[type="search"],
+.form.medium input[type="tel"],
+.form.medium input[type="number"],
+.form.medium input[type="email"],
+.form.medium input[type="search"]
+{
+height: 30px;
+}
+
+.medium .icon + input[type="tel"],
+.medium .icon + input[type="number"],
+.medium .icon + input[type="email"],
+.medium .icon + input[type="search"]
+{
+padding-left: 35px;
+}
+[dir="rtl"] .medium .icon + input[type="tel"],
+[dir="rtl"] .medium .icon + input[type="number"],
+[dir="rtl"] .medium .icon + input[type="email"],
+[dir="rtl"] .medium .icon + input[type="search"]
+{
+padding-right: 35px;
+padding-left:5px;
+}
+
+.form-control.large input[type="tel"],
+.form-control.large input[type="number"],
+.form-control.large input[type="email"],
+.form-control.large input[type="search"],
+.form.large input[type="tel"],
+.form.large input[type="number"],
+.form.large input[type="email"],
+.form.large input[type="search"]
+{
+height: 40px;
+padding-left:10px;
+padding-right: 10px;
+}
+
+.large .icon + input[type="tel"],
+.large .icon + input[type="number"],
+.large .icon + input[type="email"],
+.large .icon + input[type="search"]
+{
+padding-left: 50px;
+}
+[dir="rtl"] .large .icon + input[type="tel"],
+[dir="rtl"] .large .icon + input[type="number"],
+[dir="rtl"] .large .icon + input[type="email"],
+[dir="rtl"] .large .icon + input[type="search"]
+{
+padding-right: 50px;
+padding-left:10px;
+}
+
+.form-control.xlarge input[type="tel"],
+.form-control.xlarge input[type="number"],
+.form-control.xlarge input[type="email"],
+.form-control.xlarge input[type="search"],
+.form.xlarge input[type="tel"],
+.form.xlarge input[type="number"],
+.form.xlarge input[type="email"],
+.form.xlarge input[type="search"]
+{
+height: 50px;
+padding-left:10px;
+padding-right: 10px;
+}
+
+.xlarge .icon + input[type="tel"],
+.xlarge .icon + input[type="number"],
+.xlarge .icon + input[type="email"],
+.xlarge .icon + input[type="search"]
+{
+padding-left: 60px;
+}
+
+.xlarge .icon + input[type="tel"],
+.xlarge .icon + input[type="number"],
+.xlarge .icon + input[type="email"],
+.xlarge .icon + input[type="search"]
+{
+padding-left: 60px;
+}
+[dir="rtl"] .xlarge .icon + input[type="tel"],
+[dir="rtl"] .xlarge .icon + input[type="number"],
+[dir="rtl"] .xlarge .icon + input[type="email"],
+[dir="rtl"] .xlarge .icon + input[type="search"]
+{
+padding-right: 60px;
+padding-left:10px;
+}
+
+.secCode + input[type="tel"],
+.secCode + input[type="number"],
+.secCode + input[type="email"],
+.secCode + input[type="search"],
+#secCode + input[type="tel"],
+#secCode + input[type="number"],
+#secCode + input[type="email"],
+#secCode + input[type="search"],
+#codeRecommend + input[type="tel"],
+#codeRecommend + input[type="number"],
+#codeRecommend + input[type="email"],
+#codeRecommend + input[type="search"]
+{
+padding-left: 105px;
+}
+
+.form-control.invalid input[type="tel"],
+.form-control.invalid input[type="number"],
+.form-control.invalid input[type="email"],
+.form-control.invalid input[type="search"],
+.form.invalid input[type="tel"],
+.form.invalid input[type="number"],
+.form.invalid input[type="email"],
+.form.invalid input[type="search"]
+{
+border: 1px solid #d9534f;
+background-color:#FFCAC8;
+color: #fff;
+}
+@media screen and (max-width: 768px)
+{
+.icon:not(.myFlag) + input[type="tel"],
+.icon:not(.myFlag) + input[type="number"],
+.icon:not(.myFlag) + input[type="email"],
+.icon:not(.myFlag) + input[type="search"],
+.medium .icon:not(.myFlag) + input[type="tel"],
+.medium .icon:not(.myFlag) + input[type="number"],
+.medium .icon:not(.myFlag) + input[type="email"],
+.medium .icon:not(.myFlag) + input[type="search"],
+.large .icon:not(.myFlag) + input[type="tel"],
+.large .icon:not(.myFlag) + input[type="number"],
+.large .icon:not(.myFlag) + input[type="email"],
+.large .icon:not(.myFlag) + input[type="search"],
+.xlarge .icon:not(.myFlag) + input[type="tel"],
+.xlarge .icon:not(.myFlag) + input[type="number"],
+.xlarge .icon:not(.myFlag) + input[type="email"],
+.xlarge .icon:not(.myFlag) + input[type="search"]
+{
+padding-left: 10px;
+}
+}
+
+.tax-foffice-list
+{
+background-color:  #FFF;
+box-shadow: 0px 2px 4px rgba(0, 0, 0, .3);
+display:  none;
+position: absolute;
+top: 100%;
+left:  0;
+z-index: 1234;
+}
+
+.search-enable .tax-foffice-list
+{
+display:  block;
+}
+
+.tax-foffice-list input[type="search"]
+{
+height:  36px;
+margin-bottom: 10px;
+padding-top: 0 !important;
+outline:  0;
+}
+
+.tax-foffice-list ul
+{
+max-height:  269px;
+overflow-x: hidden;
+overflow-y:  auto;
+}
+
+.tax-foffice-list .col-text
+{
+padding-top:  6px;
+padding-bottom: 6px;
+}

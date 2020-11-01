@@ -1,0 +1,7 @@
+{foreach $VARIANT_LIST as $A}
+    {if  $A.IN_STOCK==true}
+        <a data-id="{$A.TYPE_ID}" data-group-id="{$GRUP_TIP_NO}" data-target="{$P.ID}" class="col box-border {if $A.IN_STOCK==false} passive{/if}">
+            <p>{$A.TYPE}</p>
+        </a>
+    {/if}
+{/foreach}

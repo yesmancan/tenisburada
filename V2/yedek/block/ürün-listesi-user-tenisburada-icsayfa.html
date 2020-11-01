@@ -1,0 +1,135 @@
+{if $HEADER==1}
+<div class="col-12" >
+  <div id="katalog" class="row m0">
+    <div class="col-12">
+      <div class="row mb b-right b-bottom m0" style="margin-bottom: 25px!important;">
+        <div class="fl col-12 catalogWrapper">
+          {/if}
+          {if $LOOP==1}
+          <div class="col col-4 col-md-6 col-sm-6 col-xs-6 productItem ease p0">
+            <div class="fl col-12 product-container">
+              <a href="/{$P.URL}" class="image-wrapper fl{if $P.IMAGE_LIST.1.MEDIUM != ''} imgGallery{/if}" >
+                {if $P.IS_NEW_PRODUCT == true}
+                <span class="icon-new">
+                  YENİ
+                </span>
+                {/if}
+                {if $P.IN_STOCK == false}
+                <span class="out-of-stock">{#out_of_stock#}</span>
+                {/if}
+                <span class="imgInner">
+                  <img {if $IS_LAZY_LOAD_ACTIVE == '1'}data-src="{$P.IMAGE.MEDIUM}" src="{$LAZY_LOAD_LOADING_IMAGE}" class="lazy" {else}src="{$P.IMAGE.MEDIUM}" class="active" {/if}alt="{$P.BRAND} - {$P.TITLE}"/>
+                </span>
+                {if $P.IMAGE_LIST.1.MEDIUM != ''}
+                <span class="imgInner">
+                  <img src="{$P.IMAGE_LIST.1.MEDIUM}" class="ease ndImage" alt="{$P.BRAND} - {$P.TITLE} (1)" style="padding: 0 25px;"/>
+                </span>
+                {/if}
+              </a>
+            </div>
+            <div class="fl col-12 m0">
+              <div class="fl col-12 productDetails loaderWrapper" style="height:100%x;">
+                <div class="row m0">
+                  <div class="col-12 proRowName">
+                    <div class="row m0">
+                      
+                      <a href="/{$P.URL}" title="{$P.TITLE}" class="col col-12 productDescription">
+                        {$P.TITLE}
+                      </a>
+                    </div>
+                  </div>
+                  {if $P.IS_DISPLAY_PRODUCT == 0}
+                  <div class="variantOverlay" data-id="{$P.ID}"></div>
+                  <div class="col-12 proRowAct" style="min-height: 50px;">
+                    <div class="row tooltipWrapper m0">
+                      <div class="productPrice">
+                        <div class="currentPrice">
+                             {if $P.DISCOUNT_PERCENT > 0}
+                                <span style="margin-right: 10px;font-size: 14px!important;font-weight: 200!important;">
+                                    <span class="discountedPrice">{vat price=$P.PRICE_NOT_DISCOUNTED vat=$P.VAT}</span>
+                                    <span>{$P.TARGET_CURRENCY}</span>
+                              </span>
+                           {/if}
+                          <span>
+                          {if $P.DISPLAY_VAT === "1"}
+                          {vat price=$P.PRICE_SELL vat=$P.VAT}
+                          {$P.TARGET_CURRENCY}
+                          {else} 
+                          {format price=$P.PRICE_SELL} {$P.TARGET_CURRENCY}
+                          + {#kdv#}
+                          {/if}
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  {/if}
+                </div>
+              </div>
+            </div>
+          </div>
+          {/if}
+          {if $FOOTER==1}
+        </div>
+      </div>
+      {if $IS_HOME_PAGE==0}
+      <div class="row mb m0">
+        {if $IS_AUTO_LOAD_ACTIVE==true}
+        <script type="text/javascript" src="/theme/standart/js/blok-v4/product-loader.js"></script>
+        <script type="text/javascript">
+          new ProductLoader({
+            parentDiv: '.catalogWrapper',
+            productDiv: '.productItem',
+            loadMoreButton: '.LoadMoreButton'
+          }).run();
+        </script>
+        {else}
+        <div class="box col-12" style="border: 2px solid #e8e8e8!important;">
+          <div class="box col-12 a-center">
+            {if $TOTAL==0}
+            {#no_product#}
+            {else}
+            {#total_products#|replace:'%TOTAL%':$TOTAL}
+            {/if}
+          </div>
+          <div class="box col-12 a-center">
+            <div class="box-border productPager">
+              {$PAGINATION}
+            </div>
+          </div>
+        </div>
+        {/if}
+      </div>
+      {/if}
+    </div>
+  </div>
+</div>
+
+{literal}
+<script type="text/javascript">
+  $(document).ready(function () {
+    $('#katalog').equalizer();
+    if (window.location.href.indexOf('stock=') > 0) {
+      $('#stock').prop('checked', true);
+      $('#stock').parent().addClass('active');
+    }
+    $('#pageLayout span').click(function (e) {
+      e.preventDefault();
+      window.location.href = getLink('view', $(this).attr('data-id'));
+    });
+    $('#stock').change(function (e) {
+      e.preventDefault();
+      var val = $(this).is(':checked') ? '1' : '';
+      $(this).parent().prop('checked', $(this).is(':checked'));
+      window.location.href = getLink('stock', val);
+    });
+    $('#sort').change(function (e) {
+      e.preventDefault();
+      window.location.href = getLink('sort', $(this).val());
+    });
+    
+    
+  });
+</script>
+{/literal}
+{/if}
