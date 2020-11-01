@@ -471,6 +471,7 @@ div>ul>li>ul>li:nth-child(1) {
     text-align: center;
     line-height: 35px;
     display: flex;
+    display:-webkit-flex;
     flex-direction: column;
     align-content: center;
     justify-content: center;
@@ -492,6 +493,7 @@ div>ul>li>ul>li:nth-child(1) {
 
 .flex-row {
     display: flex;
+    display:-webkit-flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -502,6 +504,7 @@ div>ul>li>ul>li:nth-child(1) {
 
 .flex-col {
     display: flex;
+    display:-webkit-flex;
     flex-direction: column;
     align-content: center;
     justify-content: center;
