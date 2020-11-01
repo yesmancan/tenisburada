@@ -145,7 +145,6 @@
     align-items: center;
     justify-content: center;
     margin: 20px auto 0 auto;
-    width: calc(50vw - 60px);
 }
 
 #addCartBtn {

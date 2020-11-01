@@ -947,7 +947,6 @@ table.product-prop {
 	justify-content: flex-end;
 	margin: 0 auto;
 	flex: 1 0 0;
-	width: calc(50vw - 60px);
 }
 
 #mobileBuyBtn .subOne {
@@ -1001,6 +1000,7 @@ table.product-prop {
 	margin: 15px auto;
 	padding-bottom: 20px;
 	border-bottom: 1px solid #ccc;
+	width: 100%;
 }
 
 #productRight.loaderWrapper {
@@ -1085,7 +1085,7 @@ table.product-prop {
 	display: flex;
 	display:-webkit-flex;
 	flex-wrap: wrap;
-	max-width: 340px;
+	max-width: 425px;
 }
 
 #benzerurunler a.image-wrapper {
@@ -1205,7 +1205,6 @@ table.product-prop {
 		margin: 0 auto;
 		width: 50vw;
 		flex: 50vw 1 1;
-		height: calc(100vh - 55px);
 	}
 
 	#productRight {
@@ -1214,9 +1213,6 @@ table.product-prop {
 		flex-direction: column;
 		justify-content: center;
 		align-items: flex-start;
-		width: calc(50vw - 60px);
-		flex: calc(50vw - 60px) 1 1;
-		height: calc(100vh - 55px);
 		background-color: #fff;
 		padding: 0 30px;
 	}
@@ -1227,7 +1223,7 @@ table.product-prop {
 	}
 
 	#mobileBuyBtn .subOne {
-		max-width: 320px;
+		max-width: 325px;
 	}
 }
 
