@@ -2445,7 +2445,7 @@
                                             src="https://www.tenisburada.com/nike-zoom-vapor-95-tour-1965-nike-nike-7245-19-K.jpg">
                                     </div>Nike Zoom Vapor 9.5 Tour
                                 </a></li>
-    
+
                             <li><a href="/nike-zoom-cage-1963" target="_self">
                                     <div class="search-image"><img
                                             src="https://www.tenisburada.com/nike-zoom-cage-1963-nike-nike-7240-19-K.jpg">
@@ -2461,7 +2461,7 @@
                                             src="https://www.tenisburada.com/nike-pure-tenis-etegi-1947-etek-sort-nike-7192-19-K.jpg">
                                     </div>Nike Pure Tenis Eteği
                                 </a></li>
-    
+
                         </ul>
                     </div>
                 </form>
@@ -2528,6 +2528,20 @@
         }
         if (navigator.appVersion.indexOf('Trident') > -1 && navigator.appVersion.indexOf('Edge') == -1) {
             $('body').addClass('ie');
+        }
+    </script>
+
+    <script defer>
+        var items = document.querySelectorAll('.catalogWrapper .productItem');
+        var catalogWrapper = document.querySelector('.catalogWrapper');
+
+        var itemperrow = parseInt((catalogWrapper.offsetWidth / items[0].offsetWidth), 10)
+        var missingItem = parseInt((items.length / itemperrow), 10);
+        if (missingItem > 3) {
+            missingIte = missingItem % itemperrow
+        }
+        for (let index = 0; index < missingItem; index++) {
+            catalogWrapper.insertAdjacentHTML('beforeEnd', `<div class="productItem ease" style="visibility:hidden;"><div class="product-container"><a href="" class="image-wrapper"><span class="imgInner"><img src="" class="active" alt=" "></span></a></div><div class="productDetails loaderWrapper" style="height: 84px;"><div class="variantOverlay" data-id=""></div><a href="" title="" class="productDescription"></a><div class="productPrice"><span class="discountedPrice">TL</span><span class="currentPrice">TL</span></div></div></div>`);
         }
     </script>
 </body>

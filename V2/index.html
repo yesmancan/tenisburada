@@ -2167,8 +2167,8 @@
                                 src="Diger/Gzip.php?F=theme/standart/js/blok-v4/product-detail"></script>
                             <script>
                                 $(document).ready(function () {
-                                    $('#productLeft .productImage').slide({
-                                        slideType: 'carousel',
+                                    $('.productImage').slide({
+                                        // slideType: 'carousel',
                                         isAuto: false,
                                         slideCtrl: {
                                             showCtrl: true,
@@ -2178,7 +2178,7 @@
                                         },
                                         slidePaging: {
                                             showPaging: true,
-                                            wrapPaging: '#productLeft .productThumbs'
+                                            wrapPaging: '.productThumbs'
                                         },
                                         changeFn: function (e) {
                                         }
