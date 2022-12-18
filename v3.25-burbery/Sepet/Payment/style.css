@@ -1,0 +1,95 @@
+@media screen and (max-width:768px){
+    .card-animation {
+        display: none!important;
+    }
+    #paymentPager {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    #paymentPager li {
+        border: 2px solid#000;
+        width: 45%;
+        padding: 0!important;
+        margin-right: 10px!important;
+        text-align: center;
+        display: flex;
+    }
+    #paymentPager li:last-child {
+        margin-right: 15px;
+    }
+}
+div#one-tab-wrapper,
+div#iyz-tablist,
+.css-54e5f1-Divider.e92n6r811 {
+    display: none !important;
+}
+
+.css-1o39wq4-Popup-Box-Box.e1xekicq2 {
+    max-width: 100% !important;
+    display: flex;
+}
+
+.css-11judmh-Body.emi5sxu1 {
+    display: flex;
+}
+
+.flip-container {
+    -webkit-perspective: 1000;
+    -moz-perspective: 1000;
+    -o-perspective: 1000;
+    perspective: 1000;
+
+}
+
+.flip-container.hover .flipper {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.flip-container,
+.front,
+.back {
+    width: 320px;
+    height: 427px;
+    margin-top: 8px;
+}
+
+.flipper {
+    -webkit-transition: 0.6s;
+    -webkit-transform-style: preserve-3d;
+
+    -moz-transition: 0.6s;
+    -moz-transform-style: preserve-3d;
+
+    -o-transition: 0.6s;
+    -o-transform-style: preserve-3d;
+
+    transition: 0.6s;
+    transform-style: preserve-3d;
+
+    position: relative;
+}
+
+.front,
+.back {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+.back {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
